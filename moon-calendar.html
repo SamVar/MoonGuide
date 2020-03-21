@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Moon Phase Calendar gives you visual representation of moon's phase for the given month and year. 
+        Choouse month and year in the drop-down menu to view full month moon phase as well as age and illumination"
+		/>
+		<title>Moon Calendar</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+			integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E"
+			crossorigin="anonymous"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Caladea|Courgette&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" href="images/favicon.ico" />
+		<link href="lightbox2-2.11.1/dist/css/lightbox.css" rel="stylesheet" />
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+
+	<body onload="moonCalendar(); addDays(); addHrefAttribute(); copyRights();">
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<a class="navbar-brand" href="index.html">Moon Guide</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarTogglerDemo02"
+					aria-controls="navbarTogglerDemo02"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+					<ul class="navbar-nav  ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html"
+								>Moon Phase<span class="sr-only">(current)</span></a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="moon-calendar.html"
+								>Moon Calendar<span class="sr-only">(current)</span></a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="bornFullMoon.html"
+								>Moon Personality<span class="sr-only">(current)</span></a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link gallery" href="gallery.html"
+								>Gallery<span class="sr-only">(current)</span></a
+							>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<section id="sec1">
+				<div class="calendar">
+					<div class="row">
+						<form class="date-form" name="dateForm" id="dateForm">
+							<select class="month-select" id="dateMonth"></select>
+							<select class="year-select" id="dateYear"></select>
+							<input type="button" class="go-btn" value="GO" />
+						</form>
+					</div>
+
+					<div class="row">
+						<div class="current-month">
+							<i class="btn btn-previous previous fas fa-angle-left"></i>
+							<div class="month-name"></div>
+							<i class="btn btn-next next fas fa-angle-right"></i>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col head-col">Sun</div>
+						<div class="col head-col">Mon</div>
+						<div class="col head-col">Tue</div>
+						<div class="col head-col">Wed</div>
+						<div class="col head-col">Thu</div>
+						<div class="col head-col">Fri</div>
+						<div class="col head-col">Sat</div>
+					</div>
+
+					<div class="row">
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+						<div class="col">
+							<div class="col-up"></div>
+							<div class="col-body"></div>
+							<div class="col-down"></div>
+						</div>
+					</div>
+				</div>
+				<hr class="line" />
+			</section>
+
+			<section id="sec2">
+				<div class="next-full-moon"></div>
+				<p class="paragraph-body">
+					<a
+						href="big-size-images/full.png"
+						data-lightbox="roadtrip"
+						data-title="Full Moon for this month"
+						data-alt="Full Moon"
+					>
+						<img class="opacity-hover flow-left" src="images/full.png" />
+					</a>
+					<span class="tab">The </span> full moon is the lunar phase when the
+					Moon appears fully illuminated from Earth's perspective. This occurs
+					when Earth is located between the Sun and the Moon (more exactly, when
+					the ecliptic longitudes of the Sun and Moon differ by 180°). This
+					means that the lunar hemisphere facing Earth – the near side – is
+					completely sunlit and appears as a circular disk. The full moon occurs
+					roughly once a month.The time interval between a full (or new) moon
+					and the next repetition of the same phase, a synodic month, averages
+					about 29.53 days. Therefore, in those lunar calendars in which each
+					month begins on the day of the new moon, the full moon falls on either
+					the 14th or 15th day of the lunar month. Because a calendar month
+					consists of a whole number of days, a month in a lunar calendar may be
+					either 29 or 30 days long. <br />
+
+					<span class="tab">Throughout </span> the history of the Earth, the
+					Moon has been a major influence on the evolution of the land, ocean
+					and life. For Billions of years the Moon has been stirring the oceans
+					in its never ending orbit. Scientist believe life itself may not have
+					been possible without the Moon's tidal mixing of the oceans that
+					created the complex chemical compounds that were necessary for life to
+					begin. It makes sense that our lives today are influenced by the Moon
+					Phase, position and proximity to Earth. Whether it’s some deep
+					chemical reaction or more of a spiritual connection it’s easy to see
+					the influence.
+					<br />
+					<span class="tab">Doctors</span> and Nurses dread the Full Moon each
+					month when the emergency rooms are filled with people giving birth.
+					Ask a police officer and they will tell you there is a heightened
+					energy in the air on a Full Moon and New Moon. It’s on these days that
+					the craziest things happen in the world. The Moon is one of the most
+					powerful symbols in astrology. Some people are more in tune with their
+					Birth Moon Phase or Zodiac Moon Sign than the more common zodiac Sun
+					Sign. Like the Sun Sign, your Birthday Moon Phase and Moon Sign can
+					tell you a lot about yourself. The current Moon Phase today or the
+					Phase on your Current Birthday is also said to influence our
+					day-to-day lives. Explore the links below to see the diffences of
+					being born on the different Moon Phases.
+				</p>
+				<hr class="line" />
+			</section>
+
+			<section id="sec3">
+				<h1>Moon Phase Personality Descriptions</h1>
+				<p class="paragraph-body">
+					<span class="tab">Your</span> astrological sign may cover the
+					positioning of the planets at the time of your birth, but it doesn’t
+					cover one of the most potent energy fields on Earth: the moon phase
+					you were born in. The “lunar personalities” are the 8 phases of the
+					moon cycle: New Moon, First Crescent, First Quarter, Waxing Gibbous,
+					Full Moon, Waning Gibbous, Last Quarter and Waning Crescent. They can
+					shed light on not only some of your qualities and tendencies, but more
+					importantly, the first energy you were exposed to on Earth, and how it
+					affects the way your path here will unfold.
+					<br />
+					<span class="tab">The</span> importance of the Moon and its phases
+					throughout history can be clearly seen by how prominently Moon phases
+					feature in the calculation of dates for major religious festivals.
+					Easter Sunday is always the first Sunday after the first Full Moon
+					after the March equinox. In 2008, the March equinox is March 20; there
+					is a Full Moon March 22; the Sunday after that is March 23. Easter
+					Sunday in 2008 is March 23. The Full Moon can occur anywhere up to a
+					month after the March Equinox; this is the reason the date of Easter
+					changes so much from one year to the next. Rosh Hashanah, the Jewish
+					“head of the year” or New Year festival “starts at sunset on the day
+					of the New Moon closest to the September Equinox”. Numerous other
+					religious festivals across a number of faiths (including Ramadan,
+					Hanukkah, Purim and both the Vietnamese and Chinese New Year) are
+					timed to either New or Full moons in certain astrological signs or in
+					relation to a specific equinox or solstice.
+					<br />
+					<span class="tab">In</span> modern astrological practice the Moon
+					phases are used to describe the pulse or tone of your birth chart and
+					your life. All other birth chart factors, like planetary placements
+					and aspects, are modified by the energy of your Moon phase. The
+					importance of Moon phases, long respected by ancient astrologers, was
+					reintroduced to the modern world through the early parts of the
+					twentieth century by the astrologer Dane Rudhyar. There are also links
+					between Moon phases and reincarnation, though these beliefs would have
+					evolved centuries earlier, out of eastern astrological philosophies,
+					where fate and karma have a larger part to play. Our obsession with
+					our Sun Sign or Star Sign is a reflection of society’s obsession with
+					the individual ego, the conscious mind and one’s creative output
+					(qualities of the Sun). Equally, you could say “I am a New Moon phase”
+					or “I am a Full Moon phase”; this description describing your
+					instinctive personality urges, from an emotional, unconscious and soul
+					perspective (moon qualities).
+					<br />
+					<span class="tab">The</span> Sun or Star sign is simply one of the
+					easiest astrological factors to generalise, making it easy to cater to
+					the general public via sun sign columns and the like. A few minutes
+					research or inquiry with an Astrologer would confirm for you what Moon
+					phase you were born under. Your Moon phase describes your personality
+					profile and reflects the basic pulse of your life. Your Sun sign is
+					subtly, but essentially different depending on which phase of the Moon
+					you were born under. The combination of Sun Sign and Moon phase
+					creates a holistic description of an individual as it caters to the
+					masculine/ yang (Sun) and feminine /yin (Moon) aspects of human
+					nature.
+				</p>
+			</section>
+
+			<section id="sec4">
+				<div class="full-moon-born">
+					<h2 class="paragraph-bornFullMoon">Where you born on a Full Moon?</h2>
+					<p class="paragraph-body paragraph-bornFullMoon">
+						<img src="images/full.png" class="flow-right" />
+						Have you ever wondered what phase of the Moon you were born on?
+						Where ypu born on a Full moon or New moon? Are more people born on a
+						Full Moon or New Moon? Enter the date you were born on to find out
+						the Moon Phase of your birthday. Also try a friend or family
+						member’s Birthday and share the results with them.
+					</p>
+
+					<p class="paragraph-body paragraph-bornFullMoon">
+						Enter the date you were born on to find out your Moon Phase and
+						Sign. Also try your birthday with the current year to get this years
+						Moon Phase and Sign
+					</p>
+
+					<form class="born-form" name="bornForm">
+						<select
+							class="select-born-month"
+							id="bornMonth"
+							onchange="checkInput()"
+						>
+						</select>
+						<select class="select-born-day" id="bornDay"> </select>
+						<select class="select-born-year" id="bornYear"> </select>
+
+						<a id="jumpToPhase" href="#"
+							><input
+								type="button"
+								class="born-btn newMoon"
+								value="Submit"
+								onclick="moonPhaseBorn(); "
+							/>
+						</a>
+					</form>
+				</div>
+
+				<hr class="line" />
+			</section>
+
+			<section>
+				<div class="you-were-born-container">
+					<div class="you-were-born-text1"></div>
+					<div class="you-were-born-moon-img"></div>
+					<div class="you-were-born-text"></div>
+					<div class="read-more"></div>
+				</div>
+			</section>
+			<!-- <p class="paragraph-body paragraph-jumpTo">Jump To:</p>
+			<div class="jumpTo">
+				<ul class="ul1">
+					<li><a href="#NewMoon">New Moon</a></li>
+					<li><a href="#WaxingCrescent">Waxing Crescent</a></li>
+					<li><a href="#FirstQuarter">First Quarter</a></li>
+					<li><a href="#WaxingGibbous">Waxing Gibbous</a></li>
+				</ul>
+				<ul class="ul2">
+					<li><a href="#FullMoon">Full Moon</a></li>
+					<li><a href="#WaningGibbous">Waning Gibbous</a></li>
+					<li><a href="#LastQuarter">Last Quarter</a></li>
+					<li><a href="#WaningCrescent">Waning Crescent</a></li>
+				</ul>
+			</div> -->
+			<section id="sec5">
+				
+				<h2 id="NewMoon">New Moon</h2>
+				<p class="paragraph-body">
+					
+					<a
+						href="big-size-images/new.png"
+						data-lightbox="roadtrip"
+						data-title="New Moon"
+						data-alt="New Moon"
+					>
+						<img src="images/new.png" class="flow-left opacity-hover" />
+					</a>
+
+					Symbolic of a new beginnings, the New Moon signals the end of an
+					entire Lunar Cycle which leads to the next New Moon. Those born under
+					this phase are supercharged with the renewing, spiritual energy of the
+					Universe. They have an affinity for all things creative and tend to be
+					imaginative, intuitive and impulsive -- occasionally making decisions
+					without thinking them through. Yet when they commit to their passion,
+					they do so with a strong resolve to develop, cultivate and make
+					manifest. Although, as lunar energy ebbs and flows, staying connected
+					to their inner resolve becomes difficult at times. Mania, nervousness
+					and racing thoughts may develop, signaling a time to slow down and
+					feel the earth underfoot. By letting go of all fears, worries and
+					self-judgement, they will begin again to give birth to new ideas and
+					concepts. Wear this moon phase to honor birthdays or any sacred date
+					and energize your life with the spirit of new beginnings.
+					<br />
+					<a
+						onclick="cleanReturns()"
+						id="return-new-moon"
+						class="return-link return1"
+						href="#"
+					>
+					</a>
+				</p>
+
+				<h2 id="WaxingCrescent">Waxing Crescent</h2>
+				<p class="paragraph-body">
+					<a
+						href="big-size-images/6.png"
+						data-lightbox="roadtrip"
+						data-title="Waxing Crescent"
+						data-alt="Waxing Crescent"
+					>
+						<img src="images/6.png" class="flow-left opacity-hover" />
+					</a>
+					Those born under the influence of this moon phase are assertive,
+					adventurous and filled with curiosity about life. Happiest while
+					pursuing a worthwhile mission, their drive for achievement is central
+					to their success. Typically individuals born in the first half of the
+					moon cycle are involved in establishing new structures, systems and
+					schools of thought. A creative disposition inspires inquiry and an
+					ability to see the world through fresh eyes. Because of this, these
+					visionaries are often torn between following conventional wisdom and
+					risking all to break new ground. Facing and overcoming imbalance and
+					chaos brings likely success early in life when ambition and
+					productivity is especially high. Wear this moon phase to honor
+					birthdays or any sacred date and capture the lucky sliver of silver
+					light to bring heartfelt dreams to fruition.
+					<br />
+					<a
+						onclick="cleanReturns()"
+						id="return-waxing-crescent"
+						class="return-link return2"
+						href="#"
+					>
+					</a>
+				</p>
+
+				<h2 id="FirstQuarter">First Quarter</h2>
+				<p class="paragraph-body">
+					<a
+						href="big-size-images/7.png"
+						data-lightbox="roadtrip"
+						data-title="First Quarter"
+						data-alt="First Quarter"
+					>
+						<img src="images/7.png" class="flow-left opacity-hover" />
+					</a>
+
+					The first quarter Moon is the first critical point in the Moon cycle
+					and there is an element of tension or nervous energy in the heart of
+					all individuals born at this time. Like the planet which now must take
+					risks as it pours energy into strengthening its position, individuals
+					born at the First Quarter Phase are passionate, confident and natural
+					risk takers. They are quick to act but can carry a chip on their
+					shoulder, as if they are trying to prove something to the world. This
+					makes them great leaders as they always rise to challenges. Anger need
+					to be managed consciously and healthy physical outlets are important.
+					A key phrase for this phase is “Crisis in Action”. First Quarter
+					individuals can feel that life is a challenge they need to beat. They
+					are ambitious, self motivated and independent and once they’ve decided
+					to do something are hard to stop. Determination is one their key
+					strengths.
+					<br />
+					<a
+						onclick="cleanReturns()"
+						id="return-first-quarter"
+						class="return-link return3"
+						href="#"
+					>
+					</a>
+				</p>
+
+				<h2 id="WaxingGibbous">Waxing Gibbous</h2>
+				<p class="paragraph-body">
+					<a
+						href="big-size-images/10.png"
+						data-lightbox="roadtrip"
+						data-title="Waxing Gibbous"
+						data-alt="Waxing Gibbous"
+					>
+						<img src="images/10.png" class="flow-left opacity-hover" />
+					</a>
+					One of the best lunar phases to give spiritual evolution a boost,
+					those born under the influence of this moon phase are quick thinkers
+					and grand philosophers that desire to seek out the meaning in life.
+					They have a natural talent for communication and self-expression and
+					love to analyze everything to come up with solutions that benefit
+					everyone. his Moon phase is about self development and perfection,
+					symbolic of the plant who is now preparing it’s offerings through
+					fruit and flowers. Those born at this Moon phase are acutely aware of
+					how important planning and organisation are. Yet, they don’t well in
+					isolation. Being in communion with partners, lovers, mentors, teachers
+					and friends brings them comfort and the mental and emotional growth
+					that leads to their success. Wear this moon phase to honor birthdays
+					or any sacred date to attract the partnerships that brings love and
+					luck to life.
+					<br />
+					<a
+						onclick="cleanReturns()"
+						id="return-waxing-gibbous"
+						class="return-link return4"
+						href="#"
+					>
+					</a>
+				</p>
+
+				<h2 id="FullMoon">Full Moon</h2>
+				<p class="paragraph-body">
+					<a
+						href="big-size-images/full.png"
+						data-lightbox="roadtrip"
+						data-title="Full Moon"
+						data-alt="Full Moon"
+					>
+						<img class="flow-left opacity-hover" src="images/full.png" />
+					</a>
+
+					Since the moon controls our emotional energy, those born at its
+					fullness may feel its effects in the extreme. Expressing emotions and
+					understanding them may be hurdles to conquer. Yet on the positive
+					side, they are extroverted and friendly with magnetic personalities
+					and known as truthful individuals who are likely to tell it like it
+					is. During a full moon, most feel exhilarated, inspired and motived
+					toward success and accomplishment while others may feel chaotic and
+					disorganized. Full moon babies are also quick studies who master tasks
+					easily and are equally given to quick changes of mind and heart which
+					to some may appear as fickleness. Even so, their strong intuition is
+					always guiding them in making their efforts come to fruition,
+					especially when following their passions. Wear this moon phase to
+					honor birthdays or any sacred date and channel the moon’s emotional
+					wisdom to bring success to personal endeavors.
+					<br />
+					<a
+						onclick="cleanReturns()"
+						id="return-full-moon"
+						class="return-link return5"
+						href="#"
+					>
+					</a>
+				</p>
+
+				<h2 id="WaningGibbous">Waning Gibbous</h2>
+				<p class="paragraph-body">
+					<a
+						href="big-size-images/18.png"
+						data-lightbox="roadtrip"
+						data-title="Waning Gibbous"
+						data-alt="Waning Gibbous"
+					>
+						<img class="flow-left opacity-hover" src="images/18.png" />
+					</a>
+
+					Sharing the attributes of Waning Gibbous, those born under the
+					influence of this moon phase are considered the caretakers of the
+					Universe. Their calming influence, caring nature and compulsion to
+					help others gives valuable insight into their strong will and
+					character and often shows up as a career in public service. An
+					eagerness to make the world a better place may tempt them to follow
+					ideologies too blindly. This moon phase individuals are precise and
+					question everything. They are highly creative without being impulsive.
+					Yet most can rely on strong intuitive powers to see that shred of
+					waning light before making wrong decisions. Remaining strong in the
+					face of adversity, uncertainty and unforeseen obstacles leads to their
+					greatest achievements and fulfillment in life. Wear this moon phase to
+					honor birthdays or any sacred date to channel strength, enlightenment
+					and a generosity of spirit.
+					<br />
+					<a
+						onclick="cleanReturns()"
+						id="return-waning-gibbous"
+						class="return-link return6"
+						href="#"
+					>
+					</a>
+				</p>
+
+				<h2 id="LastQuarter">Last Quarter</h2>
+				<p class="paragraph-body">
+					<a
+						href="big-size-images/21.png"
+						data-lightbox="roadtrip"
+						data-title="Last Quarter"
+						data-alt="Last Quarter"
+					>
+						<img class="flow-left opacity-hover" src="images/21.png" />
+					</a>
+
+					For people born on Third Quarter the mid life period, from the late
+					thirties to early fifties, is filled with change, as previously
+					conservative or mainstream Third Quarter individuals make dramatic
+					shifts, embracing alternative life choices to pursue a life aligned
+					with their personal philosophy. Often there is a key event through
+					this time which acts as a catalyst. Friends, family and colleagues may
+					struggle to understand why, at the heights of their career, Third
+					Quarter types walk away from all they’ve built up. This phase is
+					described as a “Crises in Consciousness” which reflects the importance
+					of acting in accordance with their beliefs. Third Quarter Moon phase
+					types are constantly re-valuating the old, and as they move through
+					life, turn away and discard old patterns. Many cut ties with the
+					beliefs or philosophies of the culture or community in which they were
+					raised. Third Quarter types easily combine instinct with creativity.
+					<br />
+					<a
+						onclick="cleanReturns()"
+						id="return-last-quarter"
+						class="return-link return7"
+						href="#"
+					>
+					</a>
+				</p>
+
+				<h2 id="WaningCrescent">Waning Crescent</h2>
+
+				<p class="paragraph-body">
+					<a
+						href="big-size-images/24.png"
+						data-lightbox="roadtrip"
+						data-title="Waning Crescent"
+						data-alt="Waning Crescent"
+					>
+						<img class="flow-left opacity-hover" src="images/24.png" />
+					</a>
+
+					Waning into total darkness, the moon’s shrinking light may decrease
+					illumination in the night sky yet intensifies psychic illumination for
+					those born under its influence. Feeling attuned to psychic experiences
+					and dreamy, otherworldly dimensions is not uncommon as the imagination
+					is in full force during this slim moon phase. Their challenge is not
+					to lose sight of the real world while staying connected to this
+					spiritual gift from the Universe that bridges them to energies beyond
+					the earthly realm. Wear this moon phase to honor birthdays or any
+					sacred date and delve into the deeply intuitive world of the waning
+					crescent. These folks tend to be very reflective and prefer their
+					alone time. They are very spiritual and seek to understand the big
+					questions in life and may be very intuitive or psychic. Their lesson
+					is to distill what they have learned from situations into wisdom to
+					share with others.
+					<br />
+					<a
+						onclick="cleanReturns()"
+						id="return-waning-crescent"
+						class="return-link return8"
+						href="#"
+					>
+					</a>
+				</p>
+			</section>
+		</main>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+		<script src="lightbox2-2.11.1/dist/js/lightbox-plus-jquery.js"></script>
+		<script src="functions.js" type="text/javascript"></script>
+		<script src="moonCalendar.js" type="text/javascript"></script>
+		<script src="bornFullMoon.js" type="text/javascript"></script>
+		<script src="footer.js" type="text/javascript"></script>
+
+		<script>
+			lightbox.option({
+				resizeDuration: 200,
+				fadeDuration: 200,
+				wrapAround: true,
+				disableScrolling: true
+			});
+		</script>
+		<footer>
+			<div class="contact-us">
+				Contact us
+				<a href="mailto: svksams@gmail.com"><i class="fas fa-envelope"></i></a>
+			</div>
+			<div class="copy-right"></div>
+		</footer>
+	</body>
+</html>

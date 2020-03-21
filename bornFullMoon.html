@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Find out if you were born on Full Moon. The “lunar
+     personalities” are the 8 phases of the moon cycle: New Moon, First Crescent, First 
+     Quarter, Waxing Gibbous, Full Moon, Waning Gibbous, Last Quarter and Balsamic Moon. 
+     They can shed light on not only some of your qualities and tendencies, but more 
+     importantly, the first energy you were exposed to on Earth, and how it affects the 
+     way your path here will unfold."
+		/>
+		<title>Born On Full Moon</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+			integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E"
+			crossorigin="anonymous"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Caladea|Courgette&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" href="images/favicon.ico" />
+		<link href="lightbox2-2.11.1/dist/css/lightbox.css" rel="stylesheet" />
+
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+
+	<body onload="copyRights()">
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<a class="navbar-brand" href="index.html">Moon Guide</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarTogglerDemo02"
+					aria-controls="navbarTogglerDemo02"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+					<ul class="navbar-nav  ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html"
+								>Moon Phase<span class="sr-only">(current)</span></a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="moon-calendar.html"
+								>Moon Calendar<span class="sr-only">(current)</span></a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="bornFullMoon.html"
+								>Moon Personality<span class="sr-only">(current)</span></a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link gallery" href="gallery.html"
+								>Gallery<span class="sr-only">(current)</span></a
+							>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<div class="form-div">
+				<h4 class="born-on-fullMoon which">
+					Find out which Lunar Phase you were born
+				</h4>
+
+				<!-- <form action="bornFullMoon.html">
+					<input
+						class="input-calendar"
+						type="date"
+						id="date"
+						value="2000-01-01"
+						min="1900-01-01"
+						max="2019-01-01"
+					/>
+
+					<input
+						type="button"
+						class="calendar-btn"
+						value="GO"
+						onclick="bornFullMoon()"
+					/>
+				</form> -->
+			</div>
+
+			<div class="you-were-born-container">
+				<div class="you-were-born-text1"></div>
+				<div class="you-were-born-moon-img"></div>
+				<div class="you-were-born-text"></div>
+				<div class="read-more"></div>
+			</div>
+
+			<hr class="line" />
+
+			<h2 class="moon-explain-tittle moon-parag">
+				Moon Phase Personality Descriptions
+			</h2>
+
+			<div class="born-newMoon only-this-newMoon">
+				<h3 class="born-tittle-parag">New Moon</h3>
+				<div class="for-center">
+					<a
+						href="images/new.png"
+						data-lightbox="roadtrip"
+						data-title="New Moon"
+						><img src="images/new.png" class="newMoon-img" alt="New Moon" />
+					</a>
+				</div>
+				<p class="born-newMoon-parag">
+					Symbolic of a new beginnings, the New Moon signals the end of an
+					entire Lunar Cycle which leads to the next New Moon. Those born under
+					this phase are supercharged with the renewing, spiritual energy of the
+					Universe. They have an affinity for all things creative and tend to be
+					imaginative, intuitive and impulsive -- occasionally making decisions
+					without thinking them through. Yet when they commit to their passion,
+					they do so with a strong resolve to develop, cultivate and make
+					manifest. Although, as lunar energy ebbs and flows, staying connected
+					to their inner resolve becomes difficult at times. Mania, nervousness
+					and racing thoughts may develop, signaling a time to slow down and
+					feel the earth underfoot. By letting go of all fears, worries and
+					self-judgement, they will begin again to give birth to new ideas and
+					concepts. Wear this moon phase to honor birthdays or any sacred date
+					and energize your life with the spirit of new beginnings.
+				</p>
+			</div>
+			<div class="born-waxingCrescent">
+				<h3 class="born-tittle-parag">Waxing Crescent</h3>
+				<div class="for-center">
+					<img
+						src="images/6.png"
+						class="waxingCrescent-img"
+						alt="Waxing Crescent"
+					/>
+				</div>
+				<p class="born-waxingCrescent-parag">
+					Those born under the influence of this moon phase are assertive,
+					adventurous and filled with curiosity about life. Happiest while
+					pursuing a worthwhile mission, their drive for achievement is central
+					to their success. Typically individuals born in the first half of the
+					moon cycle are involved in establishing new structures, systems and
+					schools of thought. A creative disposition inspires inquiry and an
+					ability to see the world through fresh eyes. Because of this, these
+					visionaries are often torn between following conventional wisdom and
+					risking all to break new ground. Facing and overcoming imbalance and
+					chaos brings likely success early in life when ambition and
+					productivity is especially high. Wear this moon phase to honor
+					birthdays or any sacred date and capture the lucky sliver of silver
+					light to bring heartfelt dreams to fruition.
+				</p>
+			</div>
+
+			<div class="born-firstQuarter">
+				<h3 class="born-tittle-parag">First Quarter</h3>
+				<div class="for-center">
+					<img
+						src="images/7.png"
+						class="firstQuarter-img"
+						alt="First Quarter"
+					/>
+				</div>
+				<p class="born-firstQuarter-parag">
+					The first quarter Moon is the first critical point in the Moon cycle
+					and there is an element of tension or nervous energy in the heart of
+					all individuals born at this time. Like the planet which now must take
+					risks as it pours energy into strengthening its position, individuals
+					born at the First Quarter Phase are passionate, confident and natural
+					risk takers. They are quick to act but can carry a chip on their
+					shoulder, as if they are trying to prove something to the world. This
+					makes them great leaders as they always rise to challenges. Anger need
+					to be managed consciously and healthy physical outlets are important.
+					A key phrase for this phase is “Crisis in Action”. First Quarter
+					individuals can feel that life is a challenge they need to beat. They
+					are ambitious, self motivated and independent and once they’ve decided
+					to do something are hard to stop. Determination is one their key
+					strengths.
+				</p>
+			</div>
+
+			<div class="born-waxingGibbous">
+				<h3 class="born-tittle-parag">Waxing Gibbous</h3>
+				<div class="for-center">
+					<img
+						src="images/10.png"
+						class="waxingGibbous-img"
+						alt="Waxing Gibbous"
+					/>
+				</div>
+				<p class="born-waxingGibbous-parag">
+					One of the best lunar phases to give spiritual evolution a boost,
+					those born under the influence of this moon phase are quick thinkers
+					and grand philosophers that desire to seek out the meaning in life.
+					They have a natural talent for communication and self-expression and
+					love to analyze everything to come up with solutions that benefit
+					everyone. his Moon phase is about self development and perfection,
+					symbolic of the plant who is now preparing it’s offerings through
+					fruit and flowers. Those born at this Moon phase are acutely aware of
+					how important planning and organisation are. Yet, they don’t well in
+					isolation. Being in communion with partners, lovers, mentors, teachers
+					and friends brings them comfort and the mental and emotional growth
+					that leads to their success. Wear this moon phase to honor birthdays
+					or any sacred date to attract the partnerships that brings love and
+					luck to life.
+				</p>
+			</div>
+			<div class="born-fullMoon">
+				<h3 class="born-tittle-parag">Full Moon</h3>
+				<div class="for-center">
+					<img src="images/full.png" class="fullMoon-img" alt="Full Moon" />
+				</div>
+				<p class="born-fullMoon-parag">
+					Since the moon controls our emotional energy, those born at its
+					fullness may feel its effects in the extreme. Expressing emotions and
+					understanding them may be hurdles to conquer. Yet on the positive
+					side, they are extroverted and friendly with magnetic personalities
+					and known as truthful individuals who are likely to tell it like it
+					is. During a full moon, most feel exhilarated, inspired and motived
+					toward success and accomplishment while others may feel chaotic and
+					disorganized. Full moon babies are also quick studies who master tasks
+					easily and are equally given to quick changes of mind and heart which
+					to some may appear as fickleness. Even so, their strong intuition is
+					always guiding them in making their efforts come to fruition,
+					especially when following their passions. Wear this moon phase to
+					honor birthdays or any sacred date and channel the moon’s emotional
+					wisdom to bring success to personal endeavors.
+				</p>
+			</div>
+
+			<div class="born-waningGibbous">
+				<h3 class="born-tittle-parag">Waning Gibbous</h3>
+				<div class="for-center">
+					<img
+						src="images/18.png"
+						class="waningGibbous-img"
+						alt="Waning Gibbous"
+					/>
+				</div>
+				<p class="born-waningGibbous-parag">
+					Sharing the attributes of Waning Gibbous, those born under the
+					influence of this moon phase are considered the caretakers of the
+					Universe. Their calming influence, caring nature and compulsion to
+					help others gives valuable insight into their strong will and
+					character and often shows up as a career in public service. An
+					eagerness to make the world a better place may tempt them to follow
+					ideologies too blindly. This moon phase individuals are precise and
+					question everything. They are highly creative without being impulsive.
+					Yet most can rely on strong intuitive powers to see that shred of
+					waning light before making wrong decisions. Remaining strong in the
+					face of adversity, uncertainty and unforeseen obstacles leads to their
+					greatest achievements and fulfillment in life. Wear this moon phase to
+					honor birthdays or any sacred date to channel strength, enlightenment
+					and a generosity of spirit.
+				</p>
+			</div>
+
+			<div class="born-lastQuarter">
+				<h3 class="born-tittle-parag">Last Quarter</h3>
+				<div class="for-center">
+					<img src="images/21.png" class="lastQuarter-img" alt="Last Quarter" />
+				</div>
+				<p class="born-lastQuarter-parag">
+					For people born on Third Quarter the mid life period, from the late
+					thirties to early fifties, is filled with change, as previously
+					conservative or mainstream Third Quarter individuals make dramatic
+					shifts, embracing alternative life choices to pursue a life aligned
+					with their personal philosophy. Often there is a key event through
+					this time which acts as a catalyst. Friends, family and colleagues may
+					struggle to understand why, at the heights of their career, Third
+					Quarter types walk away from all they’ve built up. This phase is
+					described as a “Crises in Consciousness” which reflects the importance
+					of acting in accordance with their beliefs. Third Quarter Moon phase
+					types are constantly re-valuating the old, and as they move through
+					life, turn away and discard old patterns. Many cut ties with the
+					beliefs or philosophies of the culture or community in which they were
+					raised. Third Quarter types easily combine instinct with creativity.
+				</p>
+			</div>
+
+			<div class="born-waningCrescent">
+				<h3 class="born-tittle-parag">Waning Crescent</h3>
+				<div class="for-center">
+					<img
+						src="images/24.png"
+						class="waningCrescent-img"
+						alt="Waning Crescent"
+					/>
+				</div>
+				<p class="born-waningCrescent-parag">
+					Waning into total darkness, the moon’s shrinking light may decrease
+					illumination in the night sky yet intensifies psychic illumination for
+					those born under its influence. Feeling attuned to psychic experiences
+					and dreamy, otherworldly dimensions is not uncommon as the imagination
+					is in full force during this slim moon phase. Their challenge is not
+					to lose sight of the real world while staying connected to this
+					spiritual gift from the Universe that bridges them to energies beyond
+					the earthly realm. Wear this moon phase to honor birthdays or any
+					sacred date and delve into the deeply intuitive world of the waning
+					crescent. These folks tend to be very reflective and prefer their
+					alone time. They are very spiritual and seek to understand the big
+					questions in life and may be very intuitive or psychic. Their lesson
+					is to distill what they have learned from situations into wisdom to
+					share with others.
+				</p>
+			</div>
+		</main>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+		<script src="lightbox2-2.11.1/dist/js/lightbox-plus-jquery.js"></script>
+
+		<script src="functions.js" type="text/javascript"></script>
+
+		<script src="footer.js" type="text/javascript"></script>
+		<footer>
+			<div class="contact-us">
+				Contact us
+				<a href="mailto: svksams@gmail.com"><i class="fas fa-envelope"></i></a>
+			</div>
+			<div class="copy-right"></div>
+		</footer>
+	</body>
+</html>
