@@ -66,30 +66,6 @@ function moonPhaseBorn() {
 	moonPhase = moonPhaseAndMoonImage[0];
 	moonImage = moonPhaseAndMoonImage[2];
 
-	//Printing message on the screen
-	// document.querySelector(".you-were-born-text1").innerHTML =
-	// 	"This is how the moon looked on the day you were born";
-
-	//Printing everything on the screen
-	// document.querySelector(".you-were-born-text").innerHTML =
-	// 	"You were born on " +
-	// 	moonPhase +
-	// 	"<br>" +
-	// 	"Moon age: " +
-	// 	age +
-	// 	" days" +
-	// 	"<br>" +
-	// 	"Moon Illumination: " +
-	// 	illumination +
-	// 	"%" +
-	// 	"<br>";
-
-	// Printing moon image on the screen
-	// document.querySelector(".you-were-born-moon-img").innerHTML = moonImage;
-
-	//Print text read more bellow
-	// document.querySelector(".read-more").innerHTML =
-	// 	"Read more about your Lunar Phase bellow";
 	addHrefAttribute(moonPhase);
 }
 
