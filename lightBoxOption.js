@@ -1,3 +1,4 @@
+//Controls light box options
 function lifghtBoxOption() {
 	lightbox.option({
 		resizeDuration: 200,
