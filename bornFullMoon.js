@@ -127,6 +127,7 @@ function cleanReturns() {
 		document.querySelectorAll(".born-moon-image")[i].innerHTML = "";
 		document.querySelectorAll(".border-line")[i].style.borderBottom = "none";
 		document.querySelectorAll(".border-line")[i].style.marginTop = "0rem";
+		document.querySelectorAll(".extraSpace")[i].style.marginTop = "0rem";
 	}
 }
 
@@ -183,4 +184,5 @@ function printPhase(
 	document.querySelectorAll(".border-line")[z].style.borderBottom =
 		"2px solid #777";
 	document.querySelectorAll(".border-line")[z].style.marginTop = "7rem";
+	document.querySelectorAll(".extraSpace")[z].style.marginTop = "10rem";
 }
