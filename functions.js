@@ -62,122 +62,122 @@ function moonPhaseNameAndImage(daySinceNewCircle) {
 		daySinceNewCircle > 29.4
 	) {
 		moonPhase = "New Moon";
-		moonImage = "<img class='card-img-top' src=images/new.png>";
-		moonImage2 = "<img class='image' src=images/new.png>";
-		moonImage3 = "<img class='born-img' src=images/new.png>";
+		moonImage = "<img class='card-img-top' src=small-size-images/new.png>";
+		moonImage2 = "<img class='image' src=small-size-images/new.png>";
+		moonImage3 = "<img class='born-img' src=small-size-images/new.png>";
 	} else if (daySinceNewCircle > 1.0 && daySinceNewCircle <= 6.9) {
 		moonPhase = "Waxing Crescent";
 
 		if (daySinceNewCircle > 1.0 && daySinceNewCircle <= 2.2) {
-			moonImage = "<img class='card-img-top' src=images/2.png>";
-			moonImage2 = "<img class='image' src=images/2.png>";
-			moonImage3 = "<img class='born-img' src=images/2.png>";
+			moonImage = "<img class='card-img-top' src=small-size-images/2.png>";
+			moonImage2 = "<img class='image' src=small-size-images/2.png>";
+			moonImage3 = "<img class='born-img' src=small-size-images/2.png>";
 		} else if (daySinceNewCircle > 2.2 && daySinceNewCircle <= 3.4) {
-			moonImage = "<img class='card-img-top' src=images/3.png>";
-			moonImage2 = "<img class='image' src=images/3.png>";
-			moonImage3 = "<img class='born-img' src=images/3.png>";
+			moonImage = "<img class='card-img-top' src=small-size-images/3.png>";
+			moonImage2 = "<img class='image' src=small-size-images/3.png>";
+			moonImage3 = "<img class='born-img' src=small-size-images/3.png>";
 		} else if (daySinceNewCircle > 3.4 && daySinceNewCircle <= 4.6) {
-			moonImage = "<img class='card-img-top' src=images/4.png>";
-			moonImage2 = "<img class='image' src=images/4.png>";
-			moonImage3 = "<img class='born-img' src=images/4.png>";
+			moonImage = "<img class='card-img-top' src=small-size-images/4.png>";
+			moonImage2 = "<img class='image' src=small-size-images/4.png>";
+			moonImage3 = "<img class='born-img' src=small-size-images/4.png>";
 		} else if (daySinceNewCircle > 4.6 && daySinceNewCircle <= 5.8) {
-			moonImage = "<img class='card-img-top' src=images/5.png>";
-			moonImage2 = "<img class='image' src=images/5.png>";
-			moonImage3 = "<img class='born-img' src=images/5.png>";
+			moonImage = "<img class='card-img-top' src=small-size-images/5.png>";
+			moonImage2 = "<img class='image' src=small-size-images/5.png>";
+			moonImage3 = "<img class='born-img' src=small-size-images/5.png>";
 		} else {
-			moonImage = "<img class='card-img-top' src=images/6.png>";
-			moonImage2 = "<img class='image' src=images/6.png>";
-			moonImage3 = "<img class='born-img' src=images/6.png>";
+			moonImage = "<img class='card-img-top' src=small-size-images/6.png>";
+			moonImage2 = "<img class='image' src=small-size-images/6.png>";
+			moonImage3 = "<img class='born-img' src=small-size-images/6.png>";
 		}
 	} else if (daySinceNewCircle > 6.9 && daySinceNewCircle <= 7.9) {
 		moonPhase = "First Quarter";
 
-		moonImage = "<img class='card-img-top' src=images/7.png>";
-		moonImage2 = "<img class='image' src=images/7.png>";
-		moonImage3 = "<img class='born-img' src=images/7.png>";
+		moonImage = "<img class='card-img-top' src=small-size-images/7.png>";
+		moonImage2 = "<img class='image' src=small-size-images/7.png>";
+		moonImage3 = "<img class='born-img' src=small-size-images/7.png>";
 	} else if (daySinceNewCircle > 7.9 && daySinceNewCircle <= 14.1) {
 		moonPhase = "Waxing Gibbous";
 		if (daySinceNewCircle > 7.9 && daySinceNewCircle <= 8.9) {
-			moonImage = "<img class='card-img-top' src=images/8.png>";
-			moonImage2 = "<img class='image' src=images/8.png>";
-			moonImage3 = "<img class='born-img' src=images/8.png>";
+			moonImage = "<img class='card-img-top' src=small-size-images/8.png>";
+			moonImage2 = "<img class='image' src=small-size-images/8.png>";
+			moonImage3 = "<img class='born-img' src=small-size-images/8.png>";
 		} else if (daySinceNewCircle > 8.9 && daySinceNewCircle <= 9.9) {
-			moonImage = "<img class='card-img-top' src=images/9.png>";
-			moonImage2 = "<img class='image' src=images/9.png>";
-			moonImage3 = "<img class='born-img' src=images/9.png>";
+			moonImage = "<img class='card-img-top' src=small-size-images/9.png>";
+			moonImage2 = "<img class='image' src=small-size-images/9.png>";
+			moonImage3 = "<img class='born-img' src=small-size-images/9.png>";
 		} else if (daySinceNewCircle > 9.9 && daySinceNewCircle <= 10.9) {
-			moonImage = "<img class='card-img-top' src=images/10.png>";
-			moonImage2 = "<img class='image' src=images/10.png>";
-			moonImage3 = "<img class='born-img' src=images/10.png>";
+			moonImage = "<img class='card-img-top' src=small-size-images/10.png>";
+			moonImage2 = "<img class='image' src=small-size-images/10.png>";
+			moonImage3 = "<img class='born-img' src=small-size-images/10.png>";
 		} else if (daySinceNewCircle > 10.9 && daySinceNewCircle <= 11.9) {
-			moonImage = "<img class='card-img-top' src=images/11.png>";
-			moonImage2 = "<img class='image' src=images/11.png>";
-			moonImage3 = "<img class='born-img' src=images/11.png>";
+			moonImage = "<img class='card-img-top' src=small-size-images/11.png>";
+			moonImage2 = "<img class='image' src=small-size-images/11.png>";
+			moonImage3 = "<img class='born-img' src=small-size-images/11.png>";
 		} else if (daySinceNewCircle > 11.9 && daySinceNewCircle <= 12.9) {
-			moonImage = "<img class='card-img-top' src=images/12.png>";
-			moonImage2 = "<img class='image' src=images/12.png>";
-			moonImage3 = "<img class='born-img' src=images/12.png>";
+			moonImage = "<img class='card-img-top' src=small-size-images/12.png>";
+			moonImage2 = "<img class='image' src=small-size-images/12.png>";
+			moonImage3 = "<img class='born-img' src=small-size-images/12.png>";
 		} else {
-			moonImage = "<img class='card-img-top' src=images/13.png>";
-			moonImage2 = "<img class='image' src=images/13.png>";
-			moonImage3 = "<img class='born-img' src=images/13.png>";
+			moonImage = "<img class='card-img-top' src=small-size-images/13.png>";
+			moonImage2 = "<img class='image' src=small-size-images/13.png>";
+			moonImage3 = "<img class='born-img' src=small-size-images/13.png>";
 		}
 	} else if (daySinceNewCircle > 14.1 && daySinceNewCircle <= 15.1) {
 		moonPhase = "Full Moon";
-		moonImage = "<img class='card-img-top' src=images/full.png>";
-		moonImage2 = "<img class='image' src=images/full.png>";
-		moonImage3 = "<img class='born-img' src=images/full.png>";
+		moonImage = "<img class='card-img-top' src=small-size-images/full.png>";
+		moonImage2 = "<img class='image' src=small-size-images/full.png>";
+		moonImage3 = "<img class='born-img' src=small-size-images/full.png>";
 	} else if (daySinceNewCircle > 15.1 && daySinceNewCircle <= 21.9) {
 		moonPhase = "Waning Gibbous";
 
 		if (daySinceNewCircle > 15.1 && daySinceNewCircle <= 15.9) {
-			moonImage = "<img class='card-img-top' src=images/16.png>";
-			moonImage2 = "<img class='image' src=images/16.png>";
-			moonImage3 = "<img class='born-img' src=images/16.png>";
+			moonImage = "<img class='card-img-top' src=small-size-images/16.png>";
+			moonImage2 = "<img class='image' src=small-size-images/16.png>";
+			moonImage3 = "<img class='born-img' src=small-size-images/16.png>";
 		} else if (daySinceNewCircle > 15.9 && daySinceNewCircle <= 17.4) {
-			moonImage = "<img class='card-img-top' src=images/17.png>";
-			moonImage2 = "<img class='image' src=images/17.png>";
-			moonImage3 = "<img class='born-img' src=images/17.png>";
+			moonImage = "<img class='card-img-top' src=small-size-images/17.png>";
+			moonImage2 = "<img class='image' src=small-size-images/17.png>";
+			moonImage3 = "<img class='born-img' src=small-size-images/17.png>";
 		} else if (daySinceNewCircle > 17.4 && daySinceNewCircle <= 18.8) {
-			moonImage = "<img class='card-img-top' src=images/18.png>";
-			moonImage2 = "<img class='image' src=images/18.png>";
-			moonImage3 = "<img class='born-img' src=images/18.png>";
+			moonImage = "<img class='card-img-top' src=small-size-images/18.png>";
+			moonImage2 = "<img class='image' src=small-size-images/18.png>";
+			moonImage3 = "<img class='born-img' src=small-size-images/18.png>";
 		} else if (daySinceNewCircle > 18.8 && daySinceNewCircle <= 20.4) {
-			moonImage = "<img class='card-img-top' src=images/19.png>";
-			moonImage2 = "<img class='image' src=images/19.png>";
-			moonImage3 = "<img class='born-img' src=images/19.png>";
+			moonImage = "<img class='card-img-top' src=small-size-images/19.png>";
+			moonImage2 = "<img class='image' src=small-size-images/19.png>";
+			moonImage3 = "<img class='born-img' src=small-size-images/19.png>";
 		} else {
-			moonImage = "<img class='card-img-top' src=images/20.png>";
-			moonImage2 = "<img class='image' src=images/20.png>";
-			moonImage3 = "<img class='born-img' src=images/20.png>";
+			moonImage = "<img class='card-img-top' src=small-size-images/20.png>";
+			moonImage2 = "<img class='image' src=small-size-images/20.png>";
+			moonImage3 = "<img class='born-img' src=small-size-images/20.png>";
 		}
 	} else if (daySinceNewCircle > 21.9 && daySinceNewCircle <= 22.9) {
 		moonPhase = "Last Quarter";
-		moonImage = "<img class='card-img-top' src=images/21.png>";
-		moonImage2 = "<img class='image' src=images/21.png>";
-		moonImage3 = "<img class='born-img' src=images/21.png>";
+		moonImage = "<img class='card-img-top' src=small-size-images/21.png>";
+		moonImage2 = "<img class='image' src=small-size-images/21.png>";
+		moonImage3 = "<img class='born-img' src=small-size-images/21.png>";
 	} else if (daySinceNewCircle > 22.9 && daySinceNewCircle <= 29.4) {
 		moonPhase = "Waning Crescent";
 		if (daySinceNewCircle > 22.9 && daySinceNewCircle <= 24.3) {
-			moonImage = "<img class='card-img-top' src=images/22.png>";
-			moonImage2 = "<img class='image' src=images/22.png>";
-			moonImage3 = "<img class='born-img' src=images/22.png>";
+			moonImage = "<img class='card-img-top' src=small-size-images/22.png>";
+			moonImage2 = "<img class='image' src=small-size-images/22.png>";
+			moonImage3 = "<img class='born-img' src=small-size-images/22.png>";
 		} else if (daySinceNewCircle > 24.3 && daySinceNewCircle <= 25.5) {
-			moonImage = "<img class='card-img-top' src=images/23.png>";
-			moonImage2 = "<img class='image' src=images/23.png>";
-			moonImage3 = "<img class='born-img' src=images/23.png>";
+			moonImage = "<img class='card-img-top' src=small-size-images/23.png>";
+			moonImage2 = "<img class='image' src=small-size-images/23.png>";
+			moonImage3 = "<img class='born-img' src=small-size-images/23.png>";
 		} else if (daySinceNewCircle > 25.5 && daySinceNewCircle <= 26.7) {
-			moonImage = "<img class='card-img-top' src=images/24.png>";
-			moonImage2 = "<img class='image' src=images/24.png>";
-			moonImage3 = "<img class='born-img' src=images/24.png>";
+			moonImage = "<img class='card-img-top' src=small-size-images/24.png>";
+			moonImage2 = "<img class='image' src=small-size-images/24.png>";
+			moonImage3 = "<img class='born-img' src=small-size-images/24.png>";
 		} else if (daySinceNewCircle > 26.7 && daySinceNewCircle <= 27.9) {
-			moonImage = "<img class='card-img-top' src=images/25.png>";
-			moonImage2 = "<img class='image' src=images/25.png>";
-			moonImage3 = "<img class='born-img' src=images/25.png>";
+			moonImage = "<img class='card-img-top' src=small-size-images/25.png>";
+			moonImage2 = "<img class='image' src=small-size-images/25.png>";
+			moonImage3 = "<img class='born-img' src=small-size-images/25.png>";
 		} else {
-			moonImage = "<img class='card-img-top' src=images/26.png>";
-			moonImage2 = "<img class='image' src=images/26.png>";
-			moonImage3 = "<img class='born-img' src=images/26.png>";
+			moonImage = "<img class='card-img-top' src=small-size-images/26.png>";
+			moonImage2 = "<img class='image' src=small-size-images/26.png>";
+			moonImage3 = "<img class='born-img' src=small-size-images/26.png>";
 		}
 	}
 
