@@ -1,5 +1,5 @@
 //Controls light box options
-function lifghtBoxOption() {
+function lightBoxOption() {
 	lightbox.option({
 		resizeDuration: 200,
 		fadeDuration: 200,
