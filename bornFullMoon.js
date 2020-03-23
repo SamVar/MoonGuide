@@ -23,6 +23,7 @@ function addDays() {
 	for (let i = 1; i <= dayLenght; i++) {
 		addOption(document.bornForm.bornDay, i, i);
 	}
+	document.getElementById("bornDay").selectedIndex = 0;
 }
 
 //Function that checks if month or year input changed
@@ -43,10 +44,12 @@ function moonPhaseBorn() {
 		month,
 		day,
 		age,
-		illumination,
-		moonPhaseAndMoonImage,
 		moonPhase,
 		moonImage,
+		monthName,
+		illumination,
+		bornMoonImage,
+		moonPhaseAndMoonImage,
 		moonPhaseAndIllumination;
 
 	year = document.getElementById("bornYear").value;
@@ -55,6 +58,9 @@ function moonPhaseBorn() {
 	year = parseInt(year);
 	month = parseInt(month);
 	day = parseInt(day);
+
+	//Calling function which returns name of the month
+	monthName = nameOfMonths(month);
 
 	//Calling function to find moon age and illumination
 	moonPhaseAndIllumination = calculateMoonPhase(year, month, day);
@@ -65,11 +71,12 @@ function moonPhaseBorn() {
 	moonPhaseAndMoonImage = moonPhaseNameAndImage(age);
 	moonPhase = moonPhaseAndMoonImage[0];
 	moonImage = moonPhaseAndMoonImage[2];
-
+	bornMoonImage = moonPhaseAndMoonImage[3];
 	addHrefAttribute(moonPhase);
+	printPhase(moonPhase, age, illumination, bornMoonImage, year, monthName, day);
 }
 
-//Function that adds href attribute to h2 tag
+//Function that adds href attribute to h2 tag for Return attribute
 function addHrefAttribute(moonPhase) {
 	var x,
 		y = "#sec4";
@@ -115,5 +122,65 @@ function addHrefAttribute(moonPhase) {
 function cleanReturns() {
 	for (let i = 0; i < 8; i++) {
 		document.querySelectorAll(".return-link")[i].innerHTML = "";
+		document.querySelectorAll(".born-text")[i].innerHTML = "";
+		document.querySelectorAll(".div-banner")[i].style.backgroundColor = "";
+		document.querySelectorAll(".born-moon-image")[i].innerHTML = "";
+		document.querySelectorAll(".border-line")[i].style.borderBottom = "none";
+		document.querySelectorAll(".border-line")[i].style.marginTop = "0rem";
 	}
+}
+
+//Prints moon phase for the date of birth
+function printPhase(
+	moonPhase,
+	age,
+	illumination,
+	bornMoonImage,
+	year,
+	monthName,
+	day
+) {
+	let z;
+	let formateDate = monthName + " " + day + ", " + year;
+
+	if (moonPhase == "New Moon") {
+		z = 0;
+	} else if (moonPhase == "Waxing Crescent") {
+		z = 1;
+	} else if (moonPhase == "First Quarter") {
+		z = 2;
+	} else if (moonPhase == "Waxing Gibbous") {
+		z = 3;
+	} else if (moonPhase == "Full Moon") {
+		z = 4;
+	} else if (moonPhase == "Waning Gibbous") {
+		z = 5;
+	} else if (moonPhase == "Last Quarter") {
+		z = 6;
+	} else if (moonPhase == "Waning Crescent") {
+		z = 7;
+	}
+
+	document.querySelectorAll(".born-text")[z].innerHTML =
+		"<strong>Your Birthday:</strong> " +
+		formateDate +
+		"<br>" +
+		"<strong>Phase:</strong> " +
+		moonPhase +
+		"<br>" +
+		"<strong>Moon age:</strong> " +
+		age +
+		" days" +
+		"<br>" +
+		"<strong>Illumination:</strong> " +
+		illumination +
+		"%";
+	document.querySelectorAll(".born-moon-image")[z].innerHTML = bornMoonImage;
+
+	//Styles
+	document.querySelectorAll(".div-banner")[z].style.backgroundColor = "#777";
+	document.querySelectorAll(".overideH2")[z].style.marginTop = "3rem";
+	document.querySelectorAll(".border-line")[z].style.borderBottom =
+		"2px solid #777";
+	document.querySelectorAll(".border-line")[z].style.marginTop = "7rem";
 }
