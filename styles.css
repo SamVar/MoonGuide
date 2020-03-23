@@ -101,7 +101,8 @@ h1 {
 	font-size: 2rem;
 	font-family: "Courgette", cursive;
 }
-h2 {
+h2,
+.next-full-moon {
 	color: rgb(250, 212, 77);
 	text-align: start;
 	margin: auto;
@@ -316,17 +317,6 @@ footer {
 
 .opacity-hover:hover {
 	opacity: 0.5;
-}
-
-/* Next Full Moon */
-.next-full-moon {
-	color: rgb(255, 223, 0);
-	text-align: start;
-	margin-top: 7rem;
-	margin-bottom: 2rem;
-	font-size: 1.5rem;
-	margin-left: 6rem;
-	font-family: "Caladea", serif;
 }
 
 /* Born on Full Moon */
