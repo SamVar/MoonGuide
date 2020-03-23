@@ -379,22 +379,22 @@ footer {
 	width: 7rem;
 	margin: 1rem;
 }
+
 .extraSpace {
 	height: 3rem;
 	width: 85%;
 	margin: auto;
-	/* margin-top: 5rem; */
-	
 }
+
 .lineSpace {
 	margin-bottom: 0rem;
 }
-.border-line{
+
+.border-line {
 	margin: auto;
 	width: 85%;
-	/* margin-top: 7rem; */
-
 }
+
 /* @media (max-width: 1055px) and (min-width: 901px) {
 	.image {
 		width: 4rem;
