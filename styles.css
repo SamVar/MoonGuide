@@ -386,6 +386,23 @@ footer {
 	width: 85%;
 }
 
+/* Solar System page */
+.solar-system-images {
+	width: 40%;
+	border-radius: 2%;
+	border: 1px solid silver;
+}
+.planet-images {
+	width: 15%;
+	border: 1px solid silver;
+	border-radius: 3%;
+}
+.solar-system-images:hover,
+.planet-images:hover {
+	border: 3px solid silver;
+	opacity: 0.5;
+}
+
 /* @media (max-width: 1055px) and (min-width: 901px) {
 	.image {
 		width: 4rem;
