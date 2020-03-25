@@ -131,7 +131,7 @@ h2,
 	width: 85%;
 	margin: auto;
 	margin-bottom: 0rem;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	text-align: justify;
 }
 
@@ -344,16 +344,6 @@ footer {
 	width: 10%;
 	padding: 0;
 }
-
-.return-link {
-	color: red;
-	float: right;
-	text-decoration: underline;
-	font-size: 1.3rem;
-	font-style: italic;
-	margin-top: 2rem;
-}
-
 .div-banner {
 	width: 85%;
 	margin: auto;
@@ -364,11 +354,23 @@ footer {
 	color: black;
 	font-size: 1.1rem;
 	margin: 1rem;
+	width: 80%;
 }
 
 .born-img {
 	width: 7rem;
 	margin: 1rem;
+}
+
+.return-link {
+	color: rgb(18, 8, 161);
+	text-decoration: underline;
+	font-size: 1.3rem;
+	font-style: italic;
+	margin-right: 1rem;
+	font-weight: 600;
+	height: fit-content;
+	margin-top: 1rem;
 }
 
 .extraSpace {
@@ -393,7 +395,7 @@ footer {
 	border: 1px solid silver;
 }
 .planet-images {
-	width: 15%;
+	width: 25%;
 	border: 1px solid silver;
 	border-radius: 3%;
 }
@@ -402,6 +404,10 @@ footer {
 .planet-images:hover {
 	border: 3px solid silver;
 	opacity: 0.5;
+}
+.source {
+	color: rgb(183, 188, 192);
+	text-decoration: underline;
 }
 
 /* Page 4 */
