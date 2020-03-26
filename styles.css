@@ -345,6 +345,7 @@ footer {
 .paragraph-bornFullMoon {
 	margin-bottom: 2rem;
 	margin-left: 0;
+	width: 100%;
 }
 
 .born-form {
@@ -544,14 +545,18 @@ ul {
 	.image {
 		width: 4rem;
 	}
+	body{
+		width: 100%;
+	}
 }
 
 @media (max-width: 900px) and (min-width: 576px) {
 	.card-text {
 		padding: 0;
 		font-size: 0.8rem;
-	}
+	} */
 
+/*
 	.card-title {
 		text-align: center;
 		font-size: 1rem;
