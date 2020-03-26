@@ -226,6 +226,7 @@ footer {
 	border-color: rgb(105, 107, 109);
 	margin: auto;
 	margin-bottom: 1rem;
+	margin-top: 1rem;
 }
 .fa-envelope {
 	color: rgb(183, 188, 192);
@@ -496,25 +497,47 @@ figcaption:hover {
 video {
 	width: 100%;
 }
-
-.links {
+.link-section {
 	display: flex;
 	margin: auto;
 	width: 85%;
-	margin-bottom: 1rem;
+}
+.link-container {
+	width: 20%;
+	margin: auto;
+	margin-top: 1rem;
+}
+.link-paragraph {
+	text-align: start;
+	font-size: 1.2rem;
+	color: rgb(231, 239, 245);
+	font-weight: 500;
+}
+.link-paragraph:hover,
+.link-body:hover {
+	text-decoration: underline;
+	color: khaki !important;
 }
 
 ul {
 	list-style: none;
-	margin: auto;
 	text-align: start;
 }
-.link-body {
+
+.link-body,
+.contact,
+.copy-right {
 	color: rgb(183, 188, 192);
 	font-size: 0.9rem;
 }
-.link-body:hover {
-	color: rgb(58, 139, 231) !important;
+
+.contact:hover {
+	color: khaki !important;
+}
+.bottom {
+	display: flex;
+	width: fit-content;
+	margin: auto;
 }
 
 /* @media (max-width: 1055px) and (min-width: 901px) {
