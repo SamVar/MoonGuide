@@ -561,7 +561,11 @@ ul {
 	width: fit-content;
 	margin: auto;
 }
-
+@media (max-width: 1000px){
+	body{
+		width: 100%;
+	}
+}
 /* Change the background color of the dropdown button when the dropdown content is shown */
 /* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
 
