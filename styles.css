@@ -53,15 +53,24 @@ a:hover {
 	background-color: #333;
 	border: none;
 	padding-top: 0;
+	margin: 0;
+	
 }
 .dropdown-item {
 	color: rgb(183, 188, 192);
+	
 }
 .dropdown-item:hover {
 	color: black !important;
 	background-color: rgb(183, 188, 192);
 }
-
+.dropdown-divider{
+	margin: 0;
+	color: rgb(48, 145, 224) !important;
+	width: 90%;
+	margin: auto;
+	border-color: #999;
+}
 .navbar-nav li:hover > div.drop {
 	display: block;
 }
@@ -566,6 +575,8 @@ ul {
 @media (max-width: 1000px) {
 	body {
 		width: 100%;
+		background: rgb(4, 15, 29);
+		border: none;
 	}
 	.logo {
 		margin: 0;
@@ -576,6 +587,7 @@ ul {
 	}
 	.dropdown-menu {
 		font-size: 0.8rem;
+		border-left: 1.5px solid #333;
 	}
 	.paragraph-body {
 		text-align: justify;
@@ -598,9 +610,7 @@ ul {
 	.card-text {
 		font-size: 0.9rem;
 	}
-	.card {
-		/* margin-top: 3rem !important; */
-	}
+
 	.card-group {
 		margin-bottom: 0rem;
 	}
