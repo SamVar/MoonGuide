@@ -48,46 +48,23 @@ a:hover {
 	color: rgb(255, 255, 255) !important;
 }
 
-/* Dropdown Button */
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-	position: relative;
-	display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-	display: none;
-	position: absolute;
+/* bootstrap making drop down menu style changes apears on hover*/
+.dropdown-menu {
 	background-color: #333;
-	min-width: 100%;
-	overflow: auto;
-	z-index: 1;
-	border-radius: 2%;
+	border-top: none;
+	padding-top: 0;
 }
-
-/* Links inside the dropdown */
-.dropdown-content a {
+.dropdown-item {
 	color: rgb(183, 188, 192);
-	padding: 0.5rem 1rem 0.5rem 1rem;
-	text-decoration: none;
-	display: block;
-	white-space: nowrap;
-	font-size: 1rem;
 }
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-	background-color: #999;
+.dropdown-item:hover {
 	color: black !important;
+	background-color: rgb(183, 188, 192);
 }
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+.navbar-nav li:hover > div.dropdown-menu {
 	display: block;
 }
-
 /* Moon Cards */
 .card-group {
 	width: 90%;
@@ -584,12 +561,6 @@ ul {
 	width: fit-content;
 	margin: auto;
 }
-
-.nav-link:active {
-	
-	background-color: rgb(63, 111, 201);
-  }
-
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 /* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
