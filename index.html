@@ -33,7 +33,7 @@
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 
-	<body onload="moonDate(); lightBoxOption(); copyRights();">
+	<body onload="moonDate(); hoverRemove(); lightBoxOption(); copyRights();">
 		<header>
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 				<a class="navbar-brand logo" href="index.html">Moon Guide</a>
@@ -52,7 +52,7 @@
 
 				<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 					<ul class="navbar-nav  ml-auto">
-						<li class="nav-item dropdown">
+						<li class="nav-item dropdown ">
 							<a
 								class="nav-link dropdown-toggle"
 								href="index.html"
@@ -66,7 +66,7 @@
 							>
 
 							<div
-								class="dropdown-menu collapse"
+								class="dropdown-menu drop "
 								aria-labelledby="navbarDropdownMenuLink"
 							>
 								<a class="dropdown-item" href="index.html">Today's Phase</a>
@@ -106,7 +106,7 @@
 								Moon Calendar<span class="sr-only">(current)</span></a
 							>
 							<div
-								class="dropdown-menu"
+								class="dropdown-menu drop"
 								aria-labelledby="navbarDropdownMenuLink"
 							>
 								<a class="dropdown-item" href="moon-calendar.html"
@@ -174,7 +174,7 @@
 								Solar System<span class="sr-only">(current)</span></a
 							>
 							<div
-								class="dropdown-menu"
+								class="dropdown-menu drop"
 								aria-labelledby="navbarDropdownMenuLink"
 							>
 								<a class="dropdown-item" href="solar-system.html"
@@ -239,7 +239,7 @@
 								Deep Sky Objects<span class="sr-only">(current)</span></a
 							>
 							<div
-								class="dropdown-menu"
+								class="dropdown-menu drop"
 								aria-labelledby="navbarDropdownMenuLink"
 							>
 								<a class="dropdown-item" href="deep-sky.html">Nebulae</a>
@@ -1080,19 +1080,7 @@
 		<script src="functions.js" type="text/javascript"></script>
 		<script src="moonDate.js" type="text/javascript"></script>
 		<script src="footer.js" type="text/javascript"></script>
-
-
-		<p id="text"></p>
-
-		<script type="text/javascript">
-			var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-			var element = document.getElementById('text');
-			if (isMobile) {
-				  element.innerHTML = "You are using Mobile";
-			} else {
-				element.innerHTML = "You are using Desktop";
-			}
-		</script>
+		<script src="hoverRemove.js" type="text/javascript"></script>
 
 		<footer>
 			<section class="link-section">

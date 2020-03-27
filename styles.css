@@ -62,10 +62,10 @@ a:hover {
 	background-color: rgb(183, 188, 192);
 }
 
-/* .navbar-nav li:hover > div.dropdown-menu {
+.navbar-nav li:hover > div.drop {
 	display: block;
-	
-} */
+}
+
 /* Moon Cards */
 .card-group {
 	width: 90%;
@@ -567,57 +567,52 @@ ul {
 	body {
 		width: 100%;
 	}
-	.logo{
+	.logo {
 		margin: 0;
 		font-size: 1.5rem;
-		
 	}
-	.navbar-nav{
+	.navbar-nav {
 		font-size: 1rem;
 	}
-	.dropdown-menu{
+	.dropdown-menu {
 		font-size: 0.8rem;
 	}
 	.paragraph-body {
 		text-align: justify;
 		text-justify: inter-word;
 	}
-	.card-group{
+	.card-group {
 		width: 70%;
 		margin-top: 2rem;
 	}
 	.previous,
-	.next{
+	.next {
 		font-size: 2.5rem;
 	}
-.card-img-top{
-	width: 10rem;
-}
-.card-title{
-	font-size: 1rem;
-}
-.card-text{
-	font-size: .9rem;
-}
-.card{
-/* margin-top: 3rem !important; */
-}
-.card-group{
-	margin-bottom: 0rem;
-}
-h1{
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-	font-size: 1.4rem;
-}
-.line{
-	margin-bottom: 0rem;
-	margin-top: 1rem;
-	
-}
-
-
-
+	.card-img-top {
+		width: 10rem;
+	}
+	.card-title {
+		font-size: 1rem;
+	}
+	.card-text {
+		font-size: 0.9rem;
+	}
+	.card {
+		/* margin-top: 3rem !important; */
+	}
+	.card-group {
+		margin-bottom: 0rem;
+	}
+	h1 {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+		font-size: 1.4rem;
+	}
+	.line {
+		margin-bottom: 0rem;
+		margin-top: 1rem;
+	}
 }
 /* Change the background color of the dropdown button when the dropdown content is shown */
 /* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
