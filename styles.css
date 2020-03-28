@@ -581,4 +581,18 @@ video {
 	.dropdown-divider {
 		width: 100%;
 	}
+	.card-group {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+		width: 65%;
+	}
+	.card {
+		margin-top: 1rem;
+	}
+	.btn {
+		font-size: 2.3rem;
+	}
+	.card-img-top {
+		width: 80%;
+	}
 }
