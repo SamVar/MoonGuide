@@ -52,6 +52,8 @@ a:hover {
 }
 .dropdown-item {
 	color: rgb(183, 188, 192);
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
 }
 .dropdown-item:hover {
 	color: black !important;
@@ -59,7 +61,7 @@ a:hover {
 }
 .dropdown-divider {
 	margin: 0;
-	width: 90%;
+	width: 100%;
 	margin: auto;
 	border-color: #999;
 }
@@ -377,7 +379,6 @@ ul {
 .go-btn {
 	margin-left: 1rem;
 	width: 30%;
-	border-color: #404853;
 }
 
 .btn-next,
@@ -421,7 +422,6 @@ ul {
 .select-born-year,
 .born-btn {
 	width: 10%;
-	border-color: #404853;
 	cursor: pointer;
 }
 .extraSpace {
@@ -557,7 +557,8 @@ video {
 /* End of the page 4 */
 
 /********************************** Responsivnes ********************************/
-@media (max-width: 1000px) {
+
+@media (max-width: 400px) {
 	body {
 		width: 100%;
 		background: rgb(4, 15, 29);
@@ -565,353 +566,19 @@ video {
 	}
 	.logo {
 		margin: 0;
+		font-size: 2rem;
+	}
+
+	.nav-link {
 		font-size: 1.5rem;
-	}
-	.navbar-nav {
-		font-size: 1rem;
-	}
-	.dropdown-menu {
-		font-size: 0.8rem;
-		border-left: 1.5px solid #333;
-	}
-	.paragraph-body {
-		text-align: justify;
-		text-justify: inter-word;
-	}
-	.card-group {
-		width: 70%;
-		margin-top: 2rem;
-	}
-	.previous,
-	.next {
-		font-size: 2.5rem;
-	}
-	.card-img-top {
-		width: 10rem;
-	}
-	.card-title {
-		font-size: 1rem;
-	}
-	.card-text {
-		font-size: 0.9rem;
+		color: khaki !important;
 	}
 
-	.card-group {
-		margin-bottom: 0rem;
+	.dropdown-item {
+		padding: 1rem;
+		font-size: 1.2rem;
 	}
-	h1 {
-		margin-top: 2rem;
-		margin-bottom: 2rem;
-		font-size: 1.4rem;
-	}
-	.line {
-		margin-bottom: 0rem;
-		margin-top: 1rem;
-	}
-}
-/* Change the background color of the dropdown button when the dropdown content is shown */
-/* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
-
-/* @media (max-width: 1055px) and (min-width: 901px) {
-	.image {
-		width: 4rem;
-	}
-	body{
+	.dropdown-divider {
 		width: 100%;
 	}
 }
-
-@media (max-width: 900px) and (min-width: 576px) {
-	.card-text {
-		padding: 0;
-		font-size: 0.8rem;
-	} */
-
-/*
-	.card-title {
-		text-align: center;
-		font-size: 1rem;
-		font-weight: bold;
-	}
-
-	.card-group {
-		width: 100%;
-		margin: auto;
-		margin-top: 9rem;
-		margin-bottom: 7rem;
-	}
-
-	.line {
-		border-color: rgb(122, 122, 122);
-		width: 90%;
-		margin: auto;
-		margin-top: 5rem;
-	}
-
-	.moon-explain-tittle {
-		color: aliceblue;
-		text-align: center;
-		margin-top: 7rem;
-		margin-bottom: 3rem;
-		font-family: "IBM Plex Sans", sans-serif;
-		font-size: 1.7rem;
-	}
-
-	.moon-explain-body {
-		color: aliceblue;
-		width: 90%;
-		margin: auto;
-		margin-bottom: 5rem;
-		font-size: 1rem;
-		text-align: justify;
-	}
-
-	.moon-diagram {
-		display: block;
-		max-width: 90%;
-		margin: 5rem auto;
-	}
-
-	.calendar {
-		width: 85%;
-		margin: auto;
-		margin-top: 1rem;
-		height: auto;
-		margin-bottom: 4rem;
-	}
-
-	.col-down {
-		margin: auto;
-		font-size: 0.5rem;
-		color: rgb(38, 38, 38);
-		padding: 0;
-		padding-top: 0.3rem;
-		line-height: 0.7rem;
-	}
-
-	.col {
-		background: rgb(122, 122, 122);
-		width: 10%;
-		height: 6.5rem;
-		border: 1px solid rgb(107, 107, 107);
-		margin: auto;
-		padding: 0;
-	}
-
-	.head-col {
-		width: 12%;
-		height: auto;
-		background: rgb(73, 73, 73);
-		font-size: 0.9rem;
-	}
-
-	.col-up {
-		font-size: 0.6rem;
-		padding: 0;
-		padding-right: 0.5rem;
-		text-align: right;
-		margin: 0;
-	}
-
-	.image {
-		height: auto;
-		width: 3rem;
-		margin: auto;
-		padding: 0;
-		text-align: center;
-	}
-
-	.month-select,
-	.year-select,
-	.go-btn {
-		width: 28%;
-	}
-
-	.btn-next,
-	.btn-previous {
-		font-size: 1.5rem;
-	}
-
-	.month-name {
-		font-size: 1.3rem;
-		width: 50%;
-	}
-
-	.full-moon {
-		width: 20rem;
-	}
-
-	.next-moon {
-		font-size: 1.7rem;
-		width: 90%;
-	}
-}
-
-@media (max-width: 575px) {
-	.card-group {
-		margin-top: 2rem;
-		margin-bottom: 0rem;
-	}
-
-	.which {
-		margin-top: 2rem;
-		font-size: 1.3rem;
-		width: 90%;
-		line-height: 2rem;
-	}
-
-	.calendar-btn {
-		margin-right: 1rem;
-		width: 35%;
-	}
-
-	.input-calendar {
-		margin-left: 1rem;
-		width: 35%;
-	}
-
-	.moon-img {
-		height: 60vw;
-	}
-
-	.card-deck {
-		margin-bottom: 0;
-		margin-top: 0;
-	}
-
-	.card {
-		margin-top: 2rem;
-	}
-
-	.apollo-story {
-		margin: 2rem;
-	}
-
-	.moon-parag {
-		margin: auto;
-		width: 90%;
-		font-size: 1.5rem;
-	}
-
-	.born-newMoon,
-	.born-waxingCrescent,
-	.born-firstQuarter,
-	.born-waxingGibbous,
-	.born-fullMoon,
-	.born-waningGibbous,
-	.born-lastQuarter,
-	.born-waningCrescent {
-		width: 85%;
-		margin: auto;
-	}
-
-	.newMoon-img,
-	.waxingCrescent-img,
-	.firstQuarter-img,
-	.waxingGibbous-img,
-	.fullMoon-img,
-	.waningGibbous-img,
-	.lastQuarter-img,
-	.waningCrescent-img {
-		float: none;
-		padding: 0;
-		margin-bottom: 2rem;
-	}
-
-	.for-center {
-		text-align: center;
-	}
-
-	.calendar {
-		width: 85%;
-		margin: auto;
-		margin-top: 1rem;
-
-		height: auto;
-		margin-bottom: 4rem;
-	}
-
-	.col-down {
-		margin: auto;
-		font-size: 0.3rem;
-		color: rgb(38, 38, 38);
-		padding: 0;
-		padding-top: 0.3rem;
-		line-height: 0.4rem;
-	}
-
-	.col {
-		background: rgb(122, 122, 122);
-		width: 10%;
-		height: 4.5rem;
-		border: 1px solid rgb(107, 107, 107);
-		margin: auto;
-		padding: 0;
-	}
-
-	.head-col {
-		width: 12%;
-		height: auto;
-		background: rgb(73, 73, 73);
-		font-size: 0.5rem;
-	}
-
-	.col-up {
-		font-size: 0.5rem;
-		padding-right: 0.4rem;
-		text-align: right;
-		margin: 0;
-	}
-
-	.col-body {
-		margin: auto;
-		text-align: center;
-		padding: 0;
-	}
-
-	.image {
-		height: auto;
-		width: 2rem;
-		margin: auto;
-		padding: 0;
-		text-align: center;
-	}
-
-	.date-form {
-		background: rgb(107, 107, 107);
-		flex: 1;
-		margin: auto;
-		text-align: center;
-		padding: 0.3rem;
-	}
-
-	.month-select,
-	.year-select,
-	.go-btn {
-		width: 25%;
-		font-size: 0.6rem;
-	}
-
-	.btn-next,
-	.btn-previous {
-		font-size: 1.3rem;
-	}
-
-	.month-name {
-		font-size: 1rem;
-		width: 40%;
-	}
-
-	.full-moon {
-		width: 15rem;
-	}
-
-	.next-moon {
-		font-size: 1.5rem;
-		width: 90%;
-	}
-
-	.moon-cal-text {
-		margin-top: 3rem;
-	}
-} */
