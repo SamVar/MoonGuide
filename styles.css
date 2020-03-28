@@ -19,21 +19,19 @@ body {
 
 /* Navbar */
 .navbar {
-	font-size: 22px;
 	background-color: #333 !important;
 }
 
 .navbar-brand {
-	font-size: 2.3rem;
+	font-size: 2rem;
 	font-family: "Courgette", cursive;
 	margin-left: 2rem;
 	color: rgb(255, 223, 0) !important;
 }
-.navbar-nav {
-	margin: 0;
-}
+
 .nav-item {
 	text-align: start;
+	font-size: 1.2rem;
 }
 .nav-link {
 	color: rgb(255, 223, 0) !important;
@@ -41,9 +39,6 @@ body {
 	margin-right: 2rem;
 }
 
-.nav-link-gallery {
-	margin-right: 3rem;
-}
 a:hover {
 	color: rgb(255, 255, 255) !important;
 }
@@ -54,19 +49,16 @@ a:hover {
 	border: none;
 	padding-top: 0;
 	margin: 0;
-	
 }
 .dropdown-item {
 	color: rgb(183, 188, 192);
-	
 }
 .dropdown-item:hover {
 	color: black !important;
 	background-color: rgb(183, 188, 192);
 }
-.dropdown-divider{
+.dropdown-divider {
 	margin: 0;
-	color: rgb(48, 145, 224) !important;
 	width: 90%;
 	margin: auto;
 	border-color: #999;
@@ -77,7 +69,7 @@ a:hover {
 
 /* Moon Cards */
 .card-group {
-	width: 90%;
+	width: 80%;
 	margin: auto;
 	margin-top: 9rem;
 	margin-bottom: 7rem;
@@ -89,14 +81,13 @@ a:hover {
 
 .card-img-top {
 	width: 75%;
-	margin: auto;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 }
 
 .card-title {
 	text-align: center;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	font-weight: bold;
 }
 
@@ -116,13 +107,13 @@ a:hover {
 .btn {
 	color: rgb(90, 88, 88);
 	margin: auto;
-	font-size: 4rem;
+	font-size: 3rem;
 }
 
 .line {
 	border-color: rgb(122, 122, 122);
-	width: 85%;
-	margin: 5rem auto;
+	width: 80%;
+	margin: 3rem auto;
 }
 
 /* End Moon cards */
@@ -130,10 +121,9 @@ a:hover {
 h1 {
 	color: rgb(255, 223, 0);
 	text-align: center;
-	margin-top: 5rem;
-	margin-bottom: 3rem;
-	font-size: 2rem;
+	font-size: 1.8rem;
 	font-family: "Courgette", cursive;
+	margin-top: 7rem;
 }
 h2,
 .next-full-moon {
@@ -141,10 +131,10 @@ h2,
 	text-align: start;
 	margin: auto;
 	margin-top: 7rem;
-	margin-bottom: 3rem;
-	font-size: 1.5rem;
+	margin-bottom: 2rem;
+	font-size: 1.4rem;
 	font-family: "Caladea", serif;
-	width: 85%;
+	width: 80%;
 }
 
 .tab {
@@ -162,7 +152,7 @@ h2,
 }
 .paragraph-body {
 	color: rgb(183, 188, 192);
-	width: 85%;
+	width: 80%;
 	margin: auto;
 	margin-bottom: 0rem;
 	font-size: 1rem;
@@ -184,25 +174,25 @@ h2,
 .table-style {
 	border: 1px solid rgb(26, 26, 26);
 	margin: auto;
-	width: 75%;
+	width: 60%;
 	margin-top: 5rem;
 	background-color: #777;
 }
 
 th {
-	font-size: 1.2rem;
+	font-size: 1rem;
 	color: rgb(250, 212, 77);
 	border: 1px solid rgb(26, 26, 26);
 	padding: 0.5rem;
+	padding-left: 1rem;
 	background-color: #444;
-	text-align: center;
 }
 
 td {
-	font-size: 1rem;
+	font-size: 0.9rem;
 	color: rgb(26, 26, 26);
 	border: 1px solid rgb(26, 26, 26);
-	padding-left: 3rem;
+	padding: 1rem;
 }
 
 .moon-phase-pics {
@@ -222,8 +212,9 @@ td {
 
 /* Moon Landing Gallery */
 .moon-gallery {
-	width: 85%;
+	width: 80%;
 	margin: auto;
+	margin-top: 5rem;
 }
 
 .card {
@@ -231,7 +222,7 @@ td {
 }
 
 .card-deck {
-	margin-top: 5rem;
+	margin-top: 3rem;
 }
 
 .moon-img {
@@ -252,6 +243,52 @@ footer {
 	padding-bottom: 1rem;
 	padding-top: 1rem;
 }
+
+/* Footer links */
+.link-section {
+	display: flex;
+	margin: auto;
+	width: 85%;
+}
+.link-container {
+	width: 20%;
+	margin: auto;
+	margin-top: 1rem;
+}
+.link-paragraph {
+	text-align: start;
+	font-size: 1rem;
+	color: rgb(231, 239, 245);
+	font-weight: 500;
+	margin-bottom: 0.5rem;
+}
+.link-paragraph:hover,
+.link-body:hover {
+	text-decoration: underline;
+	color: khaki !important;
+}
+
+ul {
+	list-style: none;
+	text-align: start;
+}
+
+.link-body,
+.contact,
+.copy-right {
+	color: rgb(183, 188, 192);
+	font-size: 0.8rem;
+}
+
+.contact:hover {
+	color: khaki !important;
+}
+.bottom {
+	display: flex;
+	width: fit-content;
+	margin: auto;
+}
+
 .footer-line {
 	width: 85%;
 	border-color: rgb(105, 107, 109);
@@ -265,17 +302,14 @@ footer {
 }
 
 .fa-envelope:hover {
-	color: rgb(63, 111, 201) !important;
 	text-decoration: underline;
 }
-
 /* End of the first page */
 
 /* Second page - Calendar */
 .calendar {
 	width: 60%;
-	margin: 4rem auto;
-	height: auto;
+	margin: 5rem auto;
 	margin-bottom: 7.5rem;
 }
 
@@ -327,19 +361,15 @@ footer {
 }
 
 .image {
-	height: auto;
-	width: 3.5rem;
-	margin: auto;
+	width: 3rem;
 	padding: 0;
-	text-align: center;
 }
 
 .date-form {
 	background: rgb(107, 107, 107);
 	flex: 1;
-	margin: auto;
-	text-align: center;
 	padding: 0.3rem;
+	margin: auto;
 }
 
 .month-select,
@@ -347,6 +377,7 @@ footer {
 .go-btn {
 	margin-left: 1rem;
 	width: 30%;
+	border-color: #404853;
 }
 
 .btn-next,
@@ -368,21 +399,21 @@ footer {
 
 /* Born on Full Moon */
 .full-moon-born {
-	width: 85%;
+	width: 80%;
 	margin: auto;
 	text-align: start;
 }
 
 .paragraph-bornFullMoon {
 	margin-bottom: 2rem;
-	margin-left: 0;
 	width: 100%;
 }
 
 .born-form {
 	background: rgb(107, 107, 107);
 	display: inline;
-	padding: 1rem;
+	padding: 0.7rem;
+	border-radius: 2%;
 }
 
 .select-born-month,
@@ -390,10 +421,16 @@ footer {
 .select-born-year,
 .born-btn {
 	width: 10%;
-	padding: 0;
+	border-color: #404853;
+	cursor: pointer;
+}
+.extraSpace {
+	height: 3rem;
+	width: 80%;
+	margin: auto;
 }
 .div-banner {
-	width: 85%;
+	width: 80%;
 	margin: auto;
 	display: flex;
 }
@@ -421,20 +458,15 @@ footer {
 	margin-top: 1rem;
 }
 
-.extraSpace {
-	height: 3rem;
-	width: 85%;
-	margin: auto;
-}
-
 .lineSpace {
 	margin-bottom: 0rem;
 }
 
 .border-line {
 	margin: auto;
-	width: 85%;
+	width: 80%;
 }
+/* End of second page */
 
 /* Solar System page */
 .solar-system-images {
@@ -447,7 +479,6 @@ footer {
 	border: 1px solid silver;
 	border-radius: 3%;
 }
-
 .solar-system-images:hover,
 .planet-images:hover {
 	border: 3px solid silver;
@@ -457,20 +488,13 @@ footer {
 	color: rgb(183, 188, 192);
 	text-decoration: underline;
 }
+/* End of 3rd page */
 
 /* Page 4 */
 .video {
-	width: 70%;
+	width: 80%;
 	margin: auto;
 	margin-bottom: 10rem;
-}
-.video-title {
-	color: rgb(250, 212, 77);
-	text-align: start;
-	margin-top: 7rem;
-	margin-bottom: 2rem;
-	font-size: 1.5rem;
-	font-family: "Caladea", serif;
 }
 
 iframe {
@@ -479,13 +503,13 @@ iframe {
 
 .galaxy-gallery-row {
 	display: flex;
-	width: 85%;
+	width: 80%;
 	margin: auto;
 }
 
 .galaxy-gallery {
 	width: 100%;
-	height: 30vh;
+	height: 25vh;
 }
 
 figure {
@@ -515,63 +539,24 @@ figcaption:hover {
 }
 
 .astro-video {
-	width: 70%;
+	width: 80%;
 	margin: auto;
+}
+
+video {
+	width: 100%;
 }
 
 .video-paragraph {
 	text-align: start;
-
 	color: rgb(183, 188, 192);
 	font-size: 1.1rem;
 	margin-bottom: 0.5rem;
 }
-video {
-	width: 100%;
-}
-.link-section {
-	display: flex;
-	margin: auto;
-	width: 85%;
-}
-.link-container {
-	width: 20%;
-	margin: auto;
-	margin-top: 1rem;
-}
-.link-paragraph {
-	text-align: start;
-	font-size: 1rem;
-	color: rgb(231, 239, 245);
-	font-weight: 500;
-	margin-bottom: 0.5rem;
-}
-.link-paragraph:hover,
-.link-body:hover {
-	text-decoration: underline;
-	color: khaki !important;
-}
 
-ul {
-	list-style: none;
-	text-align: start;
-}
+/* End of the page 4 */
 
-.link-body,
-.contact,
-.copy-right {
-	color: rgb(183, 188, 192);
-	font-size: 0.8rem;
-}
-
-.contact:hover {
-	color: khaki !important;
-}
-.bottom {
-	display: flex;
-	width: fit-content;
-	margin: auto;
-}
+/********************************** Responsivnes ********************************/
 @media (max-width: 1000px) {
 	body {
 		width: 100%;

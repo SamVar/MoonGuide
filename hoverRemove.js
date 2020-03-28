@@ -1,4 +1,4 @@
-// Cheks if the device is mobile or desktop
+// Checks if the device is mobile or desktop
 function hoverRemove() {
 	var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 	if (isMobile) {
