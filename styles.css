@@ -558,7 +558,7 @@ video {
 
 /********************************** Responsivnes ********************************/
 
-@media (max-width: 500px) {
+@media (max-width: 575px) {
 	body {
 		width: 100%;
 		background: rgb(4, 15, 29);
@@ -570,7 +570,7 @@ video {
 	}
 
 	.nav-link {
-		font-size: 1.5rem;
+		font-size: 1.4rem;
 		color: khaki !important;
 	}
 
