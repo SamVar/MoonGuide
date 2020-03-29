@@ -595,4 +595,77 @@ video {
 	.card-img-top {
 		width: 80%;
 	}
+
+	h1 {
+		margin: auto;
+		margin-top: 3rem;
+		font-size: 1.3rem;
+		width: 80%;
+	}
+	h2 {
+		margin-top: 3rem;
+		font-size: 1.1rem;
+	}
+	.flow-right,
+	.flow-left {
+		display: block;
+		margin: auto;
+		margin-bottom: 2rem;
+		width: 100%;
+	}
+	.paragraph-body {
+		font-size: 0.8rem;
+	}
+	.table-style {
+		table-layout: auto;
+		width: 80%;
+		margin-top: 2rem;
+	}
+	th {
+		font-size: 0.7rem;
+		padding: 0;
+		text-align: center;
+	}
+	td {
+		font-size: 0.6rem;
+		text-align: center;
+	}
+	.moon-phase-pics {
+		width: 60%;
+	}
+	.moon-gallery {
+		margin-top: 2rem;
+	}
+	.card-deck {
+		margin: 0;
+	}
+	.card {
+		width: 100%;
+	}
+	.moon-img {
+		width: 100%;
+	}
+	.link-section {
+		width: 85%;
+	}
+	.link-container {
+		width: 20%;
+	}
+	.link-paragraph {
+		font-size: 0.7rem;
+		line-height: 1.5;
+	}
+	.links {
+		line-height: 1;
+	}
+
+	.link-body,
+	.contact,
+	.copy-right {
+		font-size: 0.6rem;
+	}
+	.bottom {
+		width: 90%;
+		
+	}
 }
