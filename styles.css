@@ -678,3 +678,9 @@ video {
 		width: 90%;
 	}
 }
+@media (orientation: landscape) {
+	body {
+		width: 100%;
+		background: rgb(4, 15, 29) !important;
+	}
+}
