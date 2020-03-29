@@ -684,4 +684,7 @@ video {
 		background: rgb(4, 15, 29);
 		border: none;
 	}
+	.navbar{
+		width: 100%;
+	}
 }
