@@ -584,7 +584,7 @@ video {
 	.card-group {
 		margin-top: 2rem;
 		margin-bottom: 2rem;
-		width: 65%;
+		width: 80%;
 	}
 	.card {
 		margin-top: 1rem;
@@ -593,18 +593,19 @@ video {
 		font-size: 2.3rem;
 	}
 	.card-img-top {
-		width: 80%;
+		width: 75%;
 	}
 
 	h1 {
 		margin: auto;
 		margin-top: 3rem;
-		font-size: 1.3rem;
-		width: 80%;
+		font-size: 1.5rem;
+		width: 90%;
 	}
 	h2 {
 		margin-top: 3rem;
-		font-size: 1.1rem;
+		font-size: 1.2rem;
+		width: 90%;
 	}
 	.flow-right,
 	.flow-left {
@@ -614,24 +615,25 @@ video {
 		width: 100%;
 	}
 	.paragraph-body {
-		font-size: 0.8rem;
+		font-size: 1rem;
+		width: 90%;
 	}
 	.table-style {
 		table-layout: auto;
-		width: 80%;
+		width: 90%;
 		margin-top: 2rem;
 	}
 	th {
-		font-size: 0.7rem;
+		font-size: 0.9rem;
 		padding: 0;
 		text-align: center;
 	}
 	td {
-		font-size: 0.6rem;
+		font-size: 0.8rem;
 		text-align: center;
 	}
 	.moon-phase-pics {
-		width: 60%;
+		width: 50%;
 	}
 	.moon-gallery {
 		margin-top: 2rem;
@@ -646,13 +648,13 @@ video {
 		width: 100%;
 	}
 	.link-section {
-		width: 85%;
+		width: 90%;
 	}
 	.link-container {
 		width: 20%;
 	}
 	.link-paragraph {
-		font-size: 0.7rem;
+		font-size: 0.8rem;
 		line-height: 1.5;
 	}
 	.links {
@@ -662,10 +664,9 @@ video {
 	.link-body,
 	.contact,
 	.copy-right {
-		font-size: 0.6rem;
+		font-size: 0.7rem;
 	}
 	.bottom {
 		width: 90%;
-		
 	}
 }
