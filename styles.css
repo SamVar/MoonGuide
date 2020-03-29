@@ -587,7 +587,7 @@ video {
 		width: 80%;
 	}
 	.card {
-		margin-top: 1rem;
+		margin-top: 3rem;
 	}
 	.btn {
 		font-size: 2.3rem;
@@ -598,8 +598,8 @@ video {
 
 	h1 {
 		margin: auto;
-		margin-top: 3rem;
-		font-size: 1.5rem;
+		margin-top: 4rem;
+		font-size: 1.6rem;
 		width: 90%;
 	}
 	h2 {
@@ -617,11 +617,12 @@ video {
 	.paragraph-body {
 		font-size: 1rem;
 		width: 90%;
+		hyphens: auto;
 	}
 	.table-style {
 		table-layout: auto;
 		width: 90%;
-		margin-top: 2rem;
+		margin-top: 4rem;
 	}
 	th {
 		font-size: 0.9rem;
@@ -648,7 +649,7 @@ video {
 		width: 100%;
 	}
 	.link-section {
-		width: 90%;
+		width: 100%;
 	}
 	.link-container {
 		width: 20%;
