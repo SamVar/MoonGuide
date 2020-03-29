@@ -650,17 +650,17 @@ video {
 		width: 100%;
 	}
 	.link-section {
-		width: 100%;
+		width: 90%;
 	}
 	.link-container {
-		width: 20%;
+		width: 22%;
 	}
 	.link-paragraph {
 		font-size: 0.8rem;
 		line-height: 1.5;
 	}
 	.links {
-		line-height: 1;
+		line-height: 1.2;
 	}
 
 	.link-body,
