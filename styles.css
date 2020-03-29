@@ -617,8 +617,12 @@ video {
 	.paragraph-body {
 		font-size: 1rem;
 		width: 90%;
+		text-align: justify;
+		-webkit-hyphens: auto;
+		-moz-hyphens: auto;
 		hyphens: auto;
 	}
+
 	.table-style {
 		table-layout: auto;
 		width: 90%;
