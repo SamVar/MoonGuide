@@ -691,7 +691,7 @@ video {
 	.month-select,
 	.year-select {
 		background-color: aliceblue;
-		border: 2px solid rgb(7, 100, 206);
+		/* border: 2px solid rgb(7, 100, 206); */
 	}
 
 	.current-month {
