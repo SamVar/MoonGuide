@@ -176,7 +176,7 @@ h2,
 .table-style {
 	border: 1px solid rgb(26, 26, 26);
 	margin: auto;
-	width: 60%;
+	width: 70%;
 	margin-top: 5rem;
 	background-color: #777;
 }
@@ -678,13 +678,145 @@ video {
 		width: 90%;
 	}
 }
-@media (orientation: landscape) {
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+}
+
+/* 
+	##Device = Laptops, Desktops
+	##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1366px) {
 	body {
 		width: 100%;
-		background: rgb(4, 15, 29);
+		background: rgb(4, 15, 29) !important;
 		border: none;
 	}
-	.navbar{
+}
+
+/* 
+	##Device = Tablets, Ipads (portrait)
+	##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	body {
 		width: 100%;
+		background: rgb(4, 15, 29) !important;
+		border: none;
+	}
+
+	.nav-link {
+		font-size: 1.4rem;
+		color: khaki !important;
+	}
+
+	.card-group {
+		width: 90%;
+	}
+	.moon-phase-pics {
+		width: 30%;
+	}
+	.card-title {
+		font-size: 0.9rem;
+	}
+	.card-text {
+		font-size: 0.8rem;
+	}
+}
+
+/* 
+	##Device = Tablets, Ipads (landscape)
+	##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+}
+
+/* 
+	##Device = Low Resolution Tablets, Mobiles (Landscape)
+	##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+	body {
+		width: 100%;
+		background: rgb(4, 15, 29) !important;
+		border: none;
+	}
+	.card-group {
+		width: 70%;
+	}
+	.moon-phase-pics {
+		width: 30%;
+	}
+	.card-title {
+		font-size: 0.9rem;
+	}
+	.card-text {
+		font-size: 0.8rem;
+	}
+}
+@media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+	.card-img-top {
+		width: 50% !important;
+	}
+	.card-title {
+		font-size: 1.2rem;
+	}
+	.card-text {
+		font-size: 1rem;
+	}
+
+	.img-size {
+		width: 40%;
+	}
+	.flow-left {
+		margin-right: 1rem;
+		margin-bottom: 0rem;
+	}
+	.flow-right {
+		margin-left: 1rem;
+		margin-bottom: 0rem;
+	}
+}
+/* 
+	##Device = Most of the Smartphones Mobiles (Portrait)
+	##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+	.calendar {
+		width: 80%;
+	}
+	.date-form {
+		display: flex;
+		width: 20%;
+		/* color: aliceblue; */
+	}
+	.go-btn,
+	.month-select,
+	.year-select {
+		background-color: aliceblue;
+		border: 2px solid rgb(7, 100, 206);
+	}
+
+	.current-month {
+		display: flex;
+	}
+	.image {
+		width: 2rem;
+	}
+	.col-up {
+		font-size: 0.5rem;
+	}
+	.col-down {
+		font-size: 0.3rem;
 	}
 }
