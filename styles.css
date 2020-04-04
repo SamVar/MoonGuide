@@ -677,6 +677,35 @@ video {
 	.footer-line {
 		width: 90%;
 	}
+
+	/* page 2 */
+	.calendar {
+		width: 80%;
+	}
+	.date-form {
+		display: flex;
+		width: 20%;
+		/* color: aliceblue; */
+	}
+	.go-btn,
+	.month-select,
+	.year-select {
+		background-color: aliceblue;
+		border: 2px solid rgb(7, 100, 206);
+	}
+
+	.current-month {
+		display: flex;
+	}
+	.image {
+		width: 2rem;
+	}
+	.col-up {
+		font-size: 0.5rem;
+	}
+	.col-down {
+		font-size: 0.3rem;
+	}
 }
 
 /* 
