@@ -325,7 +325,18 @@ function formatTheDate(monthName, year) {
 
 //Calculates next full moon
 function nextFullMoon() {
-	var dd, mm, yy, today, monthName, fullMoonText, moonCycle, calculatedMoon;
+	var d,
+		m,
+		y,
+		dd,
+		mm,
+		yy,
+		today,
+		monthName,
+		currentDay,
+		fullMoonText,
+		moonCycle,
+		calculatedMoon;
 
 	today = new Date();
 	dd = today.getDate();
@@ -342,8 +353,19 @@ function nextFullMoon() {
 			mm = today.getMonth() + 1;
 			yy = today.getFullYear();
 		} else {
-			monthName = nameOfMonths(mm);
-			fullMoonText = "Next Full Moon: " + monthName + " " + dd + ", " + yy;
+			currentDay = new Date();
+			d = currentDay.getDate();
+			m = currentDay.getMonth() + 1;
+			y = currentDay.getFullYear();
+
+			if (d == dd && m == mm && y == yy) {
+				monthName = nameOfMonths(mm);
+				fullMoonText =
+					"Next Full Moon is Today (" + monthName + " " + dd + ", " + yy + ")";
+			} else {
+				monthName = nameOfMonths(mm);
+				fullMoonText = "Next Full Moon: " + monthName + " " + dd + ", " + yy;
+			}
 		}
 	} while (moonCycle <= 13.99 || moonCycle > 15.0);
 	document.querySelector(".next-full-moon").innerHTML = fullMoonText;
