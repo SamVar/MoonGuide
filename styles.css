@@ -721,7 +721,7 @@ video {
 	.select-born-day,
 	.select-born-year,
 	.born-btn {
-		border: solid 1px rgb(45, 145, 240);
+		/* border: solid 1px rgb(45, 145, 240); */
 	}
 	.select-born-month {
 		width: 33%;
