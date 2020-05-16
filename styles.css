@@ -691,14 +691,19 @@ video {
 		font-size: 7px !important;
 		line-height: 1.4;
 	}
-
-	.flow-left {
-		margin-right: 1rem;
-		width: 8rem;
-	}
 	.flow-right {
+		margin-bottom: 0.5rem;
 		margin-left: 1rem;
-		width: 8rem;
+		float: right;
+	}
+	.flow-left {
+		margin-bottom: 0.5rem;
+		margin-right: 1rem;
+		float: left;
+	}
+
+	.img-size {
+		width: 50%;
 	}
 	.paragraph-body {
 		font-size: 0.9rem;
@@ -706,6 +711,7 @@ video {
 		-webkit-hyphens: auto;
 		-moz-hyphens: auto;
 		hyphens: auto;
+		
 	}
 	.next-full-moon {
 		width: 100%;
