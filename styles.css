@@ -713,6 +713,10 @@ video {
 		hyphens: auto;
 		
 	}
+	.opacity-hover,
+	.image-mobile-size{
+		width: 50%;
+	}
 	.next-full-moon {
 		width: 100%;
 	}
