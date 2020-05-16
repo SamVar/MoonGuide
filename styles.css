@@ -609,20 +609,6 @@ video {
 	.line {
 		width: 100%;
 	}
-	.flow-right,
-	.flow-left {
-		display: block;
-		margin: auto;
-		margin-bottom: 2rem;
-		width: 100%;
-	}
-	.paragraph-body {
-		font-size: 0.9rem;
-		width: 100%;
-		-webkit-hyphens: auto;
-		-moz-hyphens: auto;
-		hyphens: auto;
-	}
 
 	.table-style {
 		table-layout: auto;
@@ -704,6 +690,70 @@ video {
 	.col-down {
 		font-size: 7px !important;
 		line-height: 1.4;
+	}
+
+	.flow-left {
+		margin-right: 1rem;
+		width: 8rem;
+	}
+	.flow-right {
+		margin-left: 1rem;
+		width: 8rem;
+	}
+	.paragraph-body {
+		font-size: 0.9rem;
+		width: 100%;
+		-webkit-hyphens: auto;
+		-moz-hyphens: auto;
+		hyphens: auto;
+	}
+	.next-full-moon {
+		width: 100%;
+	}
+	.full-moon-born {
+		width: 100%;
+	}
+	.born-form {
+		display: inline-block;
+		width: 100%;
+	}
+	.select-born-month,
+	.select-born-day,
+	.select-born-year,
+	.born-btn {
+		border: solid 1px rgb(45, 145, 240);
+	}
+	.select-born-month {
+		width: 33%;
+		margin-right: 0.4rem;
+	}
+	.select-born-day {
+		width: 15%;
+		margin-right: 0.4rem;
+	}
+	.select-born-year {
+		width: 20%;
+		margin-right: 0.4rem;
+	}
+
+	.born-btn {
+		width: 20%;
+		border-radius: 10%;
+	}
+
+	.div-banner {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.born-text {
+		width: 90%;
+		margin: auto;
+		font-size: 1rem;
+	}
+	.return-link {
+		margin-left: 1rem;
+		font-size: 1.3rem;
 	}
 }
 
