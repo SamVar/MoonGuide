@@ -737,8 +737,9 @@ video {
 	}
 
 	.born-btn {
-		width: 20%;
+		width: 10%;
 		border-radius: 10%;
+		color: whitesmoke;
 	}
 
 	.div-banner {
