@@ -207,26 +207,28 @@ td {
 
 /* Moon Landing Gallery */
 .moon-gallery {
-	width: 80%;
+	width: 85%;
 	margin: auto;
 	margin-top: 5rem;
 }
-
-.card {
-	border-radius: 1%;
+.gallery-row {
+	width: 100%;
+	display: flex;
 }
-
-.card-deck {
-	margin-top: 3rem;
+.gallery-img {
+	border-radius: 1%;
+	display: flex;
+	margin: 1rem;
 }
 
 .moon-img {
 	width: 100%;
 	padding: 0;
+	border: 1px solid silver;
 }
 
 .moon-img:hover {
-	border: 2px solid silver;
+	border: 2px solid #999;
 	opacity: 0.5;
 }
 
@@ -559,9 +561,10 @@ video {
 
 /********************************** Responsivnes ********************************/
 
-@media (max-width: 575px) {
+/* For screen sizes iPhone Max and bellow  */
+@media (max-width: 414px) {
 	main {
-		width: 85%;
+		width: 90%;
 	}
 	.logo {
 		margin: 0;
@@ -628,17 +631,13 @@ video {
 		width: 50%;
 	}
 	.moon-gallery {
-		margin-top: 2rem;
-		width: 90%;
-	}
-	.card {
-		margin-top: 2rem;
-	}
-	.card-deck {
-		margin: 0;
-	}
-	.card {
 		width: 100%;
+		text-align: center;
+		margin-top: 3rem;
+	}
+
+	.gallery-img {
+		margin: 0.5rem;
 	}
 
 	.moon-img {
@@ -796,6 +795,32 @@ video {
 	.video-paragraph {
 		font-size: 0.7rem;
 	}
+
+	@media (max-width: 320px) {
+		.born-form {
+			font-size: 0.8rem;
+		}
+	}
+	@media (max-width: 375px) {
+		.select-born-month {
+			width: 35%;
+			margin-right: 0.4rem;
+		}
+		.select-born-day {
+			width: 15%;
+			margin-right: 0.4rem;
+		}
+		.select-born-year {
+			width: 20%;
+			margin-right: 0.4rem;
+		}
+
+		.born-btn {
+			width: 15%;
+			border-radius: 10%;
+			background-color: rgb(206, 204, 204);
+		}
+	}
 }
 
 /* 
@@ -825,10 +850,8 @@ video {
   */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-	body {
-		width: 100%;
-		background: rgb(4, 15, 29) !important;
-		border: none;
+	main {
+		width: 90%;
 	}
 
 	.nav-link {
