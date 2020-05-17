@@ -916,6 +916,14 @@ video {
 	#video > h2 {
 		width: 100%;
 	}
+	.link-paragraph {
+		font-size: 0.9rem;
+	}
+	.link-body,
+	.contact,
+	.copy-right {
+		font-size: 0.7rem;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
