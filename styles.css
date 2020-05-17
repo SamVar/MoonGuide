@@ -1025,31 +1025,6 @@ video {
 	}
 }
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-	.galaxy-gallery {
-		height: 20vh;
-	}
-}
-
-@media (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
-	.galaxy-gallery {
-		height: 40vh;
-	}
-}
-/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-	.galaxy-gallery {
-		height: 24vh;
-	}
-} */
-/* @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
-	.galaxy-gallery {
-		height: 40vh;
-	}
-	iframe {
-		height: 25rem;
-	}
-} */
-
 @media (min-width: 1025px) and (max-width: 1366px) {
 	main {
 		width: 90%;
@@ -1068,5 +1043,17 @@ video {
 @media (min-width: 1600px) {
 	main {
 		width: 60%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	.galaxy-gallery {
+		height: 20vh;
+	}
+}
+
+@media (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
+	.galaxy-gallery {
+		height: 40vh;
 	}
 }
