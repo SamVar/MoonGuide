@@ -1030,14 +1030,7 @@ video {
 	}
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
-	.galaxy-gallery {
-		height: 40vh;
-	}
-	iframe {
-		height: 25rem;
-	}
-}
+
 
 @media (min-width: 1025px) and (max-width: 1366px) {
 	main {
