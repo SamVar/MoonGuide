@@ -729,7 +729,7 @@ video {
 	}
 
 	.select-born-month {
-		width: 34%;
+		width: 34% !important;
 		margin-right: 0.4rem;
 		background-color: aliceblue;
 	}
@@ -1037,6 +1037,12 @@ video {
 	.month-select,
 	.year-select {
 		background-color: aliceblue;
+	}
+}
+
+@media (min-width: 1377px) and (max-width: 1599px) {
+	.select-born-month {
+		width: 15%;
 	}
 }
 
