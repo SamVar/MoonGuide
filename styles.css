@@ -1057,3 +1057,9 @@ video {
 		height: 40vh;
 	}
 }
+
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+	.select-born-month {
+		width: 12%;
+	}
+}
