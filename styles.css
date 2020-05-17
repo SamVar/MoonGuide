@@ -5,7 +5,6 @@
 html,
 body {
 	background-color: rgb(4, 15, 29);
-	
 }
 
 main {
@@ -15,7 +14,6 @@ main {
 /* Navbar */
 .navbar {
 	background-color: #333 !important;
-	padding: 0;
 }
 .navbar-brand {
 	font-size: 2rem;
@@ -155,6 +153,9 @@ h2,
 	font-size: 1rem;
 	text-align: justify;
 	text-justify: inter-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
 }
 
 .img-size {
@@ -722,9 +723,6 @@ video {
 	.paragraph-body {
 		font-size: 0.9rem;
 		width: 100%;
-		-webkit-hyphens: auto;
-		-moz-hyphens: auto;
-		hyphens: auto;
 	}
 
 	.next-full-moon {
@@ -839,26 +837,84 @@ video {
 	main {
 		width: 100%;
 	}
-
-	.logo {
-		margin: 0;
-		font-size: 2rem;
-	}
-
 	.nav-link {
 		font-size: 1.4rem;
 		color: khaki !important;
 	}
-	.dropdown-item {
-		padding: 1rem;
-		font-size: 1.2rem;
+
+	.card-group {
+		width: 90%;
 	}
-	.dropdown-divider {
+
+	.card-body {
+		padding: 0.5rem;
+	}
+	.card-title {
+		font-size: 0.8rem;
+	}
+	.card-text {
+		font-size: 0.7rem;
+	}
+
+	.paragraph-body {
+		font-size: 0.9rem;
+	}
+	th {
+		font-size: 0.9rem;
+	}
+	td {
+		font-size: 0.8rem;
+	}
+	.calendar {
+		width: 80%;
+	}
+	.col-down {
+		font-size: 0.6rem !important;
+		line-height: 1.4;
+	}
+	.go-btn,
+	.month-select,
+	.year-select {
+		background-color: aliceblue;
+		width: 28%;
+	}
+	.select-born-year,
+	.select-born-day,
+	.select-born-month {
+		width: 22%;
+		margin-right: 0.4rem;
+		background-color: aliceblue;
+	}
+
+	.born-btn {
+		width: 10%;
+		border-radius: 10%;
+		background-color: aliceblue;
+	}
+	#top-objects {
 		width: 100%;
 	}
 
-	.card-group {
-		width: 90% !important;
+	iframe {
+		height: 20rem;
+	}
+	.video {
+		margin-bottom: 0;
+	}
+	.galaxy-gallery {
+		height: 25vh;
+	}
+	figcaption {
+		font-size: 0.7rem;
+	}
+	.astro-video {
+		width: 100%;
+	}
+	.video-paragraph {
+		font-size: 0.9rem;
+	}
+	#video > h2 {
+		width: 100%;
 	}
 }
 
