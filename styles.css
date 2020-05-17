@@ -562,7 +562,7 @@ video {
 /********************************** Responsivnes ********************************/
 
 /* For screen sizes iPhone Max and bellow  */
-@media (max-width: 414px) {
+@media (max-width: 575px) {
 	main {
 		width: 90%;
 	}
@@ -637,7 +637,7 @@ video {
 	}
 
 	.gallery-img {
-		margin: .7rem;
+		margin: 0.7rem;
 	}
 
 	.moon-img {
@@ -671,15 +671,22 @@ video {
 
 	/* page 2 */
 	.calendar {
-		width: 95% !important;
+		width: 90% !important;
 	}
 
+	.date-form {
+		display: flex;
+	}
 	.go-btn,
 	.month-select,
 	.year-select {
 		font-size: 0.9rem;
+		background-color: aliceblue;
 	}
 
+	.current-month {
+		display: flex;
+	}
 	.btn {
 		font-size: 1.5rem;
 	}
@@ -732,20 +739,23 @@ video {
 	.select-born-month {
 		width: 34%;
 		margin-right: 0.4rem;
+		background-color: aliceblue;
 	}
 	.select-born-day {
 		width: 19%;
 		margin-right: 0.4rem;
+		background-color: aliceblue;
 	}
 	.select-born-year {
 		width: 24%;
 		margin-right: 0.4rem;
+		background-color: aliceblue;
 	}
 
 	.born-btn {
 		width: 13%;
 		border-radius: 10%;
-		background-color: rgb(206, 204, 204);
+		background-color: aliceblue;
 	}
 
 	.div-banner {
@@ -763,7 +773,7 @@ video {
 		margin-left: 1rem;
 		font-size: 1.3rem;
 	}
-	/* 3 rd page */
+	/* 4th page */
 	#top-objects {
 		width: 100%;
 	}
@@ -818,40 +828,41 @@ video {
 		.born-btn {
 			width: 15%;
 			border-radius: 10%;
-			background-color: rgb(206, 204, 204);
+			background-color: aliceblue;
 		}
 	}
 }
 
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
-@media (min-width: 1281px) {
-}
-
-/* 
-	##Device = Laptops, Desktops
-	##Screen = B/w 1025px to 1280px
-  */
-
-@media (min-width: 1025px) and (max-width: 1366px) {
-	body {
+@media (min-width: 576px) and (max-width: 767px) {
+	main {
 		width: 100%;
-		background: rgb(4, 15, 29) !important;
-		border: none;
+	}
+
+	.logo {
+		margin: 0;
+		font-size: 2rem;
+	}
+
+	.nav-link {
+		font-size: 1.4rem;
+		color: khaki !important;
+	}
+	.dropdown-item {
+		padding: 1rem;
+		font-size: 1.2rem;
+	}
+	.dropdown-divider {
+		width: 100%;
+	}
+
+	.card-group {
+		width: 90% !important;
 	}
 }
 
-/* 
-	##Device = Tablets, Ipads (portrait)
-	##Screen = B/w 768px to 1024px
-  */
-
 @media (min-width: 768px) and (max-width: 1024px) {
 	main {
-		width: 90%;
+		width: 100%;
 	}
 
 	.nav-link {
@@ -871,7 +882,80 @@ video {
 	.card-text {
 		font-size: 0.8rem;
 	}
+	.calendar {
+		width: 80%;
+	}
+	.col-down {
+		font-size: 0.7rem !important;
+		line-height: 1.5;
+	}
+	.go-btn,
+	.month-select,
+	.year-select {
+		background-color: aliceblue;
+	}
+	.select-born-year,
+	.select-born-day,
+	.select-born-month {
+		width: 20%;
+		margin-right: 0.4rem;
+		background-color: aliceblue;
+	}
+
+	.born-btn {
+		width: 10%;
+		border-radius: 10%;
+		background-color: aliceblue;
+	}
+	#top-objects {
+		width: 100%;
+	}
+
+	iframe {
+		height: 25rem;
+	}
+	.video {
+		margin-bottom: 0;
+	}
+	.galaxy-gallery {
+		height: 13vh;
+	}
+	.galaxy-gallery-row {
+		width: 80%;
+		margin: auto;
+	}
+	#video > h2 {
+		width: 100%;
+	}
+	.astro-video {
+		width: 100%;
+	}
 }
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+}
+
+/* 
+	##Device = Laptops, Desktops
+	##Screen = B/w 1025px to 1280px
+  */
+
+/* @media (min-width: 1025px) and (max-width: 1366px) {
+	body {
+		width: 100%;
+		background: rgb(4, 15, 29) !important;
+		border: none;
+	}
+} */
+
+/* 
+	##Device = Tablets, Ipads (portrait)
+	##Screen = B/w 768px to 1024px
+  */
 
 /* 
 	##Device = Tablets, Ipads (landscape)
@@ -886,7 +970,7 @@ video {
 	##Screen = B/w 481px to 767px
   */
 
-@media (min-width: 481px) and (max-width: 767px) {
+/* @media (min-width: 481px) and (max-width: 767px) {
 	body {
 		width: 100%;
 		background: rgb(4, 15, 29) !important;
@@ -927,38 +1011,11 @@ video {
 		margin-left: 1rem;
 		margin-bottom: 0rem;
 	}
-}
+} */
 /* 
 	##Device = Most of the Smartphones Mobiles (Portrait)
 	##Screen = B/w 320px to 479px
   */
 
 @media (min-width: 320px) and (max-width: 480px) {
-	.calendar {
-		width: 80%;
-	}
-	.date-form {
-		display: flex;
-		width: 20%;
-		/* color: aliceblue; */
-	}
-	.go-btn,
-	.month-select,
-	.year-select {
-		background-color: aliceblue;
-		border: 2px solid rgb(7, 100, 206);
-	}
-
-	.current-month {
-		display: flex;
-	}
-	.image {
-		width: 2rem;
-	}
-	.col-up {
-		font-size: 0.5rem;
-	}
-	.col-down {
-		font-size: 0.3rem;
-	}
 }
