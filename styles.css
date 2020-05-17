@@ -5,6 +5,7 @@
 html,
 body {
 	background-color: rgb(4, 15, 29);
+	width: 100%;
 }
 
 main {
