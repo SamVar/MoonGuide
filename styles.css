@@ -782,7 +782,7 @@ video {
 		height: 25vh;
 	}
 	.galaxy-gallery {
-		height: 15vh;
+		height: 12vh;
 	}
 	figure {
 		width: 28%;
@@ -837,10 +837,10 @@ video {
 		}
 		.galaxy-gallery-row {
 			width: 100%;
-			height: 28vh;
+			height: 20vh;
 		}
 		.galaxy-gallery {
-			height: 13vh;
+			height: 10vh;
 		}
 		.video {
 			height: 15rem;
@@ -1006,15 +1006,13 @@ video {
 	.video {
 		margin-bottom: 0;
 	}
-	.galaxy-gallery {
-		height: 13vh;
-	}
+
 	.galaxy-gallery-row {
 		width: 80%;
 		margin: auto;
 	}
 	.galaxy-gallery {
-		height: 10rem;
+		height: 14vh;
 	}
 	figcaption {
 		font-size: 0.9rem;
@@ -1024,6 +1022,20 @@ video {
 	}
 	.astro-video {
 		width: 90%;
+	}
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+		.galaxy-gallery {
+			height: 24vh;
+		}
+	}
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+	.galaxy-gallery {
+		height: 40vh;
+	}
+	iframe {
+		height: 25rem;
 	}
 }
 
