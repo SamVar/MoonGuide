@@ -4,6 +4,6 @@ function lightBoxOption() {
 		resizeDuration: 100,
 		fadeDuration: 100,
 		wrapAround: true,
-		disableScrolling: true
+		disableScrolling: true,
 	});
 }

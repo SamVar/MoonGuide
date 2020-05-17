@@ -45,7 +45,7 @@ function moonDate() {
 		printOnCard(moonPhase, moonCycle, illumination, formatedDate, moonImage, i);
 	}
 
-	document.querySelector(".next").addEventListener("click", function() {
+	document.querySelector(".next").addEventListener("click", function () {
 		for (let i = 0; i < 5; i++) {
 			previous++;
 			today = new Date();
@@ -81,7 +81,7 @@ function moonDate() {
 		}
 	});
 
-	document.querySelector(".previous").addEventListener("click", function() {
+	document.querySelector(".previous").addEventListener("click", function () {
 		for (let i = 4; i > -1; i--) {
 			next++;
 			today = new Date();

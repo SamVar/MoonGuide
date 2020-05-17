@@ -61,7 +61,7 @@ function moonCalendar() {
 	}
 
 	//Go to next month when next button is clicked
-	document.querySelector(".btn-next").addEventListener("click", function() {
+	document.querySelector(".btn-next").addEventListener("click", function () {
 		//Function that cleans everything
 		clean();
 
@@ -102,47 +102,49 @@ function moonCalendar() {
 	});
 
 	//Go to previous month when previous button is clicked
-	document.querySelector(".btn-previous").addEventListener("click", function() {
-		//Function that cleans everything
-		clean();
+	document
+		.querySelector(".btn-previous")
+		.addEventListener("click", function () {
+			//Function that cleans everything
+			clean();
 
-		//Get current date and set to previous month
-		count++;
-		d = new Date();
-		d.setMonth(d.getMonth() + times - count + addMonth - minusMonth);
-		d.setFullYear(d.getFullYear() + addYear - minusYear);
-		month = d.getMonth() + 1;
-		year = d.getFullYear();
+			//Get current date and set to previous month
+			count++;
+			d = new Date();
+			d.setMonth(d.getMonth() + times - count + addMonth - minusMonth);
+			d.setFullYear(d.getFullYear() + addYear - minusYear);
+			month = d.getMonth() + 1;
+			year = d.getFullYear();
 
-		//Gives the month's name
-		monthName = nameOfMonths(month);
+			//Gives the month's name
+			monthName = nameOfMonths(month);
 
-		//Function that formats the date and prints
-		formatTheDate(monthName, year);
+			//Function that formats the date and prints
+			formatTheDate(monthName, year);
 
-		//Calling the function that counts which position is the 1st day for that month
-		days = numberOfDays(year, month);
-		j = weekDay(year, month);
+			//Calling the function that counts which position is the 1st day for that month
+			days = numberOfDays(year, month);
+			j = weekDay(year, month);
 
-		for (let i = 1; i <= days; i++) {
-			//Calling the function that calculates moon cycle
-			calculatedMoon = calculateMoonPhase(year, month, i);
-			moonCycle = calculatedMoon[0];
-			illumination = calculatedMoon[1];
+			for (let i = 1; i <= days; i++) {
+				//Calling the function that calculates moon cycle
+				calculatedMoon = calculateMoonPhase(year, month, i);
+				moonCycle = calculatedMoon[0];
+				illumination = calculatedMoon[1];
 
-			//Calling the function that gives moon name and image
-			phaseAndImage = moonPhaseNameAndImage(moonCycle);
-			moonPhase = phaseAndImage[0];
-			moonImage = phaseAndImage[2];
+				//Calling the function that gives moon name and image
+				phaseAndImage = moonPhaseNameAndImage(moonCycle);
+				moonPhase = phaseAndImage[0];
+				moonImage = phaseAndImage[2];
 
-			//Calling function that prints everything on the screen
-			printOnCalendar(moonPhase, moonCycle, illumination, moonImage, j, i);
+				//Calling function that prints everything on the screen
+				printOnCalendar(moonPhase, moonCycle, illumination, moonImage, j, i);
 
-			j++;
-		}
-	});
+				j++;
+			}
+		});
 
-	document.querySelector(".go-btn").addEventListener("click", function() {
+	document.querySelector(".go-btn").addEventListener("click", function () {
 		month = document.getElementById("dateMonth").value;
 		year = document.getElementById("dateYear").value;
 
