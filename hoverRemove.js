@@ -7,7 +7,7 @@ function hoverRemove() {
 			classRemove[i].classList.remove("drop");
 		}
 
-		$(".navbar-toggler").on('click','.navbar-collapse.in',function(e) {
+		$(".navbar-toggler").on('touchstart','.navbar-collapse.in',function(e) {
 
 			if( $(e.target).is('a') && ( $(e.target).attr('class') != 'dropdown-toggle' ) ) {
 				$(this).collapse('hide');
