@@ -574,17 +574,10 @@ video {
 	}
 
 	.nav-link {
-		font-size: 1.4rem;
+		font-size: 1.2rem;
 		color: khaki !important;
 	}
 
-	.dropdown-item {
-		padding: 1rem;
-		font-size: 1.2rem;
-	}
-	.dropdown-divider {
-		width: 100%;
-	}
 	.card-group {
 		margin-top: 2rem;
 		margin-bottom: 2rem;
@@ -593,8 +586,8 @@ video {
 	.card {
 		margin-top: 3rem;
 	}
-	.btn {
-		font-size: 2.3rem;
+	.card-btn {
+		font-size: 2.5rem !important;
 	}
 	.card-img-top {
 		width: 75%;
@@ -774,22 +767,22 @@ video {
 	}
 	/* 4th page */
 	#top-objects {
-		width: 100%;
+		width: 90%;
 	}
 	.video {
-		height: 15rem;
+		height: 20rem;
 		width: 100%;
 		margin: 0;
 	}
 	iframe {
-		height: 15rem;
+		height: 18rem;
 	}
 	.galaxy-gallery-row {
 		width: 100%;
-		height: 20vh;
+		height: 45vh;
 	}
 	.galaxy-gallery {
-		height: 9vh;
+		height: 30vh;
 	}
 	figure {
 		width: 28%;
@@ -797,12 +790,15 @@ video {
 	figcaption {
 		font-size: 0.5rem;
 	}
+	#video > h2 {
+		width: 90%;
+	}
 	#video,
 	.astro-video {
-		width: 100%;
+		width: 90%;
 	}
 	.video-paragraph {
-		font-size: 0.7rem;
+		font-size: 0.8rem;
 	}
 
 	@media (max-width: 320px) {
@@ -829,6 +825,22 @@ video {
 			border-radius: 10%;
 			background-color: aliceblue;
 		}
+		.galaxy-gallery-row {
+			width: 100%;
+			height: 28vh;
+		}
+		.galaxy-gallery {
+			height: 13vh;
+		}
+		.video {
+			height: 15rem;
+		}
+		iframe {
+			height: 15rem;
+		}
+		.video-paragraph {
+			font-size: 0.5rem;
+		}
 	}
 }
 
@@ -837,10 +849,12 @@ video {
 		width: 100%;
 	}
 	.nav-link {
-		font-size: 1.4rem;
+		font-size: 1.2rem;
 		color: khaki !important;
 	}
-
+	.card-btn {
+		font-size: 2.5rem !important;
+	}
 	.card-group {
 		width: 90%;
 	}
@@ -891,29 +905,29 @@ video {
 		background-color: aliceblue;
 	}
 	#top-objects {
-		width: 100%;
+		width: 90%;
 	}
 
 	iframe {
-		height: 20rem;
+		height: 22rem;
 	}
 	.video {
 		margin-bottom: 0;
 	}
 	.galaxy-gallery {
-		height: 25vh;
+		height: 32vh;
 	}
 	figcaption {
 		font-size: 0.7rem;
 	}
 	.astro-video {
-		width: 100%;
+		width: 90%;
 	}
 	.video-paragraph {
 		font-size: 0.9rem;
 	}
 	#video > h2 {
-		width: 100%;
+		width: 90%;
 	}
 	.link-paragraph {
 		font-size: 0.9rem;
@@ -931,7 +945,7 @@ video {
 	}
 
 	.nav-link {
-		font-size: 1.4rem;
+		font-size: 1.2rem;
 		color: khaki !important;
 	}
 
@@ -973,11 +987,11 @@ video {
 		background-color: aliceblue;
 	}
 	#top-objects {
-		width: 100%;
+		width: 90%;
 	}
 
 	iframe {
-		height: 25rem;
+		height: 30rem;
 	}
 	.video {
 		margin-bottom: 0;
@@ -989,17 +1003,32 @@ video {
 		width: 80%;
 		margin: auto;
 	}
+	.galaxy-gallery {
+		height: 10rem;
+	}
+	figcaption {
+		font-size: 0.9rem;
+	}
 	#video > h2 {
-		width: 100%;
+		width: 90%;
 	}
 	.astro-video {
-		width: 100%;
+		width: 90%;
 	}
 }
 
 @media (min-width: 1025px) and (max-width: 1366px) {
 	main {
 		width: 90%;
+	}
+	.select-born-year,
+	.select-born-day,
+	.select-born-month,
+	.born-btn,
+	.go-btn,
+	.month-select,
+	.year-select {
+		background-color: aliceblue;
 	}
 }
 
