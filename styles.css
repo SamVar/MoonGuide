@@ -6,7 +6,9 @@ html,
 body {
 	background-color: rgb(4, 15, 29);
 }
-
+.fixedPosition {
+	overflow: hidden !important;
+}
 main {
 	width: 80%;
 	margin: auto;
@@ -667,9 +669,7 @@ video {
 	.card-img-top {
 		width: 75%;
 	}
-	.fixedPosition {
-		overflow: hidden !important;
-	}
+
 	#sec2,
 	#sec3,
 	#sec4,
