@@ -19,9 +19,9 @@ function hoverRemove() {
 			menuIsVisible = $("#navbarTogglerDemo02").is(":visible");
 
 			if (!menuIsVisible) {
-				$("main").addClass("fixedPosition");
+				$(".test").addClass("fixedPosition");
 			} else {
-				$("main").removeClass("fixedPosition");
+				$(".test").removeClass("fixedPosition");
 			}
 		});
 
@@ -30,9 +30,9 @@ function hoverRemove() {
 			menuIsVisible = $("#navbarTogglerDemo02").is(":visible");
 
 			if (!menuIsVisible) {
-				$("main").addClass("fixedPosition");
+				$(".test").addClass("fixedPosition");
 			} else {
-				$("main").removeClass("fixedPosition");
+				$(".test").removeClass("fixedPosition");
 			}
 		});
 	}
