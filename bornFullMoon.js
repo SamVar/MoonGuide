@@ -124,6 +124,7 @@ function cleanReturns() {
 		document.querySelectorAll(".return-link")[i].innerHTML = "";
 		document.querySelectorAll(".born-text")[i].innerHTML = "";
 		document.querySelectorAll(".div-banner")[i].style.backgroundColor = "";
+		document.querySelectorAll(".div-banner")[i].style.marginTop = "";
 		document.querySelectorAll(".born-moon-image")[i].innerHTML = "";
 		document.querySelectorAll(".border-line")[i].style.borderBottom = "none";
 		document.querySelectorAll(".border-line")[i].style.marginTop = "0rem";
@@ -180,9 +181,7 @@ function printPhase(
 
 	//Styles
 	document.querySelectorAll(".div-banner")[z].style.backgroundColor = "#777";
-	document.querySelectorAll(".overideH2")[z].style.marginTop = "3rem";
-	document.querySelectorAll(".border-line")[z].style.borderBottom =
-		"2px solid #777";
-	document.querySelectorAll(".border-line")[z].style.marginTop = "7rem";
-	document.querySelectorAll(".extraSpace")[z].style.marginTop = "10rem";
+	document.querySelectorAll(".div-banner")[z].style.marginTop = "6rem";
+	document.querySelectorAll(".border-line")[z].style.cssText =
+		"border-bottom: 2px solid #777;margin-top: 5rem";
 }

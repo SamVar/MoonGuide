@@ -40,18 +40,73 @@ a:hover {
 	color: rgb(255, 255, 255) !important;
 }
 
+#sec2,
+#sec3,
+#sec4,
+#sec5,
+#sec6,
+#sec7,
+#sec8,
+#sec9,
+#sec10 {
+	padding-top: 1rem;
+}
+
+#new-moon,
+#waxing-crescent,
+#first-quarter,
+#waxing-gibbous,
+#full-moon,
+#waning-gibbous,
+#last-quarter,
+#waning-crescent,
+#NewMoon,
+#WaxingCrescent,
+#FirstQuarter,
+#WaxingGibbous,
+#FullMoon,
+#WaningGibbous,
+#LastQuarter,
+#WaningCrescent {
+	padding-top: 6rem;
+}
+
+#size-distance,
+#formation,
+#structure-composition {
+	padding-top: 1rem;
+}
+
+#sun,
+#mercury,
+#venus,
+#earth,
+#mars,
+#jupiter,
+#saturn,
+#neptune,
+#uranus {
+	padding-top: 7rem;
+	margin-top: 1rem;
+}
 /* bootstrap making drop down menu style changes apears on hover*/
 .dropdown-menu {
 	background-color: #333;
 	border: none;
 	padding-top: 0;
 	margin: 0;
+
+	/* landscape menu scrolling */
+	/* height: 200px;
+	max-height: 600px;
+	overflow-y: scroll; */
 }
 .dropdown-item {
 	color: rgb(183, 188, 192);
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
 }
+
 .dropdown-item:hover {
 	color: black !important;
 	background-color: rgb(183, 188, 192);
@@ -70,8 +125,8 @@ a:hover {
 .card-group {
 	width: 90%;
 	margin: auto;
-	margin-top: 9rem;
-	margin-bottom: 7rem;
+	margin-top: 10rem !important;
+	/* margin-bottom: 7rem; */
 }
 
 .card {
@@ -315,6 +370,7 @@ ul {
 	width: 65%;
 	margin: 5rem auto;
 	margin-bottom: 7.5rem;
+	margin-top: 9rem;
 }
 
 .current-month {
@@ -427,16 +483,18 @@ ul {
 	cursor: pointer;
 }
 .extraSpace {
-	height: 3rem;
 	width: 80%;
 	margin: auto;
+	padding-top: 0 !important;
 }
 .div-banner {
 	width: 80%;
 	margin: auto;
 	display: flex;
 }
-
+.overideH2 {
+	margin-top: 0;
+}
 .born-text {
 	color: black;
 	font-size: 1.1rem;
@@ -583,18 +641,30 @@ video {
 	}
 
 	.card-group {
-		margin-top: 2rem;
-		margin-bottom: 2rem;
+		margin-top: 6rem !important;
 		width: 90%;
 	}
 	.card {
-		margin-top: 3rem;
+		margin-top: 2rem;
 	}
 	.card-btn {
 		font-size: 2.5rem !important;
+		width: 100%;
 	}
 	.card-img-top {
 		width: 75%;
+	}
+
+	#sec2,
+	#sec3,
+	#sec4,
+	#sec5,
+	#sec6,
+	#sec7,
+	#sec8,
+	#sec9,
+	#sec10 {
+		padding-top: 2rem;
 	}
 
 	h1 {
@@ -608,6 +678,7 @@ video {
 		font-size: 1.2rem;
 		width: 100%;
 	}
+
 	.line {
 		width: 100%;
 	}
@@ -671,6 +742,8 @@ video {
 	/* page 2 */
 	.calendar {
 		width: 90% !important;
+		margin-top: 7rem;
+		margin-bottom: 5rem;
 	}
 
 	.date-form {
@@ -723,6 +796,7 @@ video {
 
 	.next-full-moon {
 		width: 100%;
+		margin-top: 3rem;
 	}
 	.full-moon-born {
 		width: 100%;
@@ -759,6 +833,9 @@ video {
 		width: 100%;
 		border-radius: 2%;
 	}
+	.overideH2 {
+		padding-top: 5rem !important;
+	}
 
 	.born-text {
 		width: 90%;
@@ -768,6 +845,28 @@ video {
 	.return-link {
 		margin-left: 1rem;
 		font-size: 1.3rem;
+	}
+	.solar-system-h1 {
+		margin-top: 7rem;
+	}
+
+	#size-distance,
+	#formation,
+	#structure-composition {
+		padding-top: 3rem;
+	}
+
+	#sun,
+	#mercury,
+	#venus,
+	#earth,
+	#mars,
+	#jupiter,
+	#saturn,
+	#neptune,
+	#uranus {
+		padding-top: 5rem;
+		margin-top: 0;
 	}
 	/* 4th page */
 	#top-objects {
@@ -977,6 +1076,7 @@ video {
 	}
 	.calendar {
 		width: 80%;
+		margin-top: 9rem;
 	}
 	.col-down {
 		font-size: 0.7rem !important;
