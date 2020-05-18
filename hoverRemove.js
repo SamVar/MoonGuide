@@ -6,13 +6,8 @@ function hoverRemove() {
 		for (var i = 0; i < classRemove.length; i++) {
 			classRemove[i].classList.remove("drop");
 		}
-
-		$(".navbar-toggler").on('touchstart','.navbar-collapse.in',function(e) {
-
-			if( $(e.target).is('a') && ( $(e.target).attr('class') != 'dropdown-toggle' ) ) {
-				$(this).collapse('hide');
-			}
-		
+		$(".navbar").on("click", ".dropdown-item", function () {
+			$(".navbar-collapse").collapse("hide");
 		});
 	}
 }
