@@ -7,9 +7,33 @@ function hoverRemove() {
 		for (var i = 0; i < classRemove.length; i++) {
 			classRemove[i].classList.remove("drop");
 		}
+
 		//Closes drop down menu after selection has been made on mobile devices
 		$(".navbar").on("click", ".dropdown-item", function () {
 			$(".navbar-collapse").collapse("hide");
+		});
+
+		var menuIsVisible;
+		//Checks if humberger button is clicked and menu is visible
+		$(".navbar").on("click", ".navbar-toggler", function () {
+			menuIsVisible = $("#navbarTogglerDemo02").is(":visible");
+
+			if (!menuIsVisible) {
+				$("body").addClass("fixedPosition");
+			} else {
+				$("body").removeClass("fixedPosition");
+			}
+		});
+
+		//Checks if humberger button is clicked and Sub menu is visible
+		$(".navbar").on("click", ".dropdown-item", function () {
+			menuIsVisible = $("#navbarTogglerDemo02").is(":visible");
+
+			if (!menuIsVisible) {
+				$("body").addClass("fixedPosition");
+			} else {
+				$("body").removeClass("fixedPosition");
+			}
 		});
 	}
 
