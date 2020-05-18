@@ -40,55 +40,6 @@ a:hover {
 	color: rgb(255, 255, 255) !important;
 }
 
-#sec2,
-#sec3,
-#sec4,
-#sec5,
-#sec6,
-#sec7,
-#sec8,
-#sec9,
-#sec10 {
-	padding-top: 1rem;
-}
-
-#new-moon,
-#waxing-crescent,
-#first-quarter,
-#waxing-gibbous,
-#full-moon,
-#waning-gibbous,
-#last-quarter,
-#waning-crescent,
-#NewMoon,
-#WaxingCrescent,
-#FirstQuarter,
-#WaxingGibbous,
-#FullMoon,
-#WaningGibbous,
-#LastQuarter,
-#WaningCrescent {
-	padding-top: 6rem;
-}
-
-#size-distance,
-#formation,
-#structure-composition {
-	padding-top: 1rem;
-}
-
-#sun,
-#mercury,
-#venus,
-#earth,
-#mars,
-#jupiter,
-#saturn,
-#neptune,
-#uranus {
-	padding-top: 7rem;
-	margin-top: 1rem;
-}
 /* bootstrap making drop down menu style changes apears on hover*/
 .dropdown-menu {
 	background-color: #333;
@@ -171,6 +122,18 @@ a:hover {
 }
 
 /* End Moon cards */
+
+#sec2,
+#sec3,
+#sec4,
+#sec5,
+#sec6,
+#sec7,
+#sec8,
+#sec9,
+#sec10 {
+	padding-top: 1rem;
+}
 
 h1 {
 	color: rgb(255, 223, 0);
@@ -455,7 +418,24 @@ ul {
 .opacity-hover:hover {
 	opacity: 0.5;
 }
-
+#new-moon,
+#waxing-crescent,
+#first-quarter,
+#waxing-gibbous,
+#full-moon,
+#waning-gibbous,
+#last-quarter,
+#waning-crescent,
+#NewMoon,
+#WaxingCrescent,
+#FirstQuarter,
+#WaxingGibbous,
+#FullMoon,
+#WaningGibbous,
+#LastQuarter,
+#WaningCrescent {
+	padding-top: 6rem;
+}
 /* Born on Full Moon */
 .full-moon-born {
 	width: 80%;
@@ -548,9 +528,41 @@ ul {
 	color: rgb(183, 188, 192);
 	text-decoration: underline;
 }
+
+#size-distance,
+#formation,
+#structure-composition {
+	padding-top: 1rem;
+}
+
+#sun,
+#mercury,
+#venus,
+#earth,
+#mars,
+#jupiter,
+#saturn,
+#neptune,
+#uranus {
+	padding-top: 7rem;
+	margin-top: 1rem;
+}
 /* End of 3rd page */
 
 /* Page 4 */
+
+#star-cluster,
+#galaxies,
+#top-objects,
+#deep-object-gallery,
+#video {
+	padding-top: 6rem;
+	margin-top: 0;
+}
+#top-objects > h2,
+#video > h2 {
+	margin-top: 0;
+}
 .video {
 	width: 80%;
 	height: 450px;
@@ -869,16 +881,19 @@ video {
 		margin-top: 0;
 	}
 	/* 4th page */
+	.deep-sky-obj-h1 {
+		margin-top: 6rem;
+	}
 	#top-objects {
 		width: 90%;
 	}
 	.video {
-		height: 20rem;
+		height: 15rem;
 		width: 100%;
 		margin: 0;
 	}
 	iframe {
-		height: 18rem;
+		height: 15rem;
 	}
 	.galaxy-gallery-row {
 		width: 100%;
@@ -907,6 +922,12 @@ video {
 	@media (max-width: 320px) {
 		.born-form {
 			font-size: 0.8rem;
+		}
+		.video {
+			height: 12rem !important;
+		}
+		iframe {
+			height: 11rem !important;
 		}
 	}
 
