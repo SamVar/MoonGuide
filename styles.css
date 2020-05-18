@@ -19,9 +19,7 @@ main {
 	width: 100%;
 	z-index: 9999;
 }
-.fixedPosition {
-	overflow: hidden;
-}
+
 .navbar-brand {
 	font-size: 2rem;
 	font-family: "Courgette", cursive;
@@ -669,7 +667,9 @@ video {
 	.card-img-top {
 		width: 75%;
 	}
-
+	.fixedPosition {
+		overflow: hidden !important;
+	}
 	#sec2,
 	#sec3,
 	#sec4,
