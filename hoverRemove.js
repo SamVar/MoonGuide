@@ -20,8 +20,10 @@ function hoverRemove() {
 
 			if (!menuIsVisible) {
 				$("body").addClass("fixedPosition");
+				$("main").addClass("fixedPosition");
 			} else {
 				$("body").removeClass("fixedPosition");
+				$("main").removeClass("fixedPosition");
 			}
 		});
 
@@ -31,8 +33,10 @@ function hoverRemove() {
 
 			if (!menuIsVisible) {
 				$("body").addClass("fixedPosition");
+				$("main").addClass("fixedPosition");
 			} else {
 				$("body").removeClass("fixedPosition");
+				$("main").removeClass("fixedPosition");
 			}
 		});
 	}
