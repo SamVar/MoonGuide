@@ -19,6 +19,7 @@ main {
 	width: 100%;
 	z-index: 9999;
 }
+
 .navbar-brand {
 	font-size: 2rem;
 	font-family: "Courgette", cursive;
@@ -26,6 +27,14 @@ main {
 	color: rgb(255, 223, 0) !important;
 }
 
+/* This is for imac 5k */
+/* html: <div class="cont"></div> */
+/* CSS
+	.cont{
+	width: 75%;
+	margin: auto;
+	display: flex;
+} */
 .nav-item {
 	text-align: start;
 	font-size: 1.2rem;

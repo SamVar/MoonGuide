@@ -2,6 +2,7 @@
 function hoverRemove() {
 	var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 	if (isMobile) {
+		//Removes class drop on mobile
 		var classRemove = document.querySelectorAll(".drop");
 		for (var i = 0; i < classRemove.length; i++) {
 			classRemove[i].classList.remove("drop");
@@ -11,6 +12,17 @@ function hoverRemove() {
 			$(".navbar-collapse").collapse("hide");
 		});
 	}
-	
-	
+
+	//removes drop class on desktop mode to deactivate hover future
+	else {
+		var dropClass = document.getElementById("remove-hover");
+		$(".navbar").on("click", ".dropdown-item", function () {
+			// removes drop class to disable hover
+			dropClass.classList.remove("drop");
+			//Waits 1 seconds and activates hover feauture again
+			setTimeout(function () {
+				dropClass.classList.add("drop");
+			}, 100);
+		});
+	}
 }
