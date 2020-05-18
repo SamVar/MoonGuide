@@ -8,6 +8,7 @@ body {
 }
 .fixedPosition {
 	overflow: hidden !important;
+	
 }
 main {
 	width: 80%;
