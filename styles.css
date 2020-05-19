@@ -52,8 +52,8 @@ a:hover {
 	margin: 0;
 
 	/* landscape menu scrolling */
-	height: 300px;
-	max-height: 400px;
+	/* height: 500px; */
+	max-height: 15rem;
 	overflow-y: scroll;
 }
 .dropdown-item {
