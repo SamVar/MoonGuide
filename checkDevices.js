@@ -42,6 +42,10 @@ function checkDevices() {
 				$("body").removeClass("fixedPosition");
 			}
 		}
+
+			$("li").removeClass("open");
+
+
 	}
 
 	//removes drop class on desktop mode to deactivate hover feature
