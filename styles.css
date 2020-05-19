@@ -7,8 +7,8 @@ body {
 	background-color: rgb(4, 15, 29);
 }
 .fixedPosition {
-	overflow: hidden !important;
-	
+	/* overflow: hidden !important; */
+	overflow-y: hidden;
 }
 main {
 	width: 80%;
@@ -50,10 +50,9 @@ a:hover {
 	border: none;
 	padding-top: 0;
 	margin: 0;
-
 	/* landscape menu scrolling */
-	/* height: 500px; */
-	max-height: 15rem;
+	height: 15rem;
+	max-height: 25rem;
 	overflow-y: scroll;
 }
 .dropdown-item {
@@ -81,7 +80,6 @@ a:hover {
 	width: 90%;
 	margin: auto;
 	margin-top: 10rem !important;
-	/* margin-bottom: 7rem; */
 }
 
 .card {
