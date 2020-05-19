@@ -38,12 +38,10 @@ main {
 	color: rgb(255, 223, 0) !important;
 	font-family: "Caladea", serif;
 	margin-right: 2rem;
-	border: none !important;
 }
 
 a:hover {
 	color: rgb(255, 255, 255) !important;
-	
 }
 
 /* bootstrap making drop down menu style changes apears on hover*/
