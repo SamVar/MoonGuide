@@ -1,7 +1,11 @@
 // Checks if the device is mobile or desktop
 function hoverRemove() {
-	var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+	// var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+	var isMobile = navigator.userAgent.match(
+        /(iPhone|iPod|iPad|Android|webOS|BlackBerry|IEMobile|Opera Mini)/i);
+ 
 	if (isMobile) {
+		
 		//Removes class drop on mobile
 		var classRemove = document.querySelectorAll(".drop");
 		for (var i = 0; i < classRemove.length; i++) {
@@ -37,7 +41,7 @@ function hoverRemove() {
 		});
 	}
 
-	//removes drop class on desktop mode to deactivate hover future
+	//removes drop class on desktop mode to deactivate hover feature
 	else {
 		var dropClass = document.getElementById("remove-hover");
 		$(".navbar").on("click", ".dropdown-item", function () {
