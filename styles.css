@@ -48,12 +48,20 @@ a:hover {
 	color: rgb(255, 255, 255) !important;
 }
 
-.navbar-nav .dropdown-toggle .dropdown .dropdown-menu .dropdown-item .nav-item .nav-link:focus {
+.navbar-nav
+	.dropdown-toggle
+	.dropdown
+	.dropdown-menu
+	.dropdown-item
+	.nav-item
+	.nav-link:focus {
 	outline: none !important;
+	box-shadow: none !important;
 }
 
-.nav-link .dropdown-toggle:focus {
+.nav-link .dropdown-toggle :focus {
 	outline: none !important;
+	box-shadow: none !important;
 }
 
 /* bootstrap making drop down menu style changes apears on hover*/
@@ -82,7 +90,7 @@ a:hover {
 	border-color: #999;
 }
 
-.navbar-nav li:hover>div.drop {
+.navbar-nav li:hover > div.drop {
 	display: block;
 }
 
@@ -597,8 +605,8 @@ ul {
 	margin-top: 0;
 }
 
-#top-objects>h2,
-#video>h2 {
+#top-objects > h2,
+#video > h2 {
 	margin-top: 0;
 }
 
@@ -993,7 +1001,7 @@ video {
 		font-size: 0.5rem;
 	}
 
-	#video>h2 {
+	#video > h2 {
 		width: 90%;
 	}
 
@@ -1175,7 +1183,7 @@ video {
 		font-size: 0.9rem;
 	}
 
-	#video>h2 {
+	#video > h2 {
 		width: 90%;
 	}
 
@@ -1279,7 +1287,7 @@ video {
 		font-size: 0.9rem;
 	}
 
-	#video>h2 {
+	#video > h2 {
 		width: 90%;
 	}
 
