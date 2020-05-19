@@ -52,9 +52,9 @@ a:hover {
 	margin: 0;
 
 	/* landscape menu scrolling */
-	/* height: 200px;
-	max-height: 600px;
-	overflow-y: scroll; */
+	height: 300px;
+	max-height: 400px;
+	overflow-y: scroll;
 }
 .dropdown-item {
 	color: rgb(183, 188, 192);
