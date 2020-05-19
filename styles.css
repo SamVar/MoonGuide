@@ -1074,7 +1074,7 @@ video {
 }
 @media (max-width: 991px) {
 	.navbar-nav {
-		max-height: 17rem;
+		max-height: 20rem;
 		overflow-y: scroll;
 	}
 }
