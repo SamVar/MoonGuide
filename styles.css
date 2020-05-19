@@ -46,9 +46,6 @@ main {
 
 a:hover {
 	color: rgb(255, 255, 255) !important;
-	box-shadow: none !important;
-	text-decoration: none !important;
-	border: none !important;
 }
 
 /* bootstrap making drop down menu style changes apears on hover*/
