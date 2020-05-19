@@ -5,5 +5,6 @@ function lightBoxOption() {
 		fadeDuration: 100,
 		wrapAround: true,
 		disableScrolling: true,
+		alwaysShowNavOnTouchDevices: true,
 	});
 }
