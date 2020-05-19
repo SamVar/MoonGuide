@@ -10,7 +10,7 @@ function hoverRemove() {
 		for (var i = 0; i < classRemove.length; i++) {
 			classRemove[i].classList.remove("drop");
 		}
-
+		alert("This Device is mobile")
 		//Closes drop down menu after selection has been made on mobile devices
 		$(".navbar").on("click", ".dropdown-item", function () {
 			$(".navbar-collapse").collapse("hide");
