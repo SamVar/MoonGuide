@@ -39,7 +39,7 @@ main {
 	margin-right: 2rem;
 }
 .nav-link:hover {
-	border: 1px solid khaki !important;
+	border: 2px solid khaki !important;
 }
 a:hover {
 	color: rgb(255, 255, 255) !important;
