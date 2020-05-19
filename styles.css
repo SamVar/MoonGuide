@@ -1073,10 +1073,8 @@ video {
 	}
 }
 @media (max-width: 991px) {
-	.dropdown-menu,
 	.navbar-nav {
-		height: 15rem;
-		max-height: 25rem;
+		max-height: 17rem;
 		overflow-y: scroll;
 	}
 }
