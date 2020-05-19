@@ -38,6 +38,7 @@ main {
 	color: rgb(255, 223, 0) !important;
 	font-family: "Caladea", serif;
 	margin-right: 2rem;
+	/* border: none; */
 }
 
 a:hover {
@@ -50,10 +51,6 @@ a:hover {
 	border: none;
 	padding-top: 0;
 	margin: 0;
-	/* landscape menu scrolling */
-	height: 15rem;
-	max-height: 25rem;
-	overflow-y: scroll;
 }
 .dropdown-item {
 	color: rgb(183, 188, 192);
@@ -988,6 +985,7 @@ video {
 		font-size: 1.2rem;
 		color: khaki !important;
 	}
+
 	.card-btn {
 		font-size: 2.5rem !important;
 	}
@@ -1074,7 +1072,14 @@ video {
 		font-size: 0.7rem;
 	}
 }
-
+@media (max-width: 991px) {
+	.dropdown-menu,
+	.navbar-nav {
+		height: 15rem;
+		max-height: 25rem;
+		overflow-y: scroll;
+	}
+}
 @media (min-width: 768px) and (max-width: 1024px) {
 	main {
 		width: 100%;
