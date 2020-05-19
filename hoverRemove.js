@@ -1,11 +1,10 @@
 // Checks if the device is mobile or desktop
 function hoverRemove() {
-	// var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 	var isMobile = navigator.userAgent.match(
-        /(iPhone|iPod|iPad|Android|webOS|BlackBerry|IEMobile|Opera Mini)/i);
- 
+		/(iPhone|iPod|iPad|Android|webOS|BlackBerry|IEMobile|Opera Mini)/i
+	);
+
 	if (isMobile) {
-		
 		//Removes class drop on mobile
 		var classRemove = document.querySelectorAll(".drop");
 		for (var i = 0; i < classRemove.length; i++) {
@@ -17,28 +16,26 @@ function hoverRemove() {
 			$(".navbar-collapse").collapse("hide");
 		});
 
-		var menuIsVisible;
-		//Checks if humberger button is clicked and menu is visible
+		//Checks if hamburger button is clicked and menu is visible
 		$(".navbar").on("click", ".navbar-toggler", function () {
-			menuIsVisible = $("#navbarTogglerDemo02").is(":visible");
-
-			if (!menuIsVisible) {
-				$("body").addClass("fixedPosition");
-			} else {
-				$("body").removeClass("fixedPosition");
-			}
+			var menuIsVisible = $("#navbarTogglerDemo02").is(":visible");
+			checkMenuVisiblity(menuIsVisible);
 		});
 
-		//Checks if humberger button is clicked and Sub menu is visible
+		//Checks if hamburger button is clicked and Submenu is visible
 		$(".navbar").on("click", ".dropdown-item", function () {
-			menuIsVisible = $("#navbarTogglerDemo02").is(":visible");
+			var menuIsVisible = $("#navbarTogglerDemo02").is(":visible");
+			checkMenuVisiblity(menuIsVisible);
+		});
 
+		//This function adds and removes fixedPosition class
+		function checkMenuVisiblity(menuIsVisible) {
 			if (!menuIsVisible) {
 				$("body").addClass("fixedPosition");
 			} else {
 				$("body").removeClass("fixedPosition");
 			}
-		});
+		}
 	}
 
 	//removes drop class on desktop mode to deactivate hover feature
