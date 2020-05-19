@@ -510,7 +510,9 @@ ul {
 	width: 7rem;
 	margin: 1rem;
 }
-
+.return-link-container {
+	margin-top: 1rem;
+}
 .return-link {
 	color: rgb(18, 8, 161);
 	text-decoration: underline;
@@ -920,7 +922,10 @@ video {
 		margin: auto;
 		font-size: 1rem;
 	}
-
+	.return-link-container {
+		margin-bottom: 1.5rem;
+		margin-top: 1rem;
+	}
 	.return-link {
 		margin-left: 1rem;
 		font-size: 1.3rem;
