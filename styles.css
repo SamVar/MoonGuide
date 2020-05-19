@@ -1072,12 +1072,14 @@ video {
 		font-size: 0.7rem;
 	}
 }
+
 @media (max-width: 991px) {
 	.navbar-nav {
 		max-height: 25rem;
 		overflow-y: scroll;
 	}
 }
+
 @media (min-width: 768px) and (max-width: 1024px) {
 	main {
 		width: 100%;
