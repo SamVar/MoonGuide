@@ -38,7 +38,6 @@ main {
 	color: rgb(255, 223, 0) !important;
 	font-family: "Caladea", serif;
 	margin-right: 2rem;
-	
 }
 
 a:hover {
@@ -62,7 +61,6 @@ a:hover {
 .dropdown-item:hover {
 	color: black !important;
 	background-color: rgb(183, 188, 192);
-	border: none;
 }
 .dropdown-divider {
 	margin: 0;
