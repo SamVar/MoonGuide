@@ -10,7 +10,7 @@ function checkDevices() {
 			(navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1)) &&
 		!window.MSStream;
 
-	if (isMobile /*|| isIOS*/) {
+	if (isMobile || isIOS) {
 		//Removes class drop on mobile
 		var classRemove = document.querySelectorAll(".drop");
 		for (var i = 0; i < classRemove.length; i++) {
