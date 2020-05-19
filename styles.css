@@ -38,8 +38,8 @@ main {
 	font-family: "Caladea", serif;
 	margin-right: 2rem;
 }
-.nav-link:hover {
-	border: 3px solid green !important;
+.dropdown-toggle:hover {
+	border: 3px solid white !important;
 }
 a:hover {
 	color: rgb(255, 255, 255) !important;
