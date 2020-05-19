@@ -677,7 +677,7 @@ video {
 	main {
 		width: 90%;
 	}
-	.navbar-nav
+	/* .navbar-nav
 		.dropdown-toggle
 		.dropdown
 		.dropdown-menu
@@ -686,9 +686,9 @@ video {
 		.nav-link:focus {
 		outline: none !important;
 		box-shadow: none !important;
-	}
+	} */
 
-	.nav-link .dropdown-toggle :focus {
+	.nav-link:focus {
 		outline: none !important;
 		box-shadow: none !important;
 	}
