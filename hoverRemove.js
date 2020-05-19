@@ -1,8 +1,18 @@
 // Checks if the device is mobile or desktop
 function hoverRemove() {
-	var isMobile = navigator.userAgent.match(
+	let isMobile = navigator.userAgent.match(
 		/(iPhone|iPod|iPad|Android|webOS|BlackBerry|IEMobile|Opera Mini)/i
 	);
+
+	let isIOS =
+		(/iPad|iPhone|iPod/.test(navigator.platform) ||
+			(navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1)) &&
+		!window.MSStream;
+
+		if (isIOS){
+			alert("Ios Device");
+		}
+	
 
 	if (isMobile) {
 		//Removes class drop on mobile
@@ -10,7 +20,7 @@ function hoverRemove() {
 		for (var i = 0; i < classRemove.length; i++) {
 			classRemove[i].classList.remove("drop");
 		}
-		alert("This Device is mobile")
+		// alert("This Device is mobile");
 		//Closes drop down menu after selection has been made on mobile devices
 		$(".navbar").on("click", ".dropdown-item", function () {
 			$(".navbar-collapse").collapse("hide");
