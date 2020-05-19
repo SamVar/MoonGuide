@@ -693,10 +693,10 @@ video {
 		box-shadow: none !important;
 	}
 
-	*:focus {
+	/* *:focus {
 		outline: none !important;
 		box-shadow: none !important;
-	}
+	} */
 	.logo {
 		margin: 0;
 		font-size: 2rem;
