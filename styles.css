@@ -41,7 +41,6 @@ main {
 
 a:hover {
 	color: rgb(255, 255, 255) !important;
-	
 }
 
 /* bootstrap making drop down menu style changes apears on hover*/
@@ -1076,6 +1075,9 @@ video {
 	.navbar-nav {
 		max-height: 25rem;
 		overflow-y: scroll;
+	}
+	.nav-link:hover {
+		border: none !important;
 	}
 }
 
