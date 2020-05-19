@@ -677,26 +677,7 @@ video {
 	main {
 		width: 90%;
 	}
-	/* .navbar-nav
-		.dropdown-toggle
-		.dropdown
-		.dropdown-menu
-		.dropdown-item
-		.nav-item
-		.nav-link:focus {
-		outline: none !important;
-		box-shadow: none !important;
-	} */
 
-	.nav-link:focus {
-		outline: none !important;
-		box-shadow: none !important;
-	}
-
-	/* *:focus {
-		outline: none !important;
-		box-shadow: none !important;
-	} */
 	.logo {
 		margin: 0;
 		font-size: 2rem;
@@ -1205,6 +1186,11 @@ video {
 	.navbar-nav {
 		max-height: 25rem;
 		overflow-y: scroll;
+	}
+
+	.nav-link:focus {
+		outline: none !important;
+		box-shadow: none !important;
 	}
 }
 
