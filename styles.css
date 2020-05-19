@@ -2,17 +2,21 @@
 	margin: 0;
 	padding: 0;
 }
+
 html,
 body {
 	background-color: rgb(4, 15, 29);
 }
+
 .fixedPosition {
 	overflow-y: hidden;
 }
+
 main {
 	width: 80%;
 	margin: auto;
 }
+
 /* Navbar */
 .navbar {
 	background-color: #333 !important;
@@ -33,14 +37,17 @@ main {
 	text-align: start;
 	font-size: 1.2rem;
 }
+
 .nav-link {
 	color: rgb(255, 223, 0) !important;
 	font-family: "Caladea", serif;
 	margin-right: 2rem;
 }
-#navbarDropdownMenuLink:hover {
-	border: 3px solid rgb(182, 40, 40) !important;
+
+.nav-link:hover {
+	border: 5px solid rgb(40, 182, 71) !important;
 }
+
 a:hover {
 	color: rgb(255, 255, 255) !important;
 }
@@ -52,6 +59,7 @@ a:hover {
 	padding-top: 0;
 	margin: 0;
 }
+
 .dropdown-item {
 	color: rgb(183, 188, 192);
 	padding-top: 0.5rem;
@@ -62,12 +70,14 @@ a:hover {
 	color: black !important;
 	background-color: rgb(183, 188, 192);
 }
+
 .dropdown-divider {
 	margin: 0;
 	width: 100%;
 	margin: auto;
 	border-color: #999;
 }
+
 .navbar-nav li:hover > div.drop {
 	display: block;
 }
@@ -141,6 +151,7 @@ h1 {
 	font-family: "Courgette", cursive;
 	margin-top: 7rem;
 }
+
 h2,
 .next-full-moon {
 	color: rgb(250, 212, 77);
@@ -156,16 +167,19 @@ h2,
 .tab {
 	padding-left: 2.5rem;
 }
+
 .flow-left {
 	margin-bottom: 1rem;
 	margin-right: 2rem;
 	float: left;
 }
+
 .flow-right {
 	margin-bottom: 1rem;
 	margin-left: 2rem;
 	float: right;
 }
+
 .paragraph-body {
 	color: rgb(183, 188, 192);
 	width: 80%;
@@ -184,6 +198,7 @@ h2,
 	border: 1px solid #777;
 	border-radius: 1%;
 }
+
 .img-size:hover {
 	opacity: 0.5;
 	border: 2px solid #999;
@@ -235,10 +250,12 @@ td {
 	margin: auto;
 	margin-top: 5rem;
 }
+
 .gallery-row {
 	width: 100%;
 	display: flex;
 }
+
 .gallery-img {
 	border-radius: 1%;
 	display: flex;
@@ -271,11 +288,13 @@ footer {
 	margin: auto;
 	width: 85%;
 }
+
 .link-container {
 	width: 20%;
 	margin: auto;
 	margin-top: 1rem;
 }
+
 .link-paragraph {
 	text-align: start;
 	font-size: 1rem;
@@ -283,6 +302,7 @@ footer {
 	font-weight: 500;
 	margin-bottom: 0.5rem;
 }
+
 .link-paragraph:hover,
 .link-body:hover {
 	text-decoration: underline;
@@ -304,6 +324,7 @@ ul {
 .contact:hover {
 	color: khaki !important;
 }
+
 .bottom {
 	display: flex;
 	width: fit-content;
@@ -317,6 +338,7 @@ ul {
 	margin-bottom: 1rem;
 	margin-top: 1rem;
 }
+
 .fa-envelope {
 	color: rgb(183, 188, 192);
 	margin-bottom: 0.5rem;
@@ -325,6 +347,7 @@ ul {
 .fa-envelope:hover {
 	text-decoration: underline;
 }
+
 /* End of the first page */
 
 /* Second page - Calendar */
@@ -417,6 +440,7 @@ ul {
 .opacity-hover:hover {
 	opacity: 0.5;
 }
+
 #new-moon,
 #waxing-crescent,
 #first-quarter,
@@ -435,6 +459,7 @@ ul {
 #WaningCrescent {
 	padding-top: 6rem;
 }
+
 /* Born on Full Moon */
 .full-moon-born {
 	width: 80%;
@@ -461,19 +486,23 @@ ul {
 	width: 10%;
 	cursor: pointer;
 }
+
 .extraSpace {
 	width: 80%;
 	margin: auto;
 	padding-top: 0 !important;
 }
+
 .div-banner {
 	width: 80%;
 	margin: auto;
 	display: flex;
 }
+
 .overideH2 {
 	margin-top: 0;
 }
+
 .born-text {
 	color: black;
 	font-size: 1.1rem;
@@ -505,6 +534,7 @@ ul {
 	margin: auto;
 	width: 80%;
 }
+
 /* End of second page */
 
 /* Solar System page */
@@ -513,16 +543,19 @@ ul {
 	border-radius: 2%;
 	border: 1px solid silver;
 }
+
 .planet-images {
 	width: 25%;
 	border: 1px solid silver;
 	border-radius: 3%;
 }
+
 .solar-system-images:hover,
 .planet-images:hover {
 	border: 3px solid silver;
 	opacity: 0.5;
 }
+
 .source {
 	color: rgb(183, 188, 192);
 	text-decoration: underline;
@@ -546,6 +579,7 @@ ul {
 	padding-top: 7rem;
 	margin-top: 1rem;
 }
+
 /* End of 3rd page */
 
 /* Page 4 */
@@ -558,20 +592,24 @@ ul {
 	padding-top: 6rem;
 	margin-top: 0;
 }
+
 #top-objects > h2,
 #video > h2 {
 	margin-top: 0;
 }
+
 .video {
 	width: 80%;
 	height: 450px;
 	margin: auto;
 	margin-bottom: 10rem;
 }
+
 #top-objects {
 	width: 85%;
 	margin: auto;
 }
+
 iframe {
 	width: 100%;
 	height: 31rem;
@@ -622,10 +660,12 @@ figcaption:hover {
 video {
 	width: 100%;
 }
+
 #video {
 	width: 85%;
 	margin: auto;
 }
+
 .video-paragraph {
 	text-align: start;
 	color: rgb(183, 188, 192);
@@ -641,6 +681,7 @@ video {
 	main {
 		width: 90%;
 	}
+
 	.logo {
 		margin: 0;
 		font-size: 2rem;
@@ -655,13 +696,16 @@ video {
 		margin-top: 6rem !important;
 		width: 90%;
 	}
+
 	.card {
 		margin-top: 2rem;
 	}
+
 	.card-btn {
 		font-size: 2.5rem !important;
 		width: 100%;
 	}
+
 	.card-img-top {
 		width: 75%;
 	}
@@ -684,6 +728,7 @@ video {
 		font-size: 1.6rem;
 		width: 100%;
 	}
+
 	h2 {
 		margin-top: 3rem;
 		font-size: 1.2rem;
@@ -699,18 +744,22 @@ video {
 		width: 100%;
 		margin-top: 4rem;
 	}
+
 	th {
 		font-size: 0.9rem;
 		padding: 0;
 		text-align: center;
 	}
+
 	td {
 		font-size: 0.8rem;
 		text-align: center;
 	}
+
 	.moon-phase-pics {
 		width: 50%;
 	}
+
 	.moon-gallery {
 		width: 100%;
 		text-align: center;
@@ -724,16 +773,20 @@ video {
 	.moon-img {
 		width: 100%;
 	}
+
 	.link-section {
 		width: 90%;
 	}
+
 	.link-container {
 		width: 22%;
 	}
+
 	.link-paragraph {
 		font-size: 0.8rem;
 		line-height: 1.5;
 	}
+
 	.links {
 		line-height: 1.2;
 	}
@@ -743,9 +796,11 @@ video {
 	.copy-right {
 		font-size: 0.7rem;
 	}
+
 	.bottom {
 		width: 90%;
 	}
+
 	.footer-line {
 		width: 90%;
 	}
@@ -760,6 +815,7 @@ video {
 	.date-form {
 		display: flex;
 	}
+
 	.go-btn,
 	.month-select,
 	.year-select {
@@ -770,36 +826,46 @@ video {
 	.current-month {
 		display: flex;
 	}
+
 	.btn {
 		font-size: 1.5rem;
 	}
+
 	.image {
 		width: 1.8rem !important;
 	}
+
 	.col-up {
 		font-size: 0.5rem;
 	}
+
 	.col-down {
 		font-size: 7px !important;
 		line-height: 1.4;
 	}
+
 	.flow-right,
 	.flow-left {
 		width: 45%;
 	}
+
 	.flow-right {
 		margin-left: 1rem;
 	}
+
 	.flow-left {
 		margin-right: 1rem;
 	}
+
 	.img-size {
 		width: 100%;
 		margin-bottom: 1rem;
 	}
+
 	.solar-system-images {
 		width: 100%;
 	}
+
 	.paragraph-body {
 		font-size: 0.9rem;
 		width: 100%;
@@ -809,9 +875,11 @@ video {
 		width: 100%;
 		margin-top: 3rem;
 	}
+
 	.full-moon-born {
 		width: 100%;
 	}
+
 	.born-form {
 		display: inline-block;
 		width: 100%;
@@ -822,11 +890,13 @@ video {
 		margin-right: 0.4rem;
 		background-color: aliceblue;
 	}
+
 	.select-born-day {
 		width: 19%;
 		margin-right: 0.4rem;
 		background-color: aliceblue;
 	}
+
 	.select-born-year {
 		width: 24%;
 		margin-right: 0.4rem;
@@ -844,6 +914,7 @@ video {
 		width: 100%;
 		border-radius: 2%;
 	}
+
 	.overideH2 {
 		padding-top: 5rem !important;
 	}
@@ -853,10 +924,12 @@ video {
 		margin: auto;
 		font-size: 1rem;
 	}
+
 	.return-link {
 		margin-left: 1rem;
 		font-size: 1.3rem;
 	}
+
 	.solar-system-h1 {
 		margin-top: 7rem;
 	}
@@ -879,41 +952,52 @@ video {
 		padding-top: 5rem;
 		margin-top: 0;
 	}
+
 	/* 4th page */
 	.deep-sky-obj-h1 {
 		margin-top: 6rem;
 	}
+
 	#top-objects {
 		width: 90%;
 	}
+
 	.video {
 		height: 15rem;
 		width: 100%;
 		margin: 0;
 	}
+
 	iframe {
 		height: 15rem;
 	}
+
 	.galaxy-gallery-row {
 		width: 100%;
 		height: 25vh;
 	}
+
 	.galaxy-gallery {
 		height: 12vh;
 	}
+
 	figure {
 		width: 28%;
 	}
+
 	figcaption {
 		font-size: 0.5rem;
 	}
+
 	#video > h2 {
 		width: 90%;
 	}
+
 	#video,
 	.astro-video {
 		width: 90%;
 	}
+
 	.video-paragraph {
 		font-size: 0.8rem;
 	}
@@ -922,9 +1006,11 @@ video {
 		.born-form {
 			font-size: 0.8rem;
 		}
+
 		.video {
 			height: 12rem !important;
 		}
+
 		iframe {
 			height: 11rem !important;
 		}
@@ -934,6 +1020,7 @@ video {
 		.galaxy-gallery-row {
 			height: 45vh;
 		}
+
 		.galaxy-gallery {
 			height: 30vh;
 		}
@@ -944,10 +1031,12 @@ video {
 			width: 35%;
 			margin-right: 0.4rem;
 		}
+
 		.select-born-day {
 			width: 15%;
 			margin-right: 0.4rem;
 		}
+
 		.select-born-year {
 			width: 20%;
 			margin-right: 0.4rem;
@@ -958,19 +1047,24 @@ video {
 			border-radius: 10%;
 			background-color: aliceblue;
 		}
+
 		.galaxy-gallery-row {
 			width: 100%;
 			height: 20vh;
 		}
+
 		.galaxy-gallery {
 			height: 10vh;
 		}
+
 		.video {
 			height: 15rem;
 		}
+
 		iframe {
 			height: 15rem;
 		}
+
 		.video-paragraph {
 			font-size: 0.5rem;
 		}
@@ -981,6 +1075,7 @@ video {
 	main {
 		width: 100%;
 	}
+
 	.nav-link {
 		font-size: 1.2rem;
 		color: khaki !important;
@@ -989,6 +1084,7 @@ video {
 	.card-btn {
 		font-size: 2.5rem !important;
 	}
+
 	.card-group {
 		width: 90%;
 	}
@@ -996,9 +1092,11 @@ video {
 	.card-body {
 		padding: 0.5rem;
 	}
+
 	.card-title {
 		font-size: 0.8rem;
 	}
+
 	.card-text {
 		font-size: 0.7rem;
 	}
@@ -1006,25 +1104,31 @@ video {
 	.paragraph-body {
 		font-size: 0.9rem;
 	}
+
 	th {
 		font-size: 0.9rem;
 	}
+
 	td {
 		font-size: 0.8rem;
 	}
+
 	.calendar {
 		width: 80%;
 	}
+
 	.col-down {
 		font-size: 0.6rem !important;
 		line-height: 1.4;
 	}
+
 	.go-btn,
 	.month-select,
 	.year-select {
 		background-color: aliceblue;
 		width: 28%;
 	}
+
 	.select-born-year,
 	.select-born-day,
 	.select-born-month {
@@ -1038,6 +1142,7 @@ video {
 		border-radius: 10%;
 		background-color: aliceblue;
 	}
+
 	#top-objects {
 		width: 90%;
 	}
@@ -1045,27 +1150,35 @@ video {
 	iframe {
 		height: 22rem;
 	}
+
 	.video {
 		margin-bottom: 0;
 	}
+
 	.galaxy-gallery {
 		height: 32vh;
 	}
+
 	figcaption {
 		font-size: 0.7rem;
 	}
+
 	.astro-video {
 		width: 90%;
 	}
+
 	.video-paragraph {
 		font-size: 0.9rem;
 	}
+
 	#video > h2 {
 		width: 90%;
 	}
+
 	.link-paragraph {
 		font-size: 0.9rem;
 	}
+
 	.link-body,
 	.contact,
 	.copy-right {
@@ -1094,28 +1207,35 @@ video {
 	.card-group {
 		width: 90%;
 	}
+
 	.moon-phase-pics {
 		width: 30%;
 	}
+
 	.card-title {
 		font-size: 0.9rem;
 	}
+
 	.card-text {
 		font-size: 0.8rem;
 	}
+
 	.calendar {
 		width: 80%;
 		margin-top: 9rem;
 	}
+
 	.col-down {
 		font-size: 0.7rem !important;
 		line-height: 1.5;
 	}
+
 	.go-btn,
 	.month-select,
 	.year-select {
 		background-color: aliceblue;
 	}
+
 	.select-born-year,
 	.select-born-day,
 	.select-born-month {
@@ -1129,6 +1249,7 @@ video {
 		border-radius: 10%;
 		background-color: aliceblue;
 	}
+
 	#top-objects {
 		width: 90%;
 	}
@@ -1136,6 +1257,7 @@ video {
 	iframe {
 		height: 30rem;
 	}
+
 	.video {
 		margin-bottom: 0;
 	}
@@ -1144,15 +1266,19 @@ video {
 		width: 80%;
 		margin: auto;
 	}
+
 	.galaxy-gallery {
 		height: 14vh;
 	}
+
 	figcaption {
 		font-size: 0.9rem;
 	}
+
 	#video > h2 {
 		width: 90%;
 	}
+
 	.astro-video {
 		width: 90%;
 	}
@@ -1162,6 +1288,7 @@ video {
 	main {
 		width: 90%;
 	}
+
 	.select-born-year,
 	.select-born-day,
 	.select-born-month,
