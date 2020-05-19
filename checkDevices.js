@@ -43,7 +43,8 @@ function checkDevices() {
 			}
 		}
 
-		// document.querySelectorAll(".nav-link")[0].style.border = "2px solid red";
+		document.querySelectorAll(".nav-link")[0].style.border =
+			"2px solid rgb(255, 255, 255)";
 	}
 
 	//removes drop class on desktop mode to deactivate hover feature
