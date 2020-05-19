@@ -4,17 +4,14 @@ function hoverRemove() {
 		/(iPhone|iPod|iPad|Android|webOS|BlackBerry|IEMobile|Opera Mini)/i
 	);
 
+	//Checks if it is ipad
 	let isIOS =
 		(/iPad|iPhone|iPod/.test(navigator.platform) ||
 			(navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1)) &&
 		!window.MSStream;
 
-		if (isIOS){
-			alert("Ios Device");
-		}
-	
 
-	if (isMobile) {
+	if (isMobile || isIOS) {
 		//Removes class drop on mobile
 		var classRemove = document.querySelectorAll(".drop");
 		for (var i = 0; i < classRemove.length; i++) {
