@@ -16,7 +16,7 @@ function checkDevices() {
 		for (var i = 0; i < classRemove.length; i++) {
 			classRemove[i].classList.remove("drop");
 		}
-		// alert("This Device is mobile");
+
 		//Closes drop down menu after selection has been made on mobile devices
 		$(".navbar").on("click", ".dropdown-item", function () {
 			$(".navbar-collapse").collapse("hide");
@@ -44,13 +44,13 @@ function checkDevices() {
 		}
 	}
 
-	//removes drop class on desktop mode to deactivate hover feature
+	//removes drop class on desktop mode to deactivates hover feature
 	else {
 		var dropClass = document.getElementById("remove-hover");
 		$(".navbar").on("click", ".dropdown-item", function () {
 			// removes drop class to disable hover
 			dropClass.classList.remove("drop");
-			//Waits 1 seconds and activates hover feauture again
+			//Waits 1 seconds and activates hover feature again
 			setTimeout(function () {
 				dropClass.classList.add("drop");
 			}, 100);
