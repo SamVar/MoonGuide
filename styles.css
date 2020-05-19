@@ -38,7 +38,7 @@ main {
 	font-family: "Caladea", serif;
 	margin-right: 2rem;
 }
-.nav-link:hover {
+.nav-item:hover {
 	border: 2px solid khaki !important;
 }
 a:hover {
