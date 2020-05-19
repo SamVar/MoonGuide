@@ -48,22 +48,6 @@ a:hover {
 	color: rgb(255, 255, 255) !important;
 }
 
-.navbar-nav
-	.dropdown-toggle
-	.dropdown
-	.dropdown-menu
-	.dropdown-item
-	.nav-item
-	.nav-link:focus {
-	outline: none !important;
-	box-shadow: none !important;
-}
-
-.nav-link .dropdown-toggle :focus {
-	outline: none !important;
-	box-shadow: none !important;
-}
-
 /* bootstrap making drop down menu style changes apears on hover*/
 .dropdown-menu {
 	background-color: #333;
@@ -693,7 +677,26 @@ video {
 	main {
 		width: 90%;
 	}
+	.navbar-nav
+		.dropdown-toggle
+		.dropdown
+		.dropdown-menu
+		.dropdown-item
+		.nav-item
+		.nav-link:focus {
+		outline: none !important;
+		box-shadow: none !important;
+	}
 
+	.nav-link .dropdown-toggle :focus {
+		outline: none !important;
+		box-shadow: none !important;
+	}
+
+	*:focus {
+		outline: none !important;
+		box-shadow: none !important;
+	}
 	.logo {
 		margin: 0;
 		font-size: 2rem;
