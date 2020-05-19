@@ -7,7 +7,6 @@ body {
 	background-color: rgb(4, 15, 29);
 }
 .fixedPosition {
-	/* overflow: hidden !important; */
 	overflow-y: hidden;
 }
 main {
@@ -33,13 +32,11 @@ main {
 .nav-item {
 	text-align: start;
 	font-size: 1.2rem;
-	
 }
 .nav-link {
 	color: rgb(255, 223, 0) !important;
 	font-family: "Caladea", serif;
 	margin-right: 2rem;
-	border: none !important;
 }
 
 a:hover {
@@ -1089,6 +1086,7 @@ video {
 	.nav-link {
 		font-size: 1.2rem;
 		color: khaki !important;
+		border: none !important;
 	}
 
 	.card-group {
