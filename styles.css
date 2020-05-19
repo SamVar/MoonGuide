@@ -1077,7 +1077,7 @@ video {
 		overflow-y: scroll;
 	}
 	.nav-link:hover {
-		border: none !important;
+		border: 1px solid khaki !important;
 	}
 }
 
