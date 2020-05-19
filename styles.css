@@ -1182,6 +1182,13 @@ video {
 	}
 }
 
+@media (max-width: 991px) and (orientation: landscape) {
+	.navbar-nav {
+		max-height: 15rem;
+		overflow-y: scroll;
+	}
+}
+
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 	.galaxy-gallery {
 		height: 23vh;
