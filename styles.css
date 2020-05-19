@@ -33,7 +33,7 @@ main {
 .nav-item {
 	text-align: start;
 	font-size: 1.2rem;
-	border: none;
+	border: none !important;
 }
 .nav-link {
 	color: rgb(255, 223, 0) !important;
