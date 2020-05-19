@@ -47,7 +47,9 @@ main {
 a:hover {
 	color: rgb(255, 255, 255) !important;
 }
-
+.dropdown .dropdown-menu .dropdown-item:focus {
+	outline: none;
+  }
 /* bootstrap making drop down menu style changes apears on hover*/
 .dropdown-menu {
 	background-color: #333;
