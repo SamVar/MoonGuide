@@ -8,8 +8,8 @@ body {
 	background-color: rgb(4, 15, 29);
 }
 
-.fixedPosition {
-	overflow-y: hidden;
+body .fixedPosition {
+	overflow: hidden;
 }
 
 main {
