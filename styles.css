@@ -10,6 +10,7 @@ body {
 
 .fixedPosition {
 	overflow: hidden;
+	-webkit-overflow-scrolling: "touch"
 }
 
 main {
