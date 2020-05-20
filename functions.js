@@ -1,5 +1,5 @@
 //All functions that is needed for the website to operate properly
-//Written by Samvel Vardanyan
+//By Samvel Vardanyan
 
 //Function that calculates Moon cycle in days and Moon illumination %
 function calculateMoonPhase(moonYear, moonMonth, moonDay) {
@@ -58,17 +58,17 @@ function moonPhaseNameAndImage(daySinceNewCircle) {
 	var moonPhase, moonImage, moonImage2, moonImage3;
 
 	if (
-		(daySinceNewCircle >= 0.0 && daySinceNewCircle <= 1.0) ||
-		daySinceNewCircle > 29.4
+		(daySinceNewCircle >= 0.0 && daySinceNewCircle <= 0.9) ||
+		daySinceNewCircle > 29.4 //29.0
 	) {
 		moonPhase = "New Moon";
 		moonImage = "<img class='card-img-top' src=small-size-images/new.png>";
 		moonImage2 = "<img class='image' src=small-size-images/new.png>";
 		moonImage3 = "<img class='born-img' src=small-size-images/new.png>";
-	} else if (daySinceNewCircle > 1.0 && daySinceNewCircle <= 6.9) {
+	} else if (daySinceNewCircle > 0.9 && daySinceNewCircle <= 6.9) {
 		moonPhase = "Waxing Crescent";
 
-		if (daySinceNewCircle > 1.0 && daySinceNewCircle <= 2.2) {
+		if (daySinceNewCircle > 0.9 && daySinceNewCircle <= 2.2) {
 			moonImage = "<img class='card-img-top' src=small-size-images/2.png>";
 			moonImage2 = "<img class='image' src=small-size-images/2.png>";
 			moonImage3 = "<img class='born-img' src=small-size-images/2.png>";
@@ -213,6 +213,52 @@ function printOnCalendar(moonPhase, moonCycle, illumination, moonImage, j, i) {
 	document.querySelectorAll(".col-body")[j].innerHTML = moonImage;
 	document.querySelectorAll(".col-down")[j].innerHTML =
 		moonPhase + "<br>" + moonCycle + " days, " + illumination + "%";
+
+	//beta
+	if (moonPhase == "Full Moon") {
+		printMajorPhaseBorder();
+	}
+	if (moonPhase == "New Moon") {
+		printMajorPhaseBorder();
+	}
+	if (moonPhase == "First Quarter") {
+		printMajorPhaseBorder();
+	}
+	if (moonPhase == "Last Quarter") {
+		printMajorPhaseBorder();
+	}
+	function printMajorPhaseBorder() {
+		document.querySelectorAll(".col")[j + 7].style.border =
+			"3px solid rgb(70, 121, 179)";
+	}
+}
+
+//This function sets borders to current day
+function addBorderOnTodaysDate(monthName, year) {
+	//Finding current day
+	var date = new Date();
+	var d = date.getDate();
+	var m = date.getMonth() + 1;
+	var y = date.getFullYear();
+
+	//Finding the name of current month
+	var month = nameOfMonths(m);
+
+	//Check if displayed month and year is equal to current month and year
+	if (month == monthName && y == year) {
+		//position of month's 1st day plus 6 for columns of week names + today's date
+		var position = weekDay(y, m) + d + 6;
+		document.querySelectorAll(".col")[position].style.border =
+			"4px solid rgb(205, 148, 74)";
+	}
+}
+
+//Function that formats the date and prints
+function formatTheDate(monthName, year) {
+	var formatedDate = monthName + " " + year;
+	document.querySelector(".month-name").innerHTML = formatedDate;
+	// Passing current month name and year from calendar to print borders
+	addBorderOnTodaysDate(monthName, year);
 }
 
 //Function that gives the month name for month number
@@ -285,7 +331,7 @@ function todaysDate(moonDay, moonMonth, moonYear) {
 	m = todayDate.getMonth() + 1;
 	y = todayDate.getFullYear();
 
-	//Adss "Today" label to todays date
+	//Adss "Today" label to todays date for moon card
 	if (moonDay == d && moonMonth == m && moonYear == y) {
 		formatedDate = "Today";
 	} else {
@@ -301,6 +347,8 @@ function clean() {
 		document.querySelectorAll(".col-up")[i].innerHTML = "";
 		document.querySelectorAll(".col-body")[i].innerHTML = "";
 		document.querySelectorAll(".col-down")[i].innerHTML = "";
+		document.querySelectorAll(".col")[i].style.border =
+			" 1px solid rgb(107, 107, 107)";
 	}
 }
 
@@ -315,12 +363,6 @@ function numberOfDays(year, month) {
 function weekDay(year, month) {
 	var b = new Date(year, month - 1, 1);
 	return b.getDay();
-}
-
-//Function that formats the date and prints
-function formatTheDate(monthName, year) {
-	var formatedDate = monthName + " " + year;
-	document.querySelector(".month-name").innerHTML = formatedDate;
 }
 
 //Calculates next full moon

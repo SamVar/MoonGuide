@@ -1,5 +1,5 @@
 //Calculates moon phase and illumination for the given month
-//Written by Samvel Vardanyan
+//By Samvel Vardanyan
 function moonCalendar() {
 	var d,
 		j,
@@ -39,9 +39,9 @@ function moonCalendar() {
 	formatTheDate(monthName, year);
 
 	//Calling the function that counts which position is the 1st day for that month
-	days = numberOfDays(year, month);
 	j = weekDay(year, month);
 
+	days = numberOfDays(year, month);
 	//Adds day numbers, images and texts to calendar
 	for (let i = 1; i <= days; i++) {
 		//Calling the function that calculates moon cycle
@@ -56,7 +56,6 @@ function moonCalendar() {
 
 		//Calling function that prints everything on the screen
 		printOnCalendar(moonPhase, moonCycle, illumination, moonImage, j, i);
-
 		j++;
 	}
 
