@@ -9,6 +9,7 @@ body {
 }
 
 .fixedPosition {
+	height: 100%;
 	overflow-y: hidden;
 }
 
