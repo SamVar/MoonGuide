@@ -38,10 +38,8 @@ function checkDevices() {
 		function checkMenuVisiblity(menuIsVisible) {
 			if (!menuIsVisible) {
 				$("body").addClass("fixedPosition");
-				$("#test").addClass("fixedPosition")
 			} else {
 				$("body").removeClass("fixedPosition");
-				$("#test").removeClass("fixedPosition")
 			}
 		}
 	}
