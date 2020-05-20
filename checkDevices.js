@@ -37,9 +37,11 @@ function checkDevices() {
 		//This function adds and removes fixedPosition class
 		function checkMenuVisiblity(menuIsVisible) {
 			if (!menuIsVisible) {
-				$("body").addClass("fixedPosition");
+				// $("body").addClass("fixedPosition");
+				$("#test").css({"overflow-y": "hidden",
+				"-webkit-overflow-scrolling": "touch"});
 			} else {
-				$("body").removeClass("fixedPosition");
+				// $("body").removeClass("fixedPosition");
 			}
 		}
 	}
