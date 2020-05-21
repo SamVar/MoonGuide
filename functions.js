@@ -31,7 +31,7 @@ function calculateMoonPhase(moonYear, moonMonth, moonDay) {
 	daySinceNew = jd - 2451549.5;
 	newMoons = daySinceNew / 29.53;
 	desPart = newMoons % 1;
-	daySinceNewCircle = desPart * 29.53 - 1;
+	daySinceNewCircle = desPart * 29.53 - 0.6;
 
 	if (daySinceNewCircle < 0) {
 		daySinceNewCircle = Math.abs(daySinceNewCircle);
