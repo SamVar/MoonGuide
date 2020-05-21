@@ -211,26 +211,23 @@ function printOnCard(
 function printOnCalendar(moonPhase, moonCycle, illumination, moonImage, j, i) {
 	document.querySelectorAll(".col-up")[j].innerHTML = i;
 	document.querySelectorAll(".col-body")[j].innerHTML = moonImage;
+
+	if (
+		moonPhase == "New Moon" ||
+		moonPhase == "Full Moon" ||
+		moonPhase == "First Quarter" ||
+		moonPhase == "Last Quarter"
+	) {
+		moonPhase = moonPhase.fontcolor("darkblue");
+	}
+
 	document.querySelectorAll(".col-down")[j].innerHTML =
 		moonPhase + "<br>" + moonCycle + " days, " + illumination + "%";
 
 	//beta
-	if (moonPhase == "Full Moon") {
-		printMajorPhaseBorder();
-	}
-	if (moonPhase == "New Moon") {
-		printMajorPhaseBorder();
-	}
-	if (moonPhase == "First Quarter") {
-		printMajorPhaseBorder();
-	}
-	if (moonPhase == "Last Quarter") {
-		printMajorPhaseBorder();
-	}
-	function printMajorPhaseBorder() {
-		document.querySelectorAll(".col")[j + 7].style.border =
-			"3px solid rgb(70, 121, 179)";
-	}
+	let isMobile = navigator.userAgent.match(
+		/(iPhone|iPod|iPad|Android|webOS|BlackBerry|IEMobile|Opera Mini)/i
+	);
 }
 
 //This function sets borders to current day
@@ -249,7 +246,7 @@ function addBorderOnTodaysDate(monthName, year) {
 		//position of month's 1st day plus 6 for columns of week names + today's date
 		var position = weekDay(y, m) + d + 6;
 		document.querySelectorAll(".col")[position].style.border =
-			"4px solid rgb(205, 148, 74)";
+			"3px solid rgb(205, 148, 74)";
 	}
 }
 
