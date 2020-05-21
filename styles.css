@@ -6,12 +6,10 @@
 html,
 body {
 	background-color: rgb(4, 15, 29);
-	
 }
 
 .fixedPosition {
 	overflow: hidden;
-	
 }
 
 main {
@@ -362,6 +360,22 @@ ul {
 	background: rgb(73, 73, 73);
 	font-size: 1.5rem;
 	flex: 3;
+}
+
+.back-to-current-month {
+	color: white;
+	font-size: 1rem;
+	text-align: end;
+	width: 100%;
+	margin-bottom: 1rem;
+}
+
+.back-to-current-month:hover {
+	opacity: 0.5;
+}
+
+.return-current-month-displayOn {
+	display: none;
 }
 
 .col-down {

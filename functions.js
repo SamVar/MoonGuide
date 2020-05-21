@@ -218,16 +218,12 @@ function printOnCalendar(moonPhase, moonCycle, illumination, moonImage, j, i) {
 		moonPhase == "First Quarter" ||
 		moonPhase == "Last Quarter"
 	) {
+		//Changes font color for 4 major moon phases
 		moonPhase = moonPhase.fontcolor("darkblue");
 	}
 
 	document.querySelectorAll(".col-down")[j].innerHTML =
 		moonPhase + "<br>" + moonCycle + " days, " + illumination + "%";
-
-	//beta
-	let isMobile = navigator.userAgent.match(
-		/(iPhone|iPod|iPad|Android|webOS|BlackBerry|IEMobile|Opera Mini)/i
-	);
 }
 
 //This function sets borders to current day
@@ -256,6 +252,7 @@ function formatTheDate(monthName, year) {
 	document.querySelector(".month-name").innerHTML = formatedDate;
 	// Passing current month name and year from calendar to print borders
 	addBorderOnTodaysDate(monthName, year);
+	backToCurrentMonth(monthName, year);
 }
 
 //Function that gives the month name for month number
@@ -408,4 +405,30 @@ function nextFullMoon() {
 		}
 	} while (moonCycle <= 13.99 || moonCycle > 15.0);
 	document.querySelector(".next-full-moon").innerHTML = fullMoonText;
+}
+
+//Ads dynamic link to go back to current month on Calendar
+function backToCurrentMonth(monthName, year) {
+	var currentDate = getCurrentDate();
+	var currentMonth = currentDate[1];
+	var currentYear = currentDate[2];
+
+	var currentMonthName = nameOfMonths(currentMonth);
+
+	//Checks if current month is equal with curent month displayed on calendar
+	if (currentMonthName == monthName && currentYear == year) {
+		$("#return-to-current-month").addClass("return-current-month-displayOn");
+	} else {
+		$("#return-to-current-month").removeClass("return-current-month-displayOn");
+	}
+}
+
+//Gives Curent date (day, month, year)
+function getCurrentDate() {
+	var today = new Date();
+	var day = today.getDate();
+	var month = today.getMonth() + 1;
+	var year = today.getFullYear();
+	var fullDate = [day, month, year];
+	return fullDate;
 }
