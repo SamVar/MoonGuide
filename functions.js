@@ -207,7 +207,7 @@ function printOnCard(
 		"%";
 }
 
-//Function that prints everything on moon Calendar
+//Function that printsmn everything on moon Calendar
 function printOnCalendar(moonPhase, moonCycle, illumination, moonImage, j, i) {
 	document.querySelectorAll(".col-up")[j].innerHTML = i;
 	document.querySelectorAll(".col-body")[j].innerHTML = moonImage;
