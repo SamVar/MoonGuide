@@ -1225,7 +1225,10 @@ video {
 		color: khaki !important;
 		border: none !important;
 	}
-
+	.nav-link:focus {
+		outline: none !important;
+		box-shadow: none !important;
+	}
 	.card-group {
 		width: 90%;
 	}
