@@ -1208,7 +1208,9 @@ video {
 		max-height: 25rem;
 		overflow-y: scroll;
 	}
+}
 
+@media (max-width: 1366px) {
 	.nav-link:focus {
 		outline: none !important;
 		box-shadow: none !important;
