@@ -1225,10 +1225,7 @@ video {
 		color: khaki !important;
 		border: none !important;
 	}
-	.nav-link:focus {
-		outline: none !important;
-		box-shadow: none !important;
-	}
+
 	.card-group {
 		width: 90%;
 	}
@@ -1344,9 +1341,14 @@ video {
 	}
 }
 
+
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 	.galaxy-gallery {
 		height: 23vh;
+	}
+	.nav-link:focus {
+		outline: none !important;
+		box-shadow: none !important;
 	}
 }
 
