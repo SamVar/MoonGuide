@@ -68,6 +68,8 @@ function calculateMoonPhase(moonYear, moonMonth, moonDay) {
 		moonIllumination = Math.round(moonIllumination);
 	}
 
+	// Round moon cycle to one decimal place
+	daySinceNewCircle = Math.round(daySinceNewCircle * 10) / 10;
 	moonPhaseAndIllumination = [daySinceNewCircle, moonIllumination];
 	return moonPhaseAndIllumination;
 }
@@ -212,8 +214,6 @@ function printOnCard(
 	moonImage,
 	i
 ) {
-	//Rounds moon cycle one decimal place
-	moonCycle = Math.round(moonCycle * 10) / 10;
 	document.querySelectorAll(".picture")[i].innerHTML = moonImage;
 	document.querySelectorAll(".card-title")[i].innerHTML = formatedDate;
 	document.querySelectorAll(".card-text")[i].innerHTML =
@@ -242,8 +242,6 @@ function printOnCalendar(moonPhase, moonCycle, illumination, moonImage, j, i) {
 		moonPhase = moonPhase.fontcolor("darkblue");
 	}
 
-	//Rounds moon cycle to one decimal place
-	moonCycle = Math.round(moonCycle * 10) / 10;
 	document.querySelectorAll(".col-down")[j].innerHTML =
 		moonPhase + "<br>" + moonCycle + " days, " + illumination + "%";
 }
