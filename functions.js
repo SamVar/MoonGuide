@@ -31,7 +31,7 @@ function calculateMoonPhase(moonYear, moonMonth, moonDay) {
 	daySinceNew = jd - 2451549.5;
 	newMoons = daySinceNew / 29.53;
 	desPart = newMoons % 1;
-	daySinceNewCircle = desPart * 29.53 - 0.6;
+	daySinceNewCircle = desPart * 29.53 - 0.7;
 
 	if (daySinceNewCircle < 0) {
 		daySinceNewCircle = Math.abs(daySinceNewCircle);
@@ -47,8 +47,27 @@ function calculateMoonPhase(moonYear, moonMonth, moonDay) {
 
 	phaseAngle = (daySinceNewCircle / 29.53) * 360 - 180;
 	moonIllumination = ((Math.cos((phaseAngle * Math.PI) / 180) + 1) / 2) * 100;
-	moonIllumination = moonIllumination.toFixed(0);
-	daySinceNewCircle = daySinceNewCircle.toFixed(1);
+	moonIllumination = moonIllumination.toFixed(2);
+	daySinceNewCircle = daySinceNewCircle.toFixed(2);
+
+	//Makes sure that only full moon gets 100% illuminationn
+	//and only new moonn gets 0% illumination
+	if (moonIllumination >= 99.7) {
+		moonIllumination = Math.ceil(moonIllumination);
+	} else if (moonIllumination < 99.7 && moonIllumination >= 99.5) {
+		moonIllumination = Math.floor(moonIllumination);
+	} else if (
+		daySinceNewCircle < 29.23 &&
+		daySinceNewCircle > 28.8 &&
+		moonIllumination < 0.5
+	) {
+		moonIllumination = Math.ceil(moonIllumination);
+	} else if (daySinceNewCircle <= 0.7 && daySinceNewCircle >= 0.6) {
+		moonIllumination = Math.floor(moonIllumination);
+	} else {
+		moonIllumination = Math.round(moonIllumination);
+	}
+
 	moonPhaseAndIllumination = [daySinceNewCircle, moonIllumination];
 	return moonPhaseAndIllumination;
 }
@@ -59,7 +78,7 @@ function moonPhaseNameAndImage(daySinceNewCircle) {
 
 	if (
 		(daySinceNewCircle >= 0.0 && daySinceNewCircle <= 0.7) ||
-		daySinceNewCircle > 29.3
+		daySinceNewCircle > 29.23
 	) {
 		moonPhase = "New Moon";
 		moonImage = "<img class='card-img-top' src=small-size-images/new.png>";
@@ -155,7 +174,7 @@ function moonPhaseNameAndImage(daySinceNewCircle) {
 		moonImage = "<img class='card-img-top' src=small-size-images/21.png>";
 		moonImage2 = "<img class='image' src=small-size-images/21.png>";
 		moonImage3 = "<img class='born-img' src=small-size-images/21.png>";
-	} else if (daySinceNewCircle > 22.5 && daySinceNewCircle <= 29.3) {
+	} else if (daySinceNewCircle > 22.5 && daySinceNewCircle <= 29.23) {
 		moonPhase = "Waning Crescent";
 		if (daySinceNewCircle > 22.5 && daySinceNewCircle <= 23.9) {
 			moonImage = "<img class='card-img-top' src=small-size-images/22.png>";
@@ -193,6 +212,8 @@ function printOnCard(
 	moonImage,
 	i
 ) {
+	//Rounds moon cycle one decimal place
+	moonCycle = Math.round(moonCycle * 10) / 10;
 	document.querySelectorAll(".picture")[i].innerHTML = moonImage;
 	document.querySelectorAll(".card-title")[i].innerHTML = formatedDate;
 	document.querySelectorAll(".card-text")[i].innerHTML =
@@ -206,7 +227,7 @@ function printOnCard(
 		"%";
 }
 
-//Function that printsmn everything on moon Calendar
+//Function that prints everything on moon Calendar
 function printOnCalendar(moonPhase, moonCycle, illumination, moonImage, j, i) {
 	document.querySelectorAll(".col-up")[j].innerHTML = i;
 	document.querySelectorAll(".col-body")[j].innerHTML = moonImage;
@@ -221,6 +242,8 @@ function printOnCalendar(moonPhase, moonCycle, illumination, moonImage, j, i) {
 		moonPhase = moonPhase.fontcolor("darkblue");
 	}
 
+	//Rounds moon cycle to one decimal place
+	moonCycle = Math.round(moonCycle * 10) / 10;
 	document.querySelectorAll(".col-down")[j].innerHTML =
 		moonPhase + "<br>" + moonCycle + " days, " + illumination + "%";
 }
