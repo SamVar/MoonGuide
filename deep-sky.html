@@ -31,7 +31,9 @@
 		<link rel="stylesheet" href="lightbox2-2.11.1/dist/css/lightbox.css" />
 		<link rel="stylesheet" href="styles.css" />
 	</head>
-	<body onload="checkDevices(); lightBoxOption(); copyRights(); checkVideoViewPort();">
+	<body
+		onload="checkDevices(); lightBoxOption(); copyRights(); checkVideoViewPort();"
+	>
 		<header>
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 				<a class="navbar-brand logo" href="index.html">Moon Guide</a>
@@ -404,9 +406,7 @@
 					confusion by making so many background stars visible.
 				</p>
 
-				<h2 id="galaxies">
-					Galaxies
-				</h2>
+				<h2 id="galaxies">Galaxies</h2>
 				<p class="paragraph-body">
 					<a
 						href="images/andromeda.jpg"
@@ -475,9 +475,10 @@
 					<h2>Top 5 Deep Sky Objects</h2>
 					<div class="video">
 						<iframe
+							id="player"
 							width="966"
 							height="500"
-							src="https://www.youtube.com/embed/48VYw05QLW0"
+							src="https://www.youtube.com/embed/48VYw05QLW0?enablejsapi=1"
 							frameborder="0"
 							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 							allowfullscreen
@@ -1053,9 +1054,7 @@
 							target="_blank"
 							class="gallery-link"
 						>
-							<figcaption>
-								Bubble Nebula 11000 light years away
-							</figcaption>
+							<figcaption>Bubble Nebula 11000 light years away</figcaption>
 						</a>
 					</figure>
 
@@ -1117,9 +1116,7 @@
 							target="_blank"
 							class="gallery-link"
 						>
-							<figcaption>
-								Carina Nebula 8500 light years away
-							</figcaption>
+							<figcaption>Carina Nebula 8500 light years away</figcaption>
 						</a>
 					</figure>
 
@@ -1181,9 +1178,7 @@
 							target="_blank"
 							class="gallery-link"
 						>
-							<figcaption>
-								NGC-6281 Clusster 1611 light years away
-							</figcaption>
+							<figcaption>NGC-6281 Clusster 1611 light years away</figcaption>
 						</a>
 					</figure>
 
@@ -1212,9 +1207,7 @@
 			</section>
 
 			<section id="video">
-				<h2>
-					Triangulum Galaxy (Messier 33)
-				</h2>
+				<h2>Triangulum Galaxy (Messier 33)</h2>
 				<div class="astro-video">
 					<p class="video-paragraph">
 						Triangulum Galaxy (Messier 33) - distance from the Earth 2.9 million
@@ -1244,7 +1237,8 @@
 		<script src="lightBoxOption.js" type="text/javascript"></script>
 		<script src="footer.js" type="text/javascript"></script>
 		<script src="checkDevices.js" type="text/javascript"></script>
-		<script src = "functions.js" type="text/javascript"></script>
+		<script src="functions.js" type="text/javascript"></script>
+		<script src="iframeViewPort.js" type="text/javascript"></script>
 		<footer>
 			<section class="link-section">
 				<div class="link-container">

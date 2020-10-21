@@ -458,18 +458,32 @@ function checkVideoViewPort() {
 	const video = document.querySelector("video");
 	video.addEventListener("play", playOn);
 	function playOn() {
+		var inView = viewPoint();
+		if (!inView) {
+			video.pause();
+		}
 		window.addEventListener("scroll", function () {
-			var bounding = video.getBoundingClientRect();
-			if (
-				bounding.top <= 0 ||
-				bounding.left <= 0 ||
-				bounding.right >=
-					(window.innerWidth || document.documentElement.clientWidth) ||
-				bounding.bottom >=
-					(window.innerHeight || document.documentElement.clientHeight)
-			) {
+			inView = viewPoint();
+			if (!inView) {
 				video.pause();
 			}
 		});
+	}
+
+	//Checks if video is in view point
+	function viewPoint() {
+		var bounding = video.getBoundingClientRect();
+		if (
+			bounding.top <= 0 ||
+			bounding.left <= 0 ||
+			bounding.right >=
+				(window.innerWidth || document.documentElement.clientWidth) ||
+			bounding.bottom >=
+				(window.innerHeight || document.documentElement.clientHeight)
+		) {
+			return false;
+		} else {
+			return true;
+		}
 	}
 }
