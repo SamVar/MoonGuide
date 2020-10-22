@@ -1017,7 +1017,9 @@ video:focus {
 	.astro-video {
 		width: 90%;
 	}
-
+	#video {
+		padding-top: 2rem;
+	}
 	.video-paragraph {
 		font-size: 0.8rem;
 	}
