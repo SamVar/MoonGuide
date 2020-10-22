@@ -22,12 +22,14 @@ function onPlayerStateChange(event) {
 //Checks if player playing or stopped and adds event listener
 function getPlayStatus(playerStatus) {
 	if (playerStatus === 1) {
+		videoPause();
+		document.addEventListener("scroll", videoPause);
+	}
+
+	//Checks if player is in viewpoint and pauses video
+	function videoPause() {
 		var inView = youtubeVideoViewPoint();
 		if (!inView) player.pauseVideo();
-		document.addEventListener("scroll", function () {
-			inView = youtubeVideoViewPoint();
-			if (!inView) player.pauseVideo();
-		});
 	}
 }
 

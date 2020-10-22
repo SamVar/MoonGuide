@@ -687,6 +687,9 @@ video {
 	margin-bottom: 0.5rem;
 }
 
+video:focus {
+	outline: none !important;
+}
 /* End of the page 4 */
 
 /********************************** Responsivnes ********************************/

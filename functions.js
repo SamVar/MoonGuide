@@ -458,16 +458,15 @@ function checkVideoViewPort() {
 	const video = document.querySelector("video");
 	video.addEventListener("play", playOn);
 	function playOn() {
-		var inView = viewPoint();
-		if (!inView) {
-			video.pause();
-		}
-		window.addEventListener("scroll", function () {
-			inView = viewPoint();
+		window.addEventListener("scroll", videoPause);
+
+		//Checks if player is in viewpoint and pauses video
+		function videoPause() {
+			var inView = viewPoint();
 			if (!inView) {
 				video.pause();
 			}
-		});
+		}
 	}
 
 	//Checks if video is in view point
