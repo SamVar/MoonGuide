@@ -488,7 +488,7 @@ ul {
 	background: rgb(107, 107, 107);
 	display: inline;
 	padding: 0.7rem;
-	border-radius: 2%;
+	border-radius: 2px;
 }
 
 .select-born-month,
