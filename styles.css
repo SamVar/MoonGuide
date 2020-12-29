@@ -509,6 +509,7 @@ ul {
 	width: 80%;
 	margin: auto;
 	display: flex;
+	border-radius: 4px;
 }
 
 .overideH2 {
