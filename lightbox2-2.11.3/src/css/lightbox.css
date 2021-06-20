@@ -49,7 +49,7 @@ body.lb-disable-scrolling {
 
   /* Background color behind image.
      This is visible during transitions. */
-  background-color: silver;
+  background-color: white;
 }
 
 .lb-outerContainer:after {
@@ -91,11 +91,10 @@ body.lb-disable-scrolling {
 
 .lb-nav a {
   outline: none;
-  background-image: url("data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==");
+  background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
 }
 
-.lb-prev,
-.lb-next {
+.lb-prev, .lb-next {
   height: 100%;
   cursor: pointer;
   display: block;
